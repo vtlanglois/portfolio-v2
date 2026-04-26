@@ -1,6 +1,11 @@
 "use client";
 import { useEffect } from "react";
 import "./styles.css";
+import {
+  CodepenLogoIcon,
+  GithubLogoIcon,
+  LinkedinLogoIcon,
+} from "@phosphor-icons/react/dist/ssr";
 
 export default function Hero() {
   useEffect(() => {
@@ -143,6 +148,47 @@ export default function Hero() {
             corporis? Atque nam quam dolorem eius laudantium unde corporis
             deserunt recusandae?
           </p>
+          <div className="flex flex-row gap-12 justify-center items-center">
+            <a
+              href="https://www.linkedin.com/in/vtlanglois/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-blue-700 hover:bg-blue-900 p-2 transition-colors duration-300"
+              title="Link to Vincent's LinkedIn profile"
+            >
+              <LinkedinLogoIcon
+                size={32}
+                weight="duotone"
+                className="text-slate-50"
+              />
+            </a>
+            <a
+              href="https://github.com/vtlanglois"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-purple-500 hover:bg-purple-600 p-2 transition-colors duration-300"
+              title="Link to Vincent's GitHub profile"
+            >
+              <GithubLogoIcon
+                size={32}
+                weight="duotone"
+                className="text-slate-50 "
+              />
+            </a>
+            <a
+              href="https://codepen.io/vtlanglois"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-gray-800 hover:bg-gray-900 p-2 transition-colors duration-300"
+              title="Link to Vincent's Codepen profile"
+            >
+              <CodepenLogoIcon
+                size={32}
+                weight="duotone"
+                className="text-slate-50"
+              />
+            </a>
+          </div>
         </div>
         {/* <div className="hero__scroll">Scroll to see more</div> */}
       </div>
