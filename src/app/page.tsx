@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Hero from "../components/sections/Hero";
+import Container from "@/components/ui/Container";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <section className="p-16">Skills</section>
-      <section className="p-16">Experience</section>
-      <section className="p-16">Projects</section>
+      <Container>
+        <section>Skills</section>
+      </Container>
+      <Container>
+        <section>Experience</section>
+      </Container>
+      <Container>
+        <section>Projects</section>
+      </Container>
     </>
   );
 }
