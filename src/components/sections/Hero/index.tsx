@@ -140,13 +140,14 @@ export default function Hero() {
         <div className="hero__card lg:w-2/3 flex flex-col gap-6">
           <div>
             <p>Hello! My name is</p>
-            <h1 className="text-6xl">Vince Langlois</h1>
+            <h1 className="text-4xl lg:text-6xl bold italic underline text-balance">
+              Vincent Langlois
+            </h1>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            quos velit eligendi delectus sint quas consequatur fugit id ipsam
-            corporis? Atque nam quam dolorem eius laudantium unde corporis
-            deserunt recusandae?
+            Senior Software Engineer @ Eli Lilly <br />
+            Engineer by trade, tinkerer by nature <br />
+            Building things, breaking things, learning everything
           </p>
           <div className="flex flex-row gap-12 justify-center items-center">
             <a
