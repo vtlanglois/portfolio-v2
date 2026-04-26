@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Container>
+      {/* <Container>
         <section>Skills</section>
       </Container>
       <Container>
@@ -14,7 +14,7 @@ export default function Home() {
       </Container>
       <Container>
         <section>Projects</section>
-      </Container>
+      </Container> */}
     </>
   );
 }

@@ -144,7 +144,7 @@ export default function Hero() {
             deserunt recusandae?
           </p>
         </div>
-        <div className="">Scroll to see more</div>
+        {/* <div className="hero__scroll">Scroll to see more</div> */}
       </div>
     </section>
   );

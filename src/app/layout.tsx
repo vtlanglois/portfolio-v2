@@ -31,14 +31,12 @@ export default function RootLayout({
         {/* <header>
           Header
         </header> */}
-        <main>
-          {children}
-        </main>
-        <Container>
+        <main>{children}</main>
+        {/* <Container>
                   <footer>
           Footer
         </footer>
-        </Container>
+        </Container> */}
       </body>
     </html>
   );

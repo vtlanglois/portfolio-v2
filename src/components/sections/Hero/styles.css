@@ -36,10 +36,10 @@
   padding: 0 1rem;
 }
 
-.hero__content > *:last-child {
+/* .hero__scroll {
   position: absolute;
   bottom: 1rem;
-}
+} */
 
 .hero__card {
   padding: 2rem;
