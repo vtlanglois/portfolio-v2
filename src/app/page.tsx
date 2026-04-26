@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Hero from "../components/sections/Hero";
 
 export default function Home() {
   return (
     <>
-      <section className="min-h-screen">Hero</section>
-      <section>Skills</section>
-      <section>Experience</section>
-      <section>Projects</section>
+      <Hero />
+      <section className="p-16">Skills</section>
+      <section className="p-16">Experience</section>
+      <section className="p-16">Projects</section>
     </>
   );
 }
