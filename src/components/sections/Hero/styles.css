@@ -60,7 +60,7 @@
     inset 0 0 26px 13px rgba(255, 255, 255, 0.13);
 }
 
-.hero a::before {
+/* .hero a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -88,9 +88,9 @@
     transparent,
     rgba(255, 255, 255, 0.3)
   );
-}
+} */
 
-.hero__card::before {
+/* .hero__card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -118,7 +118,7 @@
     transparent,
     rgba(255, 255, 255, 0.3)
   );
-}
+} */
 
 @media (min-width: 768px) {
   .hero__hills svg {
