@@ -192,6 +192,11 @@ export default function Hero() {
               />
             </a>
           </div>
+          <div>
+            <p>
+              More features coming soon!
+            </p>
+          </div>
         </div>
         {/* <div className="hero__scroll">Scroll to see more</div> */}
       </div>
