@@ -2,7 +2,8 @@
 
 :root {
   --background: #f5fbff;
-  --foreground: #1a1a2e;  
+  --foreground: #1a1a2e;
+  scrollbar-gutter: stable;
   scrollbar-width: thin;
 }
 
