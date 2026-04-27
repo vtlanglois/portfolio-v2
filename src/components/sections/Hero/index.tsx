@@ -11,7 +11,7 @@ export default function Hero() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const hills = document.querySelectorAll("path");
+      const hills = document.querySelectorAll("path.hill");
       hills.forEach((hill, index) => {
         const speed = (index + 1) * 0.03; // Different speed for each layer
         hill.setAttribute("transform", `translate(0, ${scrollY * speed})`);
@@ -82,6 +82,7 @@ export default function Hero() {
               fill="#93bfa8"
               opacity="0.55"
               filter="url(#noise-far)"
+              className="hill"
             >
               <animate
                 attributeName="d"
@@ -102,6 +103,7 @@ export default function Hero() {
               fill="#5dab6e"
               opacity="0.75"
               filter="url(#noise-mid)"
+              className="hill"
             >
               <animate
                 attributeName="d"
@@ -121,6 +123,7 @@ export default function Hero() {
               d="M-10 258 Q80 185 180 210 Q260 240 370 228 Q480 215 580 235 Q640 244 690 238 L690 9999 L-10 9999 Z"
               fill="#3ea032"
               filter="url(#noise-near)"
+              className="hill"
             >
               <animate
                 attributeName="d"
@@ -148,8 +151,7 @@ export default function Hero() {
           </div>
           <p>
             Senior Software Engineer @ Eli Lilly <br />
-            Engineer by trade, tinkerer by nature <br />
-            Building things, breaking things, learning everything
+            Engineer by trade, tinkerer by nature | Building things, breaking things, learning everything
           </p>
           <div className="flex flex-row gap-12 justify-center items-center">
             <a
