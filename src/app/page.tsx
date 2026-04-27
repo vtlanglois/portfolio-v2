@@ -1,4 +1,4 @@
-import Hero from "../components/sections/Hero";
+  import Hero from "../components/sections/Hero";
 // import Container from "@/components/ui/Container";
 
 export default function Home() {
