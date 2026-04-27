@@ -78,8 +78,8 @@ export default function Hero() {
           </defs>
           <g clipPath="url(#hillsClip)">
             <path
-              d="M-10 200 Q60 130 160 165 Q260 195 370 140 Q460 95 560 150 Q630 185 690 160 L690 400 L-10 400 Z"
-              fill="#7ecb6e"
+              d="M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z"
+              fill="#93bfa8"
               opacity="0.55"
               filter="url(#noise-far)"
             >
@@ -90,15 +90,16 @@ export default function Hero() {
                 calcMode="spline"
                 keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
                 values="
-  M-10 200 Q60 130 160 165 Q260 195 370 140 Q460 95 560 150 Q630 185 690 160 L690 400 L-10 400 Z;
-  M-10 203 Q60 133 160 162 Q260 192 370 143 Q460 98 560 147 Q630 182 690 163 L690 400 L-10 400 Z;
-  M-10 200 Q60 130 160 165 Q260 195 370 140 Q460 95 560 150 Q630 185 690 160 L690 400 L-10 400 Z
+  M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z;
+  M-10 203 Q120 158 240 172 Q340 189 450 141 Q540 103 620 142 Q655 159 690 158 L690 400 L-10 400 Z;
+  M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z
 "
               />
             </path>
+
             <path
-              d="M-10 230 Q80 165 200 195 Q320 225 430 170 Q520 130 620 180 Q660 200 690 185 L690 400 L-10 400 Z"
-              fill="#5ab84a"
+              d="M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z"
+              fill="#5dab6e"
               opacity="0.75"
               filter="url(#noise-mid)"
             >
@@ -109,14 +110,15 @@ export default function Hero() {
                 calcMode="spline"
                 keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
                 values="
-  M-10 230 Q80 165 200 195 Q320 225 430 170 Q520 130 620 180 Q660 200 690 185 L690 400 L-10 400 Z;
-  M-10 233 Q80 168 200 192 Q320 222 430 173 Q520 133 620 177 Q660 197 690 188 L690 400 L-10 400 Z;
-  M-10 230 Q80 165 200 195 Q320 225 430 170 Q520 130 620 180 Q660 200 690 185 L690 400 L-10 400 Z
+  M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z;
+  M-10 238 Q100 213 220 215 Q340 225 460 171 Q550 131 640 169 Q665 182 690 183 L690 400 L-10 400 Z;
+  M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z
 "
               />
             </path>
+
             <path
-              d="M-10 258 Q70 205 180 228 Q290 252 400 205 Q490 168 590 210 Q645 232 690 218 L690 9999 L-10 9999 Z"
+              d="M-10 258 Q80 185 180 210 Q260 240 370 228 Q480 215 580 235 Q640 244 690 238 L690 9999 L-10 9999 Z"
               fill="#3ea032"
               filter="url(#noise-near)"
             >
@@ -127,9 +129,9 @@ export default function Hero() {
                 calcMode="spline"
                 keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
                 values="
-  M-10 258 Q70 205 180 228 Q290 252 400 205 Q490 168 590 210 Q645 232 690 218 L690 9999 L-10 9999 Z;
-  M-10 261 Q70 208 180 225 Q290 249 400 208 Q490 171 590 207 Q645 229 690 221 L690 9999 L-10 9999 Z;
-  M-10 258 Q70 205 180 228 Q290 252 400 205 Q490 168 590 210 Q645 232 690 218 L690 9999 L-10 9999 Z
+  M-10 258 Q80 185 180 210 Q260 240 370 228 Q480 215 580 235 Q640 244 690 238 L690 9999 L-10 9999 Z;
+  M-10 261 Q80 188 180 207 Q260 237 370 231 Q480 218 580 232 Q640 241 690 241 L690 9999 L-10 9999 Z;
+  M-10 258 Q80 185 180 210 Q260 240 370 228 Q480 215 580 235 Q640 244 690 238 L690 9999 L-10 9999 Z
 "
               />
             </path>
@@ -154,7 +156,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/vtlanglois/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-blue-700 hover:bg-blue-900 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="rounded-full opacity-80 bg-blue-700 hover:bg-blue-900 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's LinkedIn profile"
             >
               <LinkedinLogoIcon
@@ -167,7 +169,7 @@ export default function Hero() {
               href="https://github.com/vtlanglois"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-purple-500 hover:bg-purple-600 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="rounded-full opacity-80 bg-purple-500 hover:bg-purple-600 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's GitHub profile"
             >
               <GithubLogoIcon
@@ -180,7 +182,7 @@ export default function Hero() {
               href="https://codepen.io/vtlanglois"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gray-800 hover:bg-gray-900 p-2  hover:scale-125 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="rounded-full opacity-80 bg-gray-800 hover:bg-gray-900 p-2  hover:scale-125 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's Codepen profile"
             >
               <CodepenLogoIcon
