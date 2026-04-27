@@ -2,8 +2,8 @@
 
 :root {
   --background: #f5fbff;
-  --foreground: #1a1a2e;
-    scrollbar-width: thin;
+  --foreground: #1a1a2e;  
+  scrollbar-width: thin;
 }
 
 @theme inline {

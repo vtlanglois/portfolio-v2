@@ -1,3 +1,11 @@
+import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
+import Container from "../ui/Container";
+import {
+  CodepenLogoIcon,
+  GithubLogoIcon,
+  LinkedinLogoIcon,
+} from "@phosphor-icons/react/dist/ssr";
+
 export default function Footer() {
   return (
     <footer>
@@ -29,7 +37,54 @@ export default function Footer() {
       </svg>
 
       <div className="bg-[#2d7a24] text-white">
-        <div className="container mx-auto p-3">Footer</div>
+        <Container>
+          <div className="flex flex-col lg:flex-row justify-between pb-4 lg:pb-0">
+            <div>
+              <p className="py-4 text-center lg:text-start text-sm">
+                Made by Vincent Langlois. <br />
+                Built with Next.js, React, Tailwind CSS, and more!
+              </p>
+            </div>
+            <div className="flex flex-row gap-6 justify-center items-center">
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Link to Vincent's LinkedIn profile"
+              >
+                <LinkedinLogoIcon
+                  size={32}
+                  weight="duotone"
+                  className="text-slate-50"
+                />
+              </a>
+              <a
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Link to Vincent's GitHub profile"
+              >
+                <GithubLogoIcon
+                  size={32}
+                  weight="duotone"
+                  className="text-slate-50"
+                />
+              </a>
+              <a
+                href={CODEPEN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Link to Vincent's Codepen profile"
+              >
+                <CodepenLogoIcon
+                  size={32}
+                  weight="duotone"
+                  className="text-slate-50"
+                />
+              </a>
+            </div>
+          </div>
+        </Container>
       </div>
     </footer>
   );

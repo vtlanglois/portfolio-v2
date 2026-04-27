@@ -6,6 +6,7 @@ import {
   GithubLogoIcon,
   LinkedinLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 
 export default function Hero() {
   useEffect(() => {
@@ -155,7 +156,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-row gap-12 justify-center items-center">
             <a
-              href="https://www.linkedin.com/in/vtlanglois/"
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full opacity-80 bg-blue-700 hover:bg-blue-800 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
@@ -168,7 +169,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://github.com/vtlanglois"
+              href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full opacity-80 bg-purple-500 hover:bg-purple-600 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
@@ -181,7 +182,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://codepen.io/vtlanglois"
+              href={CODEPEN_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full opacity-80 bg-gray-800 hover:bg-gray-900 p-2  hover:scale-125 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
