@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Hero from "../components/sections/Hero";
-import Container from "@/components/ui/Container";
+// import Container from "@/components/ui/Container";
 
 export default function Home() {
   return (
