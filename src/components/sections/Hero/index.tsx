@@ -154,7 +154,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/vtlanglois/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-blue-700 hover:bg-blue-900 hover:scale-125  p-2 transition-colors transition-transform duration-300"
+              className="rounded-full bg-blue-700 hover:bg-blue-900 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's LinkedIn profile"
             >
               <LinkedinLogoIcon
@@ -167,7 +167,7 @@ export default function Hero() {
               href="https://github.com/vtlanglois"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-purple-500 hover:bg-purple-600 hover:scale-125 p-2 transition-colors transition-transform duration-300"
+              className="rounded-full bg-purple-500 hover:bg-purple-600 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's GitHub profile"
             >
               <GithubLogoIcon
@@ -180,7 +180,7 @@ export default function Hero() {
               href="https://codepen.io/vtlanglois"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-gray-800 hover:bg-gray-900 p-2  hover:scale-125 transition-colors transition-transform duration-300"
+              className="rounded-full bg-gray-800 hover:bg-gray-900 p-2  hover:scale-125 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's Codepen profile"
             >
               <CodepenLogoIcon
