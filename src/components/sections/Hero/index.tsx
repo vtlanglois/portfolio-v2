@@ -156,7 +156,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/vtlanglois/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full opacity-80 bg-blue-700 hover:bg-blue-900 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="rounded-full opacity-80 bg-blue-700 hover:bg-blue-800 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
               title="Link to Vincent's LinkedIn profile"
             >
               <LinkedinLogoIcon
