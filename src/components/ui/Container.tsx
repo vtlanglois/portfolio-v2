@@ -3,5 +3,5 @@ export default function Container({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="container mx-auto px-4">{children}</div>;
+  return <div className="container mx-auto px-4 lg:w-3/4">{children}</div>;
 }

@@ -3,7 +3,8 @@
 :root {
   --background: #f5fbff;
   --foreground: #1a1a2e;
-    scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
 }
 
 @theme inline {

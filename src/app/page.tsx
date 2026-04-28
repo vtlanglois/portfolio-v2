@@ -1,10 +1,12 @@
-  import Hero from "../components/sections/Hero";
+import About from "@/components/sections/About";
+import Hero from "../components/sections/Hero";
 // import Container from "@/components/ui/Container";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <About />
       {/* <Container>
         <section>Skills</section>
       </Container>
