@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import "./styles.css";
 import {
+  ArrowDownIcon,
   CodepenLogoIcon,
   GithubLogoIcon,
   LinkedinLogoIcon,
@@ -146,13 +147,14 @@ export default function Hero() {
         <div className="hero__card lg:w-2/3 flex flex-col gap-6">
           <div>
             <p>Hello! My name is</p>
-            <h1 className="text-4xl lg:text-6xl bold italic underline text-balance">
+            <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
               Vincent Langlois
             </h1>
           </div>
           <p>
             Senior Software Engineer @ Eli Lilly <br />
-            Engineer by trade, tinkerer by nature | Building things, breaking things, learning everything
+            Engineer by trade, tinkerer by nature | Building things, breaking
+            things, learning everything
           </p>
           <div className="flex flex-row gap-12 justify-center items-center">
             <a
@@ -195,13 +197,11 @@ export default function Hero() {
               />
             </a>
           </div>
-          <div>
-            <p>
-              More features coming soon!
-            </p>
-          </div>
         </div>
-        {/* <div className="hero__scroll">Scroll to see more</div> */}
+        <div className="hero__scroll flex flex-col items-center">
+          Scroll to see more
+          <ArrowDownIcon size={16} weight="duotone" />
+        </div>
       </div>
     </section>
   );

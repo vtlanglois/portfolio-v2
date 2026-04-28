@@ -36,10 +36,12 @@
   padding: 0 1rem;
 }
 
-/* .hero__scroll {
+.hero__scroll {
   position: absolute;
   bottom: 1rem;
-} */
+  opacity: 0;
+  animation: 5s fadeInUp 1s ease-out forwards;
+}
 
 .hero__card {
   padding: 2rem;
@@ -137,4 +139,3 @@
     transform: translateY(0); /* End at original position */
   }
 }
-
