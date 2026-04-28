@@ -22,9 +22,19 @@ export default function ThemeSelector() {
   };
 
   const variants: Variants = {
-    initial: (d: number) => ({ opacity: 0, x: d * 20, scale: 0.25,filter: "blur(4px)" }),
+    initial: (d: number) => ({
+      opacity: 0,
+      x: d * 20,
+      scale: 0.25,
+      filter: "blur(4px)",
+    }),
     animate: { opacity: 1, x: 0, scale: 1, filter: "blur(0px)" },
-    exit: (d: number) => ({ opacity: 0, x: d * -20, scale: 0.25, filter: "blur(4px)" }),
+    exit: (d: number) => ({
+      opacity: 0,
+      x: d * -20,
+      scale: 0.25,
+      filter: "blur(4px)",
+    }),
   };
 
   useEffect(() => {
@@ -55,7 +65,6 @@ export default function ThemeSelector() {
   );
 }
 
-
 function ThemeIcon({ theme }: { theme: string }) {
   switch (theme) {
     case "bliss":
@@ -67,3 +76,4 @@ function ThemeIcon({ theme }: { theme: string }) {
     default:
       return null;
   }
+}
