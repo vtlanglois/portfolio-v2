@@ -45,7 +45,7 @@ export default function Hero() {
           <g clipPath="url(#hillsClip)">
             <path
               d="M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z"
-              fill="#93bfa8"
+              fill="var(--hill-far)"
               opacity="0.55"
               className="hill"
             >
@@ -65,7 +65,7 @@ export default function Hero() {
 
             <path
               d="M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z"
-              fill="#5dab6e"
+              fill="var(--hill-mid)"
               opacity="0.75"
               className="hill"
             >
@@ -85,7 +85,7 @@ export default function Hero() {
 
             <path
               d="M-10 258 Q80 185 180 210 Q260 240 370 228 Q480 215 580 235 Q640 244 690 238 L690 9999 L-10 9999 Z"
-              fill="#3ea032"
+              fill="var(--hill-near)"
               className="hill"
             >
               <animate

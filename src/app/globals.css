@@ -5,6 +5,39 @@
   --foreground: #1a1a2e;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
+  --sky-top: #60c8f0;
+  --sky-bottom: #b8e8f8;
+  --hill-far: #93bfa8;
+  --hill-mid: #5dab6e;
+  --hill-near: #3ea032;
+  --footer: #2d7a24;
+}
+
+[data-theme="bliss"] {
+  --sky-top: #60c8f0;
+  --sky-bottom: #b8e8f8;
+  --hill-far: #93bfa8;
+  --hill-mid: #5dab6e;
+  --hill-near: #3ea032;
+  --footer: #2d7a24;
+}
+
+[data-theme="ocean"] {
+  --sky-top: #60c8f0;
+  --sky-bottom: #a8dff5;
+  --hill-far: #7ab8d4;
+  --hill-mid: #2e86b5;
+  --hill-near: #1a6898;
+  --footer: #0f4a6e;
+}
+
+[data-theme="dunes"] {
+  --sky-top: #60c8f0;
+  --sky-bottom: #a8dff5;
+  --hill-far: #c8dde8;
+  --hill-mid: #e8b84a;
+  --hill-near: #d4942a;
+  --footer: #c8820a;
 }
 
 @theme inline {
@@ -26,5 +59,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-

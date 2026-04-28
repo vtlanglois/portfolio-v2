@@ -10,7 +10,8 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Vincent Langlois - Software Engineer",
-  description: "Portfolio website for Vincent Langlois, a software engineer specializing in frontend development.",
+  description:
+    "Portfolio website for Vincent Langlois, a software engineer specializing in frontend development.",
 };
 
 export default function RootLayout({
@@ -20,14 +21,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable} antialiased`}
-      >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const theme = new URLSearchParams(window.location.search).get('theme');
+              if (theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+              }
+            `,
+          }}
+        />
+      </head>
+      <body className={`${roboto.variable} antialiased`}>
         {/* <header>
           Header
         </header> */}
         <main>{children}</main>
-          <Footer />
+        <Footer />
       </body>
     </html>
   );

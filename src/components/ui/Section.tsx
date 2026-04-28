@@ -6,6 +6,8 @@ export default function Section({
   className?: string;
 }) {
   return (
-    <section className={`bg-[#3ea032] py-8 ${className}`}>{children}</section>
+    <section className={`bg-(--hill-near) py-8 ${className}`}>
+      {children}
+    </section>
   );
 }
