@@ -34,10 +34,10 @@
 [data-theme="dunes"] {
   --sky-top: #60c8f0;
   --sky-bottom: #a8dff5;
-  --hill-far: #f0d48a;
+  --hill-far: #c8dde8;
   --hill-mid: #e8b84a;
   --hill-near: #d4942a;
-  --footer: #b87820;
+  --footer: #c8820a;
 }
 
 @theme inline {
