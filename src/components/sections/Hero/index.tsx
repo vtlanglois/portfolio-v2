@@ -8,6 +8,7 @@ import {
   LinkedinLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
+import Card from "@/components/ui/Card";
 
 export default function Hero() {
   useEffect(() => {
@@ -105,7 +106,7 @@ export default function Hero() {
         </svg>
       </div>
       <div className="hero__content">
-        <div className="hero__card lg:w-2/3 flex flex-col gap-6">
+        <Card className="hero__card lg:w-2/3 flex flex-col gap-6">
           <div>
             <p>Hello! My name is</p>
             <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
@@ -158,7 +159,7 @@ export default function Hero() {
               />
             </a>
           </div>
-        </div>
+        </Card>
         <div className="hero__scroll flex flex-col items-center">
           Scroll to see more
           <ArrowDownIcon size={16} weight="duotone" />
