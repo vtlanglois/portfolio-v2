@@ -9,7 +9,6 @@ export default function Orb({
   tag: React.ElementType;
   children: React.ReactNode;
   className?: string;
-  [key: string]: any;
 }) {
   const Tag = tag || "div";
   return (
