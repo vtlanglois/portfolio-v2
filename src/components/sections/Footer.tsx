@@ -15,11 +15,11 @@ export default function Footer() {
         preserveAspectRatio="xMidYMax slice"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
-        className="bg-[#3ea032]"
+        className="bg-(--hill-near)"
       >
         <path
           d="M-10 45 L-10 12 Q60 2 150 8 Q220 14 280 6 Q320 1 360 8 Q410 16 480 7 Q570 -2 690 14 L690 45 Z"
-          fill="#2d7a24"
+          fill="var(--footer)"
         >
           <animate
             attributeName="d"
@@ -36,7 +36,7 @@ export default function Footer() {
         </path>
       </svg>
 
-      <div className="bg-[#2d7a24] text-white">
+      <div className="bg-(--footer) text-white">
         <Container>
           <div className="flex flex-col lg:flex-row justify-between pb-4 lg:pb-0">
             <div>
