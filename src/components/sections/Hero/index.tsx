@@ -13,10 +13,11 @@ import Card from "@/components/ui/Card";
 export default function Hero() {
   useEffect(() => {
     const handleScroll = () => {
+      const isMobile = window.innerWidth < 768;
       const scrollY = window.scrollY;
       const hills = document.querySelectorAll("path.hill");
       hills.forEach((hill, index) => {
-        const speed = (index + 1) * 0.03; // Different speed for each layer
+        const speed = (index + 1) * 0.018 * (isMobile ? 0.6 : 1); // Different speed for each layer
         hill.setAttribute("transform", `translate(0, ${scrollY * speed})`);
       });
     };
