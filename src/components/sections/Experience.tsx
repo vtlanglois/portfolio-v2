@@ -22,7 +22,7 @@ export default function Experience() {
               <p className="text-sm">Indianapolis, IN</p>
               <p>
                 Currently working on developing scalable web applications and
-                systems to enhance the customer experience for Lilly's online
+                systems to enhance the customer experience for Lilly&apos;s online
                 services, focusing on accessible user interfaces. Leading a
                 full-stack development team to deliver high-quality software
                 solutions.
