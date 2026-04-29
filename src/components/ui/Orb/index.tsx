@@ -4,6 +4,7 @@ interface OrbProps extends React.HTMLAttributes<HTMLElement> {
   tag: React.ElementType;
   children: React.ReactNode;
   className?: string;
+  [key: string]: unknown;
 }
 
 export default function Orb({
