@@ -60,7 +60,7 @@ export default function ThemeSelector() {
           </motion.div>
         </AnimatePresence>
       ) : (
-        <div style={{ width: 32, height: 32 }} />
+        <div className="w-8 h-8 rounded-full bg-white/20 animate-pulse"  />
       )}
     </Orb>
   );

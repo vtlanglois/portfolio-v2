@@ -121,7 +121,7 @@ export default function Hero() {
             Engineer by trade, tinkerer by nature | Building things, breaking
             things, learning everything
           </p>
-          <div className="flex flex-row gap-12 justify-center items-center">
+          <div className="flex flex-row gap-6 lg:gap-12 justify-center items-center flex-wrap">
             <Orb
               tag="a"
               href={LINKEDIN_URL}
