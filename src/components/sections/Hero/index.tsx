@@ -4,13 +4,13 @@ import "./styles.css";
 import {
   ArrowDownIcon,
   CodepenLogoIcon,
-  GithubLogoIcon,
   LinkedinLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 import Card from "@/components/ui/Card";
 import Orb from "@/components/ui/Orb";
 import ThemeToggle from "@/components/ui/ThemeSelector";
+import GitHubLink from "@/components/ui/GitHubLink";
 
 export default function Hero() {
   useEffect(() => {
@@ -136,20 +136,10 @@ export default function Hero() {
                 className="text-slate-50"
               />
             </Orb>
-            <Orb
-              tag="a"
+            <GitHubLink
               href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-purple-500 hover:bg-purple-600"
-              title="Link to Vincent's GitHub profile"
-            >
-              <GithubLogoIcon
-                size={32}
-                weight="duotone"
-                className="text-slate-50 "
-              />
-            </Orb>
+              alt="Link to Vincent's GitHub profile"
+            />
             <Orb
               tag="a"
               href={CODEPEN_URL}
