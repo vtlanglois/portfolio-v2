@@ -1,15 +1,17 @@
 import "./styles.css";
 
+interface OrbProps extends React.HTMLAttributes<HTMLElement> {
+  tag: React.ElementType;
+  children: React.ReactNode;
+  className?: string;
+}
+
 export default function Orb({
   tag,
   children,
   className,
   ...rest
-}: {
-  tag: React.ElementType;
-  children: React.ReactNode;
-  className?: string;
-}) {
+}: OrbProps) {
   const Tag = tag || "div";
   return (
     <Tag
