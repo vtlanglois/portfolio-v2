@@ -9,6 +9,8 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 import Card from "@/components/ui/Card";
+import Orb from "@/components/ui/Orb";
+import ThemeToggle from "@/components/ui/ThemeSelector";
 
 export default function Hero() {
   useEffect(() => {
@@ -120,11 +122,12 @@ export default function Hero() {
             things, learning everything
           </p>
           <div className="flex flex-row gap-12 justify-center items-center">
-            <a
+            <Orb
+              tag="a"
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full opacity-80 bg-blue-700 hover:bg-blue-800 hover:scale-125  p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="bg-blue-700 hover:bg-blue-800"
               title="Link to Vincent's LinkedIn profile"
             >
               <LinkedinLogoIcon
@@ -132,12 +135,13 @@ export default function Hero() {
                 weight="duotone"
                 className="text-slate-50"
               />
-            </a>
-            <a
+            </Orb>
+            <Orb
+              tag="a"
               href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full opacity-80 bg-purple-500 hover:bg-purple-600 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="bg-purple-500 hover:bg-purple-600"
               title="Link to Vincent's GitHub profile"
             >
               <GithubLogoIcon
@@ -145,12 +149,13 @@ export default function Hero() {
                 weight="duotone"
                 className="text-slate-50 "
               />
-            </a>
-            <a
+            </Orb>
+            <Orb
+              tag="a"
               href={CODEPEN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full opacity-80 bg-gray-800 hover:bg-gray-900 p-2  hover:scale-125 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
+              className="bg-gray-800 hover:bg-gray-900"
               title="Link to Vincent's Codepen profile"
             >
               <CodepenLogoIcon
@@ -158,7 +163,8 @@ export default function Hero() {
                 weight="duotone"
                 className="text-slate-50"
               />
-            </a>
+            </Orb>
+            <ThemeToggle />
           </div>
         </Card>
         <div className="hero__scroll flex flex-col items-center">
