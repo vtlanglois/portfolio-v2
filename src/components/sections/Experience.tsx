@@ -1,6 +1,5 @@
 import Card from "../ui/Card";
 import Container from "../ui/Container";
-import GitHubLink from "../ui/GitHubLink";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
 
