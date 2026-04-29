@@ -6,11 +6,15 @@ import { AnimatePresence, motion, Variants } from "framer-motion";
 import { CactusIcon, PlantIcon, WavesIcon } from "@phosphor-icons/react";
 
 export default function ThemeSelector() {
-  const [theme, setTheme] = useState(() => {
+  const [theme, setTheme] = useState("bliss");
+
+  useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const initialTheme = urlParams.get("theme");
-    return THEMES.includes(initialTheme || "") ? initialTheme! : "bliss";
-  });
+    const newTheme = THEMES.includes(initialTheme || "") ? initialTheme! : "bliss";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  }, []);
 
   const toggleTheme = () => {
     const currentTheme = document.documentElement.getAttribute("data-theme");
