@@ -56,7 +56,7 @@ export default function ThemeSelector() {
           ? "bg-(--hill-near) hover:bg-(--hill-far)"
           : "rainbow-orb filter hover:hue-rotate-30"
       }
-      title="Cycle themes: bliss, ocean, dunes, lava, spring, winter, pink"
+      title="Cycle themes: bliss, ocean, dunes, lava, pink, spring, rainbow, winter"
     >
       {mounted ? (
         <AnimatePresence mode="popLayout" initial={false} custom={1}>
