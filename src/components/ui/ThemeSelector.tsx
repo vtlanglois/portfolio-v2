@@ -3,7 +3,15 @@ import { THEMES } from "@/constants";
 import { useEffect, useState } from "react";
 import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
-import { CactusIcon, PlantIcon, WavesIcon } from "@phosphor-icons/react";
+import {
+  CactusIcon,
+  FlowerIcon,
+  HorseIcon,
+  MeteorIcon,
+  PlantIcon,
+  SnowflakeIcon,
+  WavesIcon,
+} from "@phosphor-icons/react";
 
 const variants: Variants = {
   initial: (d: number) => ({
@@ -43,7 +51,7 @@ export default function ThemeSelector() {
       tag="button"
       onClick={toggleTheme}
       className="bg-(--hill-near) hover:bg-(--hill-far)"
-      title="Cycle themes: bliss, ocean, dunes"
+      title="Cycle themes: bliss, ocean, dunes, lava, spring, winter, pink"
     >
       {mounted ? (
         <AnimatePresence mode="popLayout" initial={false} custom={1}>
@@ -60,7 +68,7 @@ export default function ThemeSelector() {
           </motion.div>
         </AnimatePresence>
       ) : (
-        <div className="w-8 h-8 rounded-full bg-white/20 animate-pulse"  />
+        <div className="w-8 h-8 rounded-full bg-white/20 animate-pulse" />
       )}
     </Orb>
   );
@@ -72,6 +80,14 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <WavesIcon size={32} weight="duotone" />;
     case "dunes":
       return <CactusIcon size={32} weight="duotone" />;
+    case "lava":
+      return <MeteorIcon size={32} weight="duotone" />;
+    case "spring":
+      return <FlowerIcon size={32} weight="duotone" />;
+    case "winter":
+      return <SnowflakeIcon size={32} weight="duotone" />;
+    case "pink":
+      return <HorseIcon size={32} weight="duotone" />;
     case "bliss":
     default:
       return <PlantIcon size={32} weight="duotone" />;
