@@ -5,7 +5,33 @@ import Stack from "../ui/Stack";
 
 export default function Experience() {
   return (
-    <Section>
+    <Section sectionNumber={2}>
+      <div className="section-divider">
+        <svg
+          width="100%"
+          viewBox="0 0 680 30"
+          preserveAspectRatio="xMidYMax slice"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ display: "block" }}
+          fill="var(--section-color)"
+          className="hill-shadow"
+        >
+          <path d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z">
+            <animate
+              attributeName="d"
+              dur="12s"
+              repeatCount="indefinite"
+              calcMode="spline"
+              keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
+              values="
+          M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z;
+          M0 30 L0 22 Q80 10 180 16 Q260 20 320 10 Q380 4 460 12 Q560 20 680 10 L680 30 Z;
+          M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z
+        "
+            />
+          </path>
+        </svg>
+      </div>
       <Container>
         <Stack>
           <Card>
@@ -22,9 +48,9 @@ export default function Experience() {
               <p className="text-sm">Indianapolis, IN</p>
               <p>
                 Currently working on developing scalable web applications and
-                systems to enhance the customer experience for Lilly&apos;s online
-                services, focusing on accessible user interfaces. Leading a
-                full-stack development team to deliver high-quality software
+                systems to enhance the customer experience for Lilly&apos;s
+                online services, focusing on accessible user interfaces. Leading
+                a full-stack development team to deliver high-quality software
                 solutions.
               </p>
             </Card>
