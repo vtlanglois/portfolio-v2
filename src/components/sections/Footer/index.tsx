@@ -1,21 +1,23 @@
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
-import Container from "../ui/Container";
+import Container from "../../ui/Container";
 import {
   CodepenLogoIcon,
   GithubLogoIcon,
   LinkedinLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import "./styles.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer data-last-section="3">
       <svg
+        id="footer-divider"
         width="100%"
         viewBox="0 0 680 42"
         preserveAspectRatio="xMidYMax slice"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
-        className="bg-(--hill-near) block mb-[-2px]"
+        className="bg-(--hill-near)"
       >
         <path
           d="M-10 45 L-10 12 Q60 2 150 8 Q220 14 280 6 Q320 1 360 8 Q410 16 480 7 Q570 -2 690 14 L690 45 Z"
@@ -40,7 +42,7 @@ export default function Footer() {
         <Container>
           <div className="flex flex-col lg:flex-row justify-between pb-4 lg:pb-0">
             <div>
-              <p className="py-4 text-center lg:text-start text-sm">
+              <p className="pb-4 text-center lg:text-start text-sm">
                 Made by Vincent Langlois. <br />
                 Built with Next.js, React, Tailwind CSS, and more!
               </p>

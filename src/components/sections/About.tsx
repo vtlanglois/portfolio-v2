@@ -4,17 +4,18 @@ import Section from "../ui/Section";
 
 export default function About() {
   return (
-    <Section>
+    <Section sectionNumber={1}>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4">
           <Card className="row-span-2 col-span-2 flex flex-col gap-2 text-pretty">
             <h2 className="text-xl font-bold">About</h2>
             <p>
-              I&apos;m a passionate software engineer with a focus on web development
-              and accessibility. I graduated from Indiana University with a
-              Bachelor&apos;s degree in Computer Science and a minor in Game Design.
-              I have a strong foundation in computer science principles and a
-              keen interest in creating inclusive digital experiences.
+              I&apos;m a passionate software engineer with a focus on web
+              development and accessibility. I graduated from Indiana University
+              with a Bachelor&apos;s degree in Computer Science and a minor in
+              Game Design. I have a strong foundation in computer science
+              principles and a keen interest in creating inclusive digital
+              experiences.
             </p>
             <p>
               I grew up surrounded by technology, from the early days on online
@@ -25,9 +26,10 @@ export default function About() {
               engineering.
             </p>
             <p>
-              I&apos;m also a big fan of building and making things, including LEGO
-              sets, Minecraft worlds, video games, furniture, paintings, meals,
-              and more! Give me something I can build, and I&apos;ll be happy.
+              I&apos;m also a big fan of building and making things, including
+              LEGO sets, Minecraft worlds, video games, furniture, paintings,
+              meals, and more! Give me something I can build, and I&apos;ll be
+              happy.
             </p>
             <p>
               This website is my fourth revision of my portfolio. For this take,

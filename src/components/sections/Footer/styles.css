@@ -1,0 +1,18 @@
+footer[data-last-section="1"] svg#footer-divider {
+  background: var(--section-1);
+}
+footer[data-last-section="2"] svg#footer-divider {
+  background: var(--section-2);
+}
+footer[data-last-section="3"] svg#footer-divider {
+  background: var(--section-3);
+}
+footer[data-last-section="4"] svg#footer-divider {
+  background: var(--section-4);
+}
+
+footer #footer-divider {
+  display: block;
+  width: 100%;
+    height: 10dvh;
+}

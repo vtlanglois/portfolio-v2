@@ -1,21 +1,15 @@
 import About from "@/components/sections/About";
 import Hero from "../components/sections/Hero";
-// import Container from "@/components/ui/Container";
+import Projects from "@/components/sections/Projects";
+import Experience from "@/components/sections/Experience";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
-      {/* <Container>
-        <section>Skills</section>
-      </Container>
-      <Container>
-        <section>Experience</section>
-      </Container>
-      <Container>
-        <section>Projects</section>
-      </Container> */}
+      <Experience />
+      <Projects />
     </>
   );
 }
