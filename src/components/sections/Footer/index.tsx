@@ -17,7 +17,6 @@ export default function Footer() {
         preserveAspectRatio="xMidYMax slice"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
-        className="bg-(--hill-near)"
       >
         <path
           d="M-10 45 L-10 12 Q60 2 150 8 Q220 14 280 6 Q320 1 360 8 Q410 16 480 7 Q570 -2 690 14 L690 45 Z"
