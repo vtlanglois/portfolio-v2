@@ -137,6 +137,24 @@
   --section-6: #2a4858;
 }
 
+[data-theme="rainbow"] {
+  --sky-top: #60c8f0;
+  --sky-bottom: #b8e8f8;
+  --hill-far: #c0a0e0;
+  --hill-mid: #e8a0b8;
+  --hill-near: #a0d8b0;
+  --footer: #8a7a9a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #a0c8e8;
+  --section-3: #e8c8a0;
+  --section-4: #c8a0c0;
+  --section-5: #a8d0a0;
+  --section-6: #d0a8b0;
+}
+
+
+
 /* ============================================
    DARK MODE
    ============================================ */
@@ -258,6 +276,22 @@
     --section-4: #101820;
     --section-5: #0c1418;
     --section-6: #080e14;
+  }
+
+    [data-theme="rainbow"] {
+    --sky-top: #0d1b2a;
+    --sky-bottom: #1a3048;
+    --hill-far: #4a3a6a;
+    --hill-mid: #6a3a50;
+    --hill-near: #3a6048;
+    --footer: #2a2038;
+    --card-bg: rgba(18, 14, 26, 0.5);
+    --section-1: #3a6048;
+    --section-2: #3a5068;
+    --section-3: #6a5430;
+    --section-4: #503060;
+    --section-5: #385830;
+    --section-6: #583040;
   }
 }
 

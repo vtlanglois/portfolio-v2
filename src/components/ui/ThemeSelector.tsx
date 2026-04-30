@@ -9,6 +9,7 @@ import {
   HorseIcon,
   MeteorIcon,
   PlantIcon,
+  RainbowCloudIcon,
   SnowflakeIcon,
   WavesIcon,
 } from "@phosphor-icons/react";
@@ -50,7 +51,11 @@ export default function ThemeSelector() {
     <Orb
       tag="button"
       onClick={toggleTheme}
-      className="bg-(--hill-near) hover:bg-(--hill-far)"
+      className={
+        theme !== "rainbow"
+          ? "bg-(--hill-near) hover:bg-(--hill-far)"
+          : "rainbow-orb filter hover:hue-rotate-30"
+      }
       title="Cycle themes: bliss, ocean, dunes, lava, spring, winter, pink"
     >
       {mounted ? (
@@ -88,6 +93,8 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <SnowflakeIcon size={32} weight="duotone" />;
     case "pink":
       return <HorseIcon size={32} weight="duotone" />;
+    case "rainbow":
+      return <RainbowCloudIcon size={32} weight="duotone" />;
     case "bliss":
     default:
       return <PlantIcon size={32} weight="duotone" />;

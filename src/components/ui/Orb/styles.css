@@ -8,6 +8,17 @@
   -webkit-backdrop-filter: blur(15px);
 }
 
+.rainbow-orb {
+  background: conic-gradient(
+    var(--hill-far),
+    var(--hill-mid),
+    var(--hill-near),
+    var(--section-2),
+    var(--section-3),
+    var(--hill-far)
+  );
+}
+
 @media (prefers-color-scheme: dark) {
   .orb {
     box-shadow:
