@@ -14,7 +14,7 @@ export default function Experience() {
           xmlns="http://www.w3.org/2000/svg"
           style={{ display: "block" }}
           fill="var(--section-color)"
-          className="hill-shadow"
+          className="mb-[-2px]"
         >
           <path d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z">
             <animate

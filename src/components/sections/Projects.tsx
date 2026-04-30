@@ -15,6 +15,7 @@ export default function Projects() {
           xmlns="http://www.w3.org/2000/svg"
           style={{ display: "block" }}
           fill="var(--section-color)"
+          className="mb-[-2px]"
         >
           <path
             d="M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z"
