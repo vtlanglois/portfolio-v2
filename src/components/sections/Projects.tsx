@@ -20,7 +20,6 @@ export default function Projects() {
           <path
             d="M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z"
             fill="var(--section-color)"
-            className="hill"
           >
             <animate
               attributeName="d"

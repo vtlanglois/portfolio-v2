@@ -16,7 +16,7 @@ export default function Experience() {
           fill="var(--section-color)"
           className="mb-[-2px]"
         >
-          <path d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z" className="hill">
+          <path d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z">
             <animate
               attributeName="d"
               dur="12s"
