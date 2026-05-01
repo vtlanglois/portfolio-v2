@@ -17,7 +17,7 @@
   --section-2: #2d7a24;
   --section-3: #1e5e1a;
   --section-4: #154d12;
-    --section-5: #0e3d0a;
+  --section-5: #0e3d0a;
   --section-6: #092808;
 }
 
@@ -37,7 +37,7 @@
   --section-2: #0f4a6e;
   --section-3: #0a3050;
   --section-4: #061a30;
-    --section-5: #040f20;
+  --section-5: #040f20;
   --section-6: #020810;
 }
 
@@ -57,7 +57,7 @@
   --section-2: #b07840;
   --section-3: #8a5e2a;
   --section-4: #6a4418;
-   --section-5: #4e3010;
+  --section-5: #4e3010;
   --section-6: #3a2208;
 }
 
@@ -66,7 +66,7 @@
    ============================================ */
 
 [data-theme="lava"] {
---sky-top: #6aaed6;
+  --sky-top: #6aaed6;
   --sky-bottom: #b8d8f0;
   --hill-far: #c8a850;
   --hill-mid: #c86420;
@@ -100,6 +100,10 @@
   --section-5: #5a8a2a;
   --section-6: #3a6a1a;
 }
+
+/* ============================================
+   PINK
+   ============================================ */
 
 [data-theme="pink"] {
   --sky-top: #90d8f0;
@@ -137,6 +141,10 @@
   --section-6: #2a4858;
 }
 
+/* ============================================
+   RAINBOW
+   ============================================ */
+
 [data-theme="rainbow"] {
   --sky-top: #60c8f0;
   --sky-bottom: #b8e8f8;
@@ -153,7 +161,186 @@
   --section-6: #d0a8b0;
 }
 
-
+/* ============================================
+   CMYK
+   ============================================ */
+[data-theme="cmyk"] {
+  --sky-top: #ffffff;
+  --sky-bottom: #ffffff;
+  --hill-far: #00b8d4;
+  --hill-mid: #e800a0;
+  --hill-near: #f0e000;
+  --footer: #1a1a1a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #e800a0;
+  --section-3: #00b8d4;
+  --section-4: #a000c8;
+  --section-5: #0a6e00;
+  --section-6: #1a1a1a;
+}
+/* ============================================
+   MISTY
+   ============================================ */
+[data-theme="misty"] {
+  --sky-top: #0a4a8a;
+  --sky-bottom: #58c8f0;
+  --hill-far: #2a8a70;
+  --hill-mid: #1e6a50;
+  --hill-near: #184e3a;
+  --footer: #3a3a3a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #143828;
+  --section-3: #102a1e;
+  --section-4: #0c1e16;
+  --section-5: #08140e;
+  --section-6: #050e08;
+}
+/* ============================================
+   PLAIN
+   ============================================ */
+[data-theme="plain"] {
+  --sky-top: #ffffff;
+  --sky-bottom: #ffffff;
+  --hill-far: #d0d0d0;
+  --hill-mid: #b0b0b0;
+  --hill-near: #888888;
+  --footer: #1a1a1a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #666666;
+  --section-3: #4a4a4a;
+  --section-4: #333333;
+  --section-5: #222222;
+  --section-6: #1a1a1a;
+}
+/* ============================================
+   NEOPOLITAN
+   ============================================ */
+[data-theme="neopolitan"] {
+  --sky-top: #f8e0e8;
+  --sky-bottom: #fce8f0;
+  --hill-far: #f8e0a0;
+  --hill-mid: #f0a0b8;
+  --hill-near: #c85a78;
+  --footer: #6a2a3a;
+  --card-bg: rgba(255, 245, 250, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #d47890;
+  --section-3: #e8c870;
+  --section-4: #f8f0d0;
+  --section-5: #e8a8b8;
+  --section-6: #8a3a50;
+}
+/* ============================================
+   BLOCKS
+   ============================================ */
+[data-theme="blocks"] {
+  --sky-top: #006cb7;
+  --sky-bottom: #006cb7;
+  --hill-far: #00a650;
+  --hill-mid: #f5c400;
+  --hill-near: #e3000b;
+  --footer: #1a1a1a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #f5c400;
+  --section-3: #00a650;
+  --section-4: #006cb7;
+  --section-5: #e3000b;
+  --section-6: #1a1a1a;
+}
+/* ============================================
+   SUNSET
+   ============================================ */
+[data-theme="sunset"] {
+  --sky-top: #ff6b35;
+  --sky-bottom: #ffd166;
+  --hill-far: #c8607a;
+  --hill-mid: #a03060;
+  --hill-near: #782050;
+  --footer: #2a0a18;
+  --card-bg: rgba(255, 245, 235, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #601840;
+  --section-3: #481028;
+  --section-4: #300818;
+  --section-5: #20050f;
+  --section-6: #140308;
+}
+/* ============================================
+   NEON
+   ============================================ */
+[data-theme="neon"] {
+  --sky-top: #0a0a0a;
+  --sky-bottom: #140a1e;
+  --hill-far: #0af0e0;
+  --hill-mid: #e000f0;
+  --hill-near: #00f040;
+  --footer: #050505;
+  --card-bg: rgba(250, 250, 250, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #f0e000;
+  --section-3: #f06000;
+  --section-4: #0060f0;
+  --section-5: #e000f0;
+  --section-6: #0a0a0a;
+}
+/* ============================================
+   GALAXY
+   ============================================ */
+[data-theme="galaxy"] {
+  --sky-top: #0a0520;
+  --sky-bottom: #180a38;
+  --hill-far: #3a1a6a;
+  --hill-mid: #6a1a8a;
+  --hill-near: #9a20a0;
+  --footer: #050210;
+  --card-bg: rgba(250, 250, 250, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #6a1a8a;
+  --section-3: #3a1a6a;
+  --section-4: #1a0a48;
+  --section-5: #100530;
+  --section-6: #080318;
+}
+/* ============================================
+   CLOUDY
+   ============================================ */
+[data-theme="cloudy"] {
+  --sky-top: #f0c8a0;
+  --sky-bottom: #f8e8c8;
+  --hill-far: #f0f0f0;
+  --hill-mid: #d8d8d8;
+  --hill-near: #b8b8c8;
+  --footer: #8a8a9a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #9a9aaa;
+  --section-3: #7a7a8a;
+  --section-4: #5a5a6a;
+  --section-5: #3a3a4a;
+  --section-6: #2a2a38;
+}
+/* ============================================
+   ARCTIC
+   ============================================ */
+[data-theme="arctic"] {
+  --sky-top: #a8d8f8;
+  --sky-bottom: #d8f0f8;
+  --hill-far: #e8f4fc;
+  --hill-mid: #c8e8f8;
+  --hill-near: #a0d0f0;
+  --footer: #4a7a9a;
+  --card-bg: rgba(240, 250, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #78aad0;
+  --section-3: #5a8ab0;
+  --section-4: #3a6a90;
+  --section-5: #284e70;
+  --section-6: #1a3850;
+}
 
 /* ============================================
    DARK MODE
@@ -211,7 +398,7 @@
     --section-6: #1a1005;
   }
 
-    [data-theme="lava"] {
+  [data-theme="lava"] {
     --sky-top: #100804;
     --sky-bottom: #1e1008;
     --hill-far: #2e1e08;
@@ -243,7 +430,7 @@
     --section-6: #1a0518;
   }
 
-    [data-theme="spring"] {
+  [data-theme="spring"] {
     --background: #14080e;
     --foreground: #f8e0ee;
     --sky-top: #14080e;
@@ -261,7 +448,6 @@
     --section-6: #1a2e0a;
   }
 
-
   [data-theme="winter"] {
     --sky-top: #080e14;
     --sky-bottom: #101820;
@@ -278,7 +464,7 @@
     --section-6: #080e14;
   }
 
-    [data-theme="rainbow"] {
+  [data-theme="rainbow"] {
     --sky-top: #0d1b2a;
     --sky-bottom: #1a3048;
     --hill-far: #4a3a6a;
@@ -292,6 +478,165 @@
     --section-4: #503060;
     --section-5: #385830;
     --section-6: #583040;
+  }
+
+  [data-theme="cmyk"] {
+    --sky-top: #1a1a1a;
+    --sky-bottom: #2a2a2a;
+    --hill-far: #007a8a;
+    --hill-mid: #a00070;
+    --hill-near: #a09800;
+    --footer: #000000;
+    --card-bg: rgba(26, 26, 26, 0.5);
+    --section-1: #a09800;
+    --section-2: #a00070;
+    --section-3: #007a8a;
+    --section-4: #6a0088;
+    --section-5: #064800;
+    --section-6: #000000;
+  }
+
+  [data-theme="misty"] {
+    --sky-bottom: #040e1a;
+    --hill-far: #0a1a14;
+    --hill-mid: #0e2218;
+    --hill-near: #122a1e;
+    --footer: #010508;
+    --card-bg: rgba(2, 8, 16, 0.5);
+    --section-1: #122a1e;
+    --section-2: #0e2018;
+    --section-3: #0a1810;
+    --section-4: #08120c;
+    --section-5: #060e08;
+    --section-6: #040a06;
+  }
+
+  [data-theme="blocks"] {
+    --sky-top: #004a80;
+    --sky-bottom: #004a80;
+    --hill-far: #007a38;
+    --hill-mid: #c8a000;
+    --hill-near: #a80008;
+    --footer: #000000;
+    --card-bg: rgba(0, 0, 0, 0.5);
+    --section-1: #a80008;
+    --section-2: #c8a000;
+    --section-3: #007a38;
+    --section-4: #004a80;
+    --section-5: #a80008;
+    --section-6: #0a0a0a;
+  }
+
+  [data-theme="neopolitan"] {
+    --sky-top: #1a0810;
+    --sky-bottom: #2a1018;
+    --hill-far: #3a2a08;
+    --hill-mid: #4a1828;
+    --hill-near: #6a1830;
+    --footer: #0a0408;
+    --card-bg: rgba(26, 8, 16, 0.5);
+    --section-1: #6a1830;
+    --section-2: #581428;
+    --section-3: #483010;
+    --section-4: #5a4a10;
+    --section-5: #3a1020;
+    --section-6: #280810;
+  }
+
+  [data-theme="plain"] {
+    --sky-top: #1a1a1a;
+    --sky-bottom: #242424;
+    --hill-far: #2a2a2a;
+    --hill-mid: #323232;
+    --hill-near: #3a3a3a;
+    --footer: #0a0a0a;
+    --card-bg: rgba(20, 20, 20, 0.5);
+    --section-1: #3a3a3a;
+    --section-2: #343434;
+    --section-3: #2e2e2e;
+    --section-4: #282828;
+    --section-5: #222222;
+    --section-6: #1c1c1c;
+  }
+
+  [data-theme="sunset"] {
+    --sky-top: #1a0808;
+    --sky-bottom: #2e1008;
+    --hill-far: #4a1828;
+    --hill-mid: #6a2040;
+    --hill-near: #8a2850;
+    --footer: #0a0408;
+    --card-bg: rgba(26, 8, 8, 0.5);
+    --section-1: #8a2850;
+    --section-2: #6a2040;
+    --section-3: #4a1830;
+    --section-4: #301020;
+    --section-5: #200a18;
+    --section-6: #140510;
+  }
+
+  [data-theme="neon"] {
+    --sky-top: #050505;
+    --sky-bottom: #0a0514;
+    --hill-far: #07a89c;
+    --hill-mid: #9a00a8;
+    --hill-near: #00a82c;
+    --footer: #020202;
+    --card-bg: rgba(5, 5, 5, 0.8);
+    --section-1: #00a82c;
+    --section-2: #a89c00;
+    --section-3: #a84200;
+    --section-4: #0042a8;
+    --section-5: #9a00a8;
+    --section-6: #050505;
+  }
+
+  [data-theme="galaxy"] {
+    --sky-top: #050210;
+    --sky-bottom: #0e0520;
+    --hill-far: #1e0e38;
+    --hill-mid: #380e48;
+    --hill-near: #4e1058;
+    --footer: #020108;
+    --card-bg: rgba(5, 2, 16, 0.5);
+    --section-1: #4e1058;
+    --section-2: #380e48;
+    --section-3: #1e0e38;
+    --section-4: #100528;
+    --section-5: #080318;
+    --section-6: #040110;
+  }
+
+  [data-theme="cloudy"] {
+    --sky-top: #0a0c10;
+    --sky-bottom: #141820;
+    --hill-far: #1e2028;
+    --hill-mid: #282a38;
+    --hill-near: #323448;
+    --footer: #080a0e;
+    --card-bg: rgba(10, 12, 16, 0.5);
+    --section-1: #323448;
+    --section-2: #282a3a;
+    --section-3: #1e2030;
+    --section-4: #141828;
+    --section-5: #0e1020;
+    --section-6: #080c18;
+  }
+
+  [data-theme="arctic"] {
+    --sky-top: #020814;
+    --sky-bottom: #0a3028;
+    --hill-far: #0e2040;
+    --hill-mid: #142848;
+    --hill-near: #1a3058;
+    --footer: #030a18;
+    --card-bg: rgba(5, 14, 40, 0.5);
+    --section-1: #1a3058;
+    --section-2: #142848;
+    --section-3: #102040;
+    --section-4: #0c1838;
+    --section-5: #081028;
+    --section-6: #050c1e;
   }
 }
 

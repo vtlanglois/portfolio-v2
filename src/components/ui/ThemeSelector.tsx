@@ -5,13 +5,23 @@ import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
   CactusIcon,
+  CloudIcon,
   FlowerIcon,
   HorseIcon,
+  IceCreamIcon,
+  LegoIcon,
+  LightningIcon,
   MeteorIcon,
+  PlanetIcon,
   PlantIcon,
+  PrinterIcon,
   RainbowCloudIcon,
   SnowflakeIcon,
+  SquareIcon,
+  SunHorizonIcon,
+  TreeEvergreenIcon,
   WavesIcon,
+  WindIcon,
 } from "@phosphor-icons/react";
 
 const variants: Variants = {
@@ -95,6 +105,26 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <HorseIcon size={32} weight="duotone" />;
     case "rainbow":
       return <RainbowCloudIcon size={32} weight="duotone" />;
+    case "cmyk":
+      return <PrinterIcon size={32} weight="duotone" />;
+    case "neopolitan":
+      return <IceCreamIcon size={32} weight="duotone" />;
+    case "misty":
+      return <TreeEvergreenIcon size={32} weight="duotone" />;
+    case "blocks":
+      return <LegoIcon size={32} weight="duotone" />;
+    case "plain":
+      return <SquareIcon size={32} weight="duotone" />;
+    case "neon":
+      return <LightningIcon size={32} weight="duotone" />;
+    case "galaxy":
+      return <PlanetIcon size={32} weight="duotone" />;
+    case "sunset":
+      return <SunHorizonIcon size={32} weight="duotone" />;
+    case "cloudy":
+      return <CloudIcon size={32} weight="duotone" />;
+    case "arctic":
+      return <WindIcon size={32} weight="duotone" />;
     case "bliss":
     default:
       return <PlantIcon size={32} weight="duotone" />;
