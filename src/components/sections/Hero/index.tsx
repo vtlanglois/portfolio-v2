@@ -154,13 +154,13 @@ export default function Hero() {
                 className="text-slate-50"
               />
             </Orb>
-            <ThemeToggle />
           </div>
         </Card>
         <div className="hero__scroll flex flex-col items-center">
           Scroll to see more
           <ArrowDownIcon size={16} weight="duotone" />
         </div>
+        <ThemeToggle />
       </div>
     </section>
   );
