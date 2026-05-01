@@ -81,9 +81,13 @@ export default function ThemeSelector() {
     do {
       randomTheme = THEMES[Math.floor(Math.random() * THEMES.length)];
     } while (randomTheme === currentTheme);
+    if (currentIndex > THEMES.indexOf(randomTheme)) {
+      setDirection(-1);
+    } else {
+      setDirection(1);
+    }
     document.documentElement.setAttribute("data-theme", randomTheme);
     window.history.replaceState(null, "", `?theme=${randomTheme}`);
-    setDirection(1);
     setTheme(randomTheme);
   };
 
@@ -95,6 +99,9 @@ export default function ThemeSelector() {
     <Card
       size="small"
       className="absolute top-4 left-4 flex flex-row !bg-(--sky-top)/60"
+      aria-expanded={!hidden}
+      aria-label="Theme selector. Click to expand or collapse theme options."
+      aria-description="Allows you to change the website theme. Click the arrows to cycle through themes, or the shuffle icon to select a random theme."
     >
       <Orb
         tag="div"
@@ -103,7 +110,7 @@ export default function ThemeSelector() {
             ? "bg-(--hill-near) hover:bg-(--hill-far) mr-2 !hover:scale-100"
             : "rainbow-orb filter hover:hue-rotate-30 mr-2 !hover:scale-100"
         }
-        title="Cycle themes: bliss, ocean, dunes, lava, pink, spring, rainbow, winter"
+        title={`Current theme: ${theme}.`}
       >
         {mounted ? (
           <AnimatePresence mode="popLayout" initial={false} custom={direction}>
@@ -116,6 +123,7 @@ export default function ThemeSelector() {
               exit="exit"
               transition={{ type: "spring", duration: 0.35, bounce: 0 }}
             >
+              <span className="sr-only">Current Theme: {theme}</span>
               <ThemeIcon theme={theme} />
             </motion.div>
           </AnimatePresence>
@@ -126,17 +134,20 @@ export default function ThemeSelector() {
       <AnimatePresence initial={hidden}>
         {!hidden && (
           <motion.span
-            initial={{ opacity: 0, scale: 0, width: 0}}
+            initial={{ opacity: 0, scale: 0, width: 0 }}
             animate={{ opacity: 1, scale: 1, width: "auto" }}
             exit={{ opacity: 0, scale: 0, width: 0 }}
             transition={{ type: "spring", duration: 0.35, bounce: 0 }}
-            style={{ transformOrigin: "left center", overflow: hidden ? "hidden" : "inherit" }}
+            style={{
+              transformOrigin: "left center",
+              overflow: hidden ? "hidden" : "inherit",
+            }}
             className="flex flex-row gap-2 "
             key="box"
           >
             <Orb
               tag="button"
-              className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+              className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
               title="Previous theme"
               onClick={previousTheme}
             >
@@ -149,7 +160,7 @@ export default function ThemeSelector() {
             </Orb>
             <Orb
               tag="button"
-              className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+              className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
               title="Next theme"
               onClick={nextTheme}
             >
@@ -158,7 +169,7 @@ export default function ThemeSelector() {
             </Orb>
             <Orb
               tag="button"
-              className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+              className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
               title="Random theme"
               onClick={selectRandomTheme}
             >
@@ -171,7 +182,7 @@ export default function ThemeSelector() {
 
       <Orb
         tag="button"
-        className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 ml-2 "
+        className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 ml-2 "
         title={hidden ? "Expand theme selector" : "Collapse Theme Selector"}
         onClick={toggleHidden}
       >
