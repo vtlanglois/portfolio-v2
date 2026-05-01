@@ -10,6 +10,10 @@
   backdrop-filter: blur(10px);
 }
 
+.glass-card.small {
+  padding: 0.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   .glass-card {
     box-shadow:

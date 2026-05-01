@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
+  ArrowRightIcon,
   CactusIcon,
   CloudIcon,
   FlowerIcon,
@@ -12,10 +13,13 @@ import {
   LegoIcon,
   LightningIcon,
   MeteorIcon,
+  MinusIcon,
   PlanetIcon,
   PlantIcon,
+  PlusIcon,
   PrinterIcon,
   RainbowCloudIcon,
+  ShuffleIcon,
   SnowflakeIcon,
   SquareIcon,
   SunHorizonIcon,
@@ -23,6 +27,7 @@ import {
   WavesIcon,
   WindIcon,
 } from "@phosphor-icons/react";
+import Card from "./Card";
 
 const variants: Variants = {
   initial: (d: number) => ({
@@ -43,49 +48,149 @@ const variants: Variants = {
 export default function ThemeSelector() {
   const [mounted, setMounted] = useState(false);
   const [theme, setTheme] = useState("bliss");
+  const [direction, setDirection] = useState(1);
+  const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
     setTheme(document.documentElement.getAttribute("data-theme") ?? "bliss");
     setMounted(true);
   }, []);
 
-  const toggleTheme = () => {
+  const nextTheme = () => {
     const currentIndex = THEMES.indexOf(theme);
     const newTheme = THEMES[(currentIndex + 1) % THEMES.length];
     document.documentElement.setAttribute("data-theme", newTheme);
     window.history.replaceState(null, "", `?theme=${newTheme}`);
+    setDirection(1);
     setTheme(newTheme);
   };
 
+  const previousTheme = () => {
+    const currentIndex = THEMES.indexOf(theme);
+    const newTheme = THEMES[(currentIndex - 1 + THEMES.length) % THEMES.length];
+    document.documentElement.setAttribute("data-theme", newTheme);
+    window.history.replaceState(null, "", `?theme=${newTheme}`);
+    setDirection(-1);
+    setTheme(newTheme);
+  };
+
+  const selectRandomTheme = () => {
+    const currentIndex = THEMES.indexOf(theme);
+    const currentTheme = THEMES[currentIndex];
+    let randomTheme;
+    do {
+      randomTheme = THEMES[Math.floor(Math.random() * THEMES.length)];
+    } while (randomTheme === currentTheme);
+    document.documentElement.setAttribute("data-theme", randomTheme);
+    window.history.replaceState(null, "", `?theme=${randomTheme}`);
+    setDirection(1);
+    setTheme(randomTheme);
+  };
+
+  const toggleHidden = () => {
+    setHidden(!hidden);
+  };
+
   return (
-    <Orb
-      tag="button"
-      onClick={toggleTheme}
-      className={
-        theme !== "rainbow"
-          ? "bg-(--hill-near) hover:bg-(--hill-far)"
-          : "rainbow-orb filter hover:hue-rotate-30"
-      }
-      title="Cycle themes: bliss, ocean, dunes, lava, pink, spring, rainbow, winter"
+    <Card
+      size="small"
+      className="absolute top-4 left-4 flex flex-row !bg-(--sky-top)/60"
     >
-      {mounted ? (
-        <AnimatePresence mode="popLayout" initial={false} custom={1}>
-          <motion.div
-            key={theme}
-            custom={1}
-            variants={variants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
+      <Orb
+        tag="div"
+        className={
+          theme !== "rainbow"
+            ? "bg-(--hill-near) hover:bg-(--hill-far) mr-2 !hover:scale-100"
+            : "rainbow-orb filter hover:hue-rotate-30 mr-2 !hover:scale-100"
+        }
+        title="Cycle themes: bliss, ocean, dunes, lava, pink, spring, rainbow, winter"
+      >
+        {mounted ? (
+          <AnimatePresence mode="popLayout" initial={false} custom={direction}>
+            <motion.div
+              key={theme}
+              custom={direction}
+              variants={variants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ type: "spring", duration: 0.35, bounce: 0 }}
+            >
+              <ThemeIcon theme={theme} />
+            </motion.div>
+          </AnimatePresence>
+        ) : (
+          <div className="w-8 h-8 rounded-full bg-white/20 animate-pulse" />
+        )}
+      </Orb>
+      <AnimatePresence initial={hidden}>
+        {!hidden && (
+          <motion.span
+            initial={{ opacity: 0, scale: 0, width: 0}}
+            animate={{ opacity: 1, scale: 1, width: "auto" }}
+            exit={{ opacity: 0, scale: 0, width: 0 }}
             transition={{ type: "spring", duration: 0.35, bounce: 0 }}
+            style={{ transformOrigin: "left center", overflow: hidden ? "hidden" : "inherit" }}
+            className="flex flex-row gap-2 "
+            key="box"
           >
-            <ThemeIcon theme={theme} />
+            <Orb
+              tag="button"
+              className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+              title="Previous theme"
+              onClick={previousTheme}
+            >
+              <span className="sr-only">Previous theme</span>
+              <ArrowRightIcon
+                size={32}
+                weight="duotone"
+                className="rotate-180"
+              />
+            </Orb>
+            <Orb
+              tag="button"
+              className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+              title="Next theme"
+              onClick={nextTheme}
+            >
+              <span className="sr-only">Next theme</span>
+              <ArrowRightIcon size={32} weight="duotone" />
+            </Orb>
+            <Orb
+              tag="button"
+              className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+              title="Random theme"
+              onClick={selectRandomTheme}
+            >
+              <span className="sr-only">Random theme</span>
+              <ShuffleIcon size={32} weight="duotone" />
+            </Orb>
+          </motion.span>
+        )}
+      </AnimatePresence>
+
+      <Orb
+        tag="button"
+        className="bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 ml-2 "
+        title={hidden ? "Expand theme selector" : "Collapse Theme Selector"}
+        onClick={toggleHidden}
+      >
+        <span className="sr-only">
+          {hidden ? "Expand theme selector" : "Collapse Theme Selector"}
+        </span>
+        <AnimatePresence mode="popLayout">
+          <motion.div
+            key={hidden ? "plus" : "minus"}
+            initial={{ opacity: 0, rotate: -90, scale: 0.5 }}
+            animate={{ opacity: 1, rotate: 0, scale: 1 }}
+            exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+          >
+            {hidden ? <PlusIcon size={32} /> : <MinusIcon size={32} />}
           </motion.div>
         </AnimatePresence>
-      ) : (
-        <div className="w-8 h-8 rounded-full bg-white/20 animate-pulse" />
-      )}
-    </Orb>
+      </Orb>
+    </Card>
   );
 }
 
