@@ -1,3 +1,4 @@
+import { KanbanIcon } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
 import GitHubLink from "../ui/GitHubLink";
@@ -6,7 +7,7 @@ import Stack from "../ui/Stack";
 
 export default function Projects() {
   return (
-    <Section sectionNumber={3}>
+    <Section id="projects" sectionNumber={3}>
       <div className="section-divider">
         <svg
           width="100%"
@@ -38,8 +39,9 @@ export default function Projects() {
       </div>
       <Container>
         <Stack>
-          <Card>
-            <h2 className="text-3xl font-bold">Projects</h2>
+          <Card variation="heading" className="flex flex-row flex-wrap items-center justify-between">
+            <h2 className="text-3xl font-bold leading-none">Projects</h2>
+            <KanbanIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
             <Card className="row-span-3 grid grid-rows-subgrid">

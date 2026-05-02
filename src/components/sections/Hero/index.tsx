@@ -11,6 +11,7 @@ import Card from "@/components/ui/Card";
 import Orb from "@/components/ui/Orb";
 import ThemeToggle from "@/components/ui/ThemeSelector";
 import GitHubLink from "@/components/ui/GitHubLink";
+import Stack from "@/components/ui/Stack";
 
 export default function Hero() {
   useEffect(() => {
@@ -27,7 +28,7 @@ export default function Hero() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero__hills">
         <svg
           width="100%"
@@ -109,53 +110,57 @@ export default function Hero() {
         </svg>
       </div>
       <div className="hero__content">
-        <Card className="hero__card lg:w-2/3 flex flex-col gap-6">
-          <div>
-            <p>Hello! My name is</p>
-            <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
-              Vincent Langlois
-            </h1>
-          </div>
-          <p>
-            Senior Software Engineer @ Eli Lilly <br />
-            Engineer by trade, tinkerer by nature | Building things, breaking
-            things, learning everything
-          </p>
-          <div className="flex flex-row gap-6 lg:gap-12 justify-center items-center flex-wrap">
-            <Orb
-              tag="a"
-              href={LINKEDIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-700 hover:bg-blue-800"
-              title="Link to Vincent's LinkedIn profile"
-            >
-              <LinkedinLogoIcon
-                size={32}
-                weight="duotone"
-                className="text-slate-50"
+        <Stack className="hero__card lg:w-2/3">
+          <Card className="flex flex-col gap-4">
+            <div>
+              <p>Hello! My name is</p>
+              <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
+                Vincent Langlois
+              </h1>
+            </div>
+            <p>
+              Engineer by trade, tinkerer by nature | Building things, breaking
+              things, learning everything
+            </p>
+          </Card>
+          
+          <Card size="small" variation="interface">
+            <div className="flex flex-row gap-6 lg:gap-12 justify-center items-center flex-wrap">
+              <Orb
+                tag="a"
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-700 hover:bg-blue-800"
+                title="Link to Vincent's LinkedIn profile"
+              >
+                <LinkedinLogoIcon
+                  size={32}
+                  weight="duotone"
+                  className="text-slate-50"
+                />
+              </Orb>
+              <GitHubLink
+                href={GITHUB_URL}
+                alt="Link to Vincent's GitHub profile"
               />
-            </Orb>
-            <GitHubLink
-              href={GITHUB_URL}
-              alt="Link to Vincent's GitHub profile"
-            />
-            <Orb
-              tag="a"
-              href={CODEPEN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800 hover:bg-gray-900"
-              title="Link to Vincent's Codepen profile"
-            >
-              <CodepenLogoIcon
-                size={32}
-                weight="duotone"
-                className="text-slate-50"
-              />
-            </Orb>
-          </div>
-        </Card>
+              <Orb
+                tag="a"
+                href={CODEPEN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 hover:bg-gray-900"
+                title="Link to Vincent's Codepen profile"
+              >
+                <CodepenLogoIcon
+                  size={32}
+                  weight="duotone"
+                  className="text-slate-50"
+                />
+              </Orb>
+            </div>
+          </Card>
+        </Stack>
         <div className="hero__scroll flex flex-col items-center">
           Scroll to see more
           <ArrowDownIcon size={16} weight="duotone" />

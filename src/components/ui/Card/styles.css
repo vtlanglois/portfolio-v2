@@ -1,5 +1,5 @@
 .glass-card {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 15px;
   background: var(--card-bg);
   box-shadow:
@@ -12,6 +12,20 @@
 
 .glass-card.small {
   padding: 0.5rem;
+}
+
+.glass-card.large {
+  padding: 2rem;
+}
+
+.glass-card.heading {
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  background: color-mix(in srgb, var(--card-bg) 70%, transparent);
+}
+
+.glass-card.interface {
+    background: color-mix(in srgb, var(--sky-top) 60%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {

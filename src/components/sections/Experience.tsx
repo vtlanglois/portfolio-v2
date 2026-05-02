@@ -1,3 +1,4 @@
+import { LaptopIcon } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
@@ -5,7 +6,7 @@ import Stack from "../ui/Stack";
 
 export default function Experience() {
   return (
-    <Section sectionNumber={2}>
+    <Section id="experience" sectionNumber={2}>
       <div className="section-divider">
         <svg
           width="100%"
@@ -34,8 +35,9 @@ export default function Experience() {
       </div>
       <Container>
         <Stack>
-          <Card>
-            <h2 className="text-3xl font-bold">Experience</h2>
+          <Card variation="heading" className="flex flex-row flex-wrap items-center justify-between">
+            <h2 className="text-3xl font-bold leading-none">Experience</h2>
+            <LaptopIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-cols-1 gap-4">
             <Card className="flex flex-col gap-2">
