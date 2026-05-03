@@ -4,7 +4,7 @@ import Container from "../ui/Container";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
 import TagList from "../ui/TagList";
-import {TAGS} from "../../data/skills"
+import { TAGS } from "../../data/skills";
 
 export default function About() {
   return (
@@ -53,15 +53,18 @@ export default function About() {
               </p>
             </Card>
             <Card className="row-span-1 col-span-2">
-              <h3 className="text-lg font-bold">My technical interests</h3>
+              <h3 id="tech-interests" className="text-lg font-bold mb-2">
+                My technical interests
+              </h3>
               <TagList
-                direction="col"
+              direction="col"
+                labelledBy="tech-interests"
                 tags={[
                   TAGS.react,
                   TAGS.accessibility,
                   TAGS.educationTech,
                   TAGS.gameDevelopment,
-                  TAGS.webDevelopment
+                  TAGS.webDevelopment,
                 ]}
               />
             </Card>

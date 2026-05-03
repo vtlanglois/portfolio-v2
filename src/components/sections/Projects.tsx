@@ -4,6 +4,8 @@ import Container from "../ui/Container";
 import GitHubLink from "../ui/GitHubLink";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
+import TagList from "../ui/TagList";
+import { TAGS } from "@/data/skills";
 
 export default function Projects() {
   return (
@@ -39,18 +41,30 @@ export default function Projects() {
       </div>
       <Container>
         <Stack>
-          <Card variation="heading" className="flex flex-row flex-wrap items-center justify-between">
+          <Card
+            variation="heading"
+            className="flex flex-row flex-wrap items-center justify-between"
+          >
             <h2 className="text-3xl font-bold leading-none">Projects</h2>
             <KanbanIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
-            <Card className="row-span-3 grid grid-rows-subgrid">
+            <Card className="row-span-4 grid grid-rows-subgrid">
               <h3 className="text-xl font-semibold mb-2">PyBot</h3>
               <p>
                 A Python-based chatbot that integrates with various APIs,
                 include OpenAI&apos;s GPT models. Used to demo GenAI to a
                 younger audience at a STEM event.
               </p>
+              <TagList
+                labelledBy="skills-tag-label"
+                tags={[
+                  TAGS.python,
+                  TAGS.genai,
+                  TAGS.educationTech,
+                  TAGS.apiIntegration,
+                ]}
+              />
               <div className="text-end">
                 <GitHubLink
                   href="https://github.com/vtlanglois/PyBot"
@@ -58,7 +72,7 @@ export default function Projects() {
                 />
               </div>
             </Card>
-            <Card className="row-span-3 grid grid-rows-subgrid">
+            <Card className="row-span-4 grid grid-rows-subgrid">
               <h3 className="text-xl font-semibold mb-2">
                 OLED Matrix Display Demo
               </h3>
@@ -66,6 +80,10 @@ export default function Projects() {
                 A showcase of the capabilities of an OLED Screen for Arduino
                 devices for data visualization and animation.
               </p>
+              <TagList
+                labelledBy="skills-tag-label"
+                tags={[TAGS.arduino, TAGS.educationTech]}
+              />
               <div className="text-end">
                 <GitHubLink
                   href="https://github.com/vtlanglois/OLED-Demo"
@@ -73,7 +91,7 @@ export default function Projects() {
                 />
               </div>
             </Card>
-            <Card className="row-span-3 grid grid-rows-subgrid">
+            <Card className="row-span-4 grid grid-rows-subgrid">
               <h3 className="text-xl font-semibold mb-2">
                 Obsidian Markdown Sped Up
               </h3>
@@ -81,6 +99,7 @@ export default function Projects() {
                 A set of custom Markdown snippets for Obsidian to speed up your
                 notetaking.
               </p>
+              <TagList labelledBy="skills-tag-label" tags={[TAGS.typescript]} />
               <div className="text-end">
                 <GitHubLink
                   href="https://github.com/vtlanglois/obsidian-MarkdownSpedUp"
