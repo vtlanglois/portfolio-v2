@@ -62,7 +62,7 @@ export default function Tag({
   return (
     <span
       className={
-        "tag rounded-full border-2 px-2 py-0.5 inline-flex items-center gap-1 leading-none"
+        "tag rounded-full  px-2 py-0.5 inline-flex items-center gap-1"
       }
     >
       {selectedIcon()}
