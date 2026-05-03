@@ -1,0 +1,72 @@
+.tag-list {
+  --bg-alpha: 25%;
+  --border-alpha: 80%;
+}
+
+.tag-list li:nth-child(10n + 1) .tag {
+  background: color-mix(in srgb, var(--sky-top) var(--bg-alpha), transparent);
+  border-color: color-mix(
+    in srgb,
+    var(--sky-top) var(--border-alpha),
+    transparent
+  );
+}
+
+.tag-list li:nth-child(10n + 2) .tag,
+.tag-list li:nth-child(10n + 10) .tag {
+  background: color-mix(
+    in srgb,
+    var(--sky-bottom) var(--bg-alpha),
+    transparent
+  );
+  border-color: color-mix(
+    in srgb,
+    var(--sky-bottom) var(--border-alpha),
+    transparent
+  );
+}
+
+.tag-list li:nth-child(10n + 3) .tag,
+.tag-list li:nth-child(10n + 9) .tag {
+  background: color-mix(in srgb, var(--hill-far) var(--bg-alpha), transparent);
+  border-color: color-mix(
+    in srgb,
+    var(--hill-far) var(--border-alpha),
+    transparent
+  );
+}
+
+.tag-list li:nth-child(10n + 4) .tag,
+.tag-list li:nth-child(10n + 8) .tag {
+  background: color-mix(in srgb, var(--hill-mid) var(--bg-alpha), transparent);
+  border-color: color-mix(
+    in srgb,
+    var(--hill-mid) var(--border-alpha),
+    transparent
+  );
+}
+
+.tag-list li:nth-child(10n + 5) .tag,
+.tag-list li:nth-child(10n + 7) .tag {
+  background: color-mix(in srgb, var(--hill-near) var(--bg-alpha), transparent);
+  border-color: color-mix(
+    in srgb,
+    var(--hill-near) var(--border-alpha),
+    transparent
+  );
+}
+
+.tag-list li:nth-child(10n + 6) .tag {
+  background: color-mix(in srgb, var(--section-2) var(--bg-alpha), transparent);
+  border-color: color-mix(
+    in srgb,
+    var(--section-2) var(--border-alpha),
+    transparent
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  .tag-list {
+    --bg-alpha: 60%;
+  }
+}
