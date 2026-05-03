@@ -3,6 +3,8 @@ import Card from "../ui/Card";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
+import TagList from "../ui/TagList";
+import { TAGS } from "@/data/skills";
 
 export default function Experience() {
   return (
@@ -35,7 +37,10 @@ export default function Experience() {
       </div>
       <Container>
         <Stack>
-          <Card variation="heading" className="flex flex-row flex-wrap items-center justify-between">
+          <Card
+            variation="heading"
+            className="flex flex-row flex-wrap items-center justify-between"
+          >
             <h2 className="text-3xl font-bold leading-none">Experience</h2>
             <LaptopIcon size={30} weight="duotone" />
           </Card>
@@ -55,6 +60,29 @@ export default function Experience() {
                 a full-stack development team to deliver high-quality software
                 solutions.
               </p>
+              <span id="skills-tag-label" className="sr-only">
+                Skills
+              </span>
+              <TagList
+                labelledBy="skills-tag-label"
+                tags={[
+                  TAGS.typescript,
+                  TAGS.javascript,
+                  TAGS.react,
+                  TAGS.webDevelopment,
+                  TAGS.bugHunting,
+                  TAGS.bugFixing,
+                  TAGS.accessibility,
+                  TAGS.nextjs,
+                  TAGS.documentation,
+                  TAGS.codeReview,
+                  TAGS.tailwind,
+                  TAGS.apiIntegration,
+                  TAGS.crossFunctionalCollaboration,
+                  TAGS.adaptability,
+                  TAGS.teamwork,
+                ]}
+              />
             </Card>
             <Card className="flex flex-col gap-2">
               <div className="flex flex-row justify-between gap-1 flex-wrap">
@@ -69,6 +97,19 @@ export default function Experience() {
                 Management System, focused on enhancing user experience and
                 performance.
               </p>
+              <TagList
+                labelledBy="skills-tag-label"
+                tags={[
+                  TAGS.javascript,
+                  TAGS.react,
+                  TAGS.nodejs,
+                  TAGS.sql,
+                  TAGS.bootstrap,
+                  TAGS.webDevelopment,
+                  TAGS.prototyping,
+                  TAGS.problemSolving,
+                ]}
+              />
             </Card>
             <Card className="flex flex-col gap-2">
               <div className="flex flex-row justify-between gap-1 flex-wrap">
@@ -84,6 +125,19 @@ export default function Experience() {
                 promoting STEM education and engaging with local schools to
                 inspire the next generation of technologists.
               </p>
+              <TagList
+                labelledBy="skills-tag-label"
+                tags={[
+                  TAGS.educationTech,
+                  TAGS.projectManagement,
+                  TAGS.teamwork,
+                  TAGS.communication,
+                  TAGS.empathy,
+                  TAGS.crossFunctionalCollaboration,
+                  TAGS.crossCompanyCollaboration,
+                  TAGS.adaptability,
+                ]}
+              />
             </Card>
           </div>
         </Stack>
