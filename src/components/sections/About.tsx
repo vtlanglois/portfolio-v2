@@ -3,6 +3,8 @@ import Card from "../ui/Card";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
+import TagList from "../ui/TagList";
+import {TAGS} from "../../data/skills"
 
 export default function About() {
   return (
@@ -10,7 +12,10 @@ export default function About() {
       <Container>
         <Stack>
           <div className="grid grid-rows-1">
-            <Card variation="heading" className="flex flex-row flex-wrap items-center justify-between">
+            <Card
+              variation="heading"
+              className="flex flex-row flex-wrap items-center justify-between"
+            >
               <h2 className="text-3xl font-bold leading-none">About Me</h2>
               <UserCircleIcon size={30} weight="duotone" />
             </Card>
@@ -49,14 +54,16 @@ export default function About() {
             </Card>
             <Card className="row-span-1 col-span-2">
               <h3 className="text-lg font-bold">My technical interests</h3>
-              <ul className="list-disc list-inside">
-                <li>React</li>
-                <li>Accessibility</li>
-                <li>Design</li>
-                <li>Educational Tech</li>
-                <li>Game Development</li>
-                <li>Web Development</li>
-              </ul>
+              <TagList
+                direction="col"
+                tags={[
+                  TAGS.react,
+                  TAGS.accessibility,
+                  TAGS.educationTech,
+                  TAGS.gameDevelopment,
+                  TAGS.webDevelopment
+                ]}
+              />
             </Card>
             <Card className="row-span-1 col-span-2">
               <h3 className="text-lg font-bold">Fun Facts</h3>
