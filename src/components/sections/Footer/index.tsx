@@ -22,8 +22,9 @@ export default function Footer() {
         <path
           d="M-10 45 L-10 12 Q60 2 150 8 Q220 14 280 6 Q320 1 360 8 Q410 16 480 7 Q570 -2 690 14 L690 45 Z"
           fill="var(--footer)"
+          className="section-hill"
         >
-          <animate
+          {/* <animate
             attributeName="d"
             dur="5.5s"
             repeatCount="indefinite"
@@ -34,7 +35,7 @@ export default function Footer() {
     M-10 45 L-10 14 Q60 4 150 10 Q220 16 280 8 Q320 3 360 10 Q410 18 480 9 Q570 0 690 16 L690 45 Z;
     M-10 45 L-10 12 Q60 2 150 8 Q220 14 280 6 Q320 1 360 8 Q410 16 480 7 Q570 -2 690 14 L690 45 Z
   "
-          />
+          /> */}
         </path>
       </svg>
 

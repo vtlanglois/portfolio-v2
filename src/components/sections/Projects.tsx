@@ -23,8 +23,9 @@ export default function Projects() {
           <path
             d="M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z"
             fill="var(--section-color)"
+            className="section-hill"
           >
-            <animate
+            {/* <animate
               attributeName="d"
               dur="10s"
               repeatCount="indefinite"
@@ -35,7 +36,7 @@ export default function Projects() {
           M0 30 L0 16 Q120 8 240 14 Q340 20 440 8 Q560 2 680 12 L680 30 Z;
           M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z
         "
-            />
+            /> */}
           </path>
         </svg>
       </div>

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* ============================================
    BLISS (default theme)
    ============================================ */
@@ -654,4 +655,13 @@ body {
     var(--font-roboto) Arial,
     Helvetica,
     sans-serif;
+}
+
+@keyframes hillBreath {
+  0%, 100% { transform: translateY(0) scaleX(1); }
+  50% { transform: translateY(1px) scaleX(1.02); }
+}
+
+.section-hill {
+  animation: hillBreath 6s ease-in-out infinite; 
 }

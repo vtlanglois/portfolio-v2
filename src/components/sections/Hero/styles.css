@@ -37,6 +37,10 @@
   padding: 0 1rem;
 }
 
+.hill {
+  will-change: d;
+}
+
 .hero__scroll {
   position: absolute;
   bottom: 1rem;

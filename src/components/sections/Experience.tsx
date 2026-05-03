@@ -19,8 +19,8 @@ export default function Experience() {
           fill="var(--section-color)"
           className="mb-[-2px]"
         >
-          <path d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z">
-            <animate
+          <path d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z" className="section-hill">
+            {/* <animate
               attributeName="d"
               dur="12s"
               repeatCount="indefinite"
@@ -31,7 +31,7 @@ export default function Experience() {
           M0 30 L0 22 Q80 10 180 16 Q260 20 320 10 Q380 4 460 12 Q560 20 680 10 L680 30 Z;
           M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z
         "
-            />
+            /> */}
           </path>
         </svg>
       </div>
