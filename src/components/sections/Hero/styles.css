@@ -26,6 +26,16 @@
   margin-bottom: -2px;
 }
 
+.hill-far {
+  animation: hillFar 13s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.hill-mid {
+  animation: hillMid 9s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
 .hero__content {
   position: relative;
   z-index: 1;
@@ -61,70 +71,21 @@
   backdrop-filter: blur(10px);
 }
 
-/* .hero a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
-}
-
-.hero a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.8),
-    transparent,
-    rgba(255, 255, 255, 0.3)
-  );
-} */
-
-/* .hero__card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
-}
-
-.hero__card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.8),
-    transparent,
-    rgba(255, 255, 255, 0.3)
-  );
-} */
 
 @media (min-width: 768px) {
   .hero__hills svg {
     height: auto;
   }
+}
+
+@keyframes hillFar {
+  0%, 100% { transform: translateY(0) scaleX(1) scaleY(1) rotate(0deg); }
+  50% { transform: translateY(-3px) scaleX(1.01) scaleY(1.008) rotate(0.3deg); }
+}
+
+@keyframes hillMid {
+  0%, 100% { transform: translateY(0) scaleX(1) scaleY(1) rotate(0deg); }
+  50% { transform: translateY(-4px) scaleX(1.015) scaleY(1.012) rotate(-0.4deg); }
 }
 
 @keyframes fadeInUp {

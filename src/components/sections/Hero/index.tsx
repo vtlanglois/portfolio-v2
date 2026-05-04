@@ -52,41 +52,15 @@ export default function Hero() {
               d="M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z"
               fill="var(--hill-far)"
               opacity="0.55"
-              className="hill"
-            >
-              <animate
-                attributeName="d"
-                dur="13s"
-                repeatCount="indefinite"
-                calcMode="spline"
-                keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
-                values="
-  M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z;
-  M-10 203 Q120 158 240 172 Q340 189 450 141 Q540 103 620 142 Q655 159 690 158 L690 400 L-10 400 Z;
-  M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z
-"
-              />
-            </path>
+              className="hill hill-far"
+            />
 
             <path
               d="M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z"
               fill="var(--hill-mid)"
               opacity="0.75"
-              className="hill"
-            >
-              <animate
-                attributeName="d"
-                dur="9s"
-                repeatCount="indefinite"
-                calcMode="spline"
-                keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
-                values="
-  M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z;
-  M-10 238 Q100 213 220 215 Q340 225 460 171 Q550 131 640 169 Q665 182 690 183 L690 400 L-10 400 Z;
-  M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z
-"
-              />
-            </path>
+              className="hill hill-mid"
+            />
 
             <path
               d="M-10 258 Q80 185 180 210 Q260 240 370 228 Q480 215 580 235 Q640 244 690 238 L690 9999 L-10 9999 Z"
@@ -123,7 +97,7 @@ export default function Hero() {
               things, learning everything
             </p>
           </Card>
-          
+
           <Card size="small" variation="interface">
             <div className="flex flex-row gap-6 lg:gap-12 justify-center items-center flex-wrap">
               <Orb
