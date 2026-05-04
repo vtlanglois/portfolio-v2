@@ -5,15 +5,19 @@ import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
   ArrowRightIcon,
+  BalloonIcon,
   CactusIcon,
   CloudIcon,
+  DropIcon,
   FlowerIcon,
+  GridNineIcon,
   HorseIcon,
   IceCreamIcon,
   LegoIcon,
   LightningIcon,
   MeteorIcon,
   MinusIcon,
+  OrangeSliceIcon,
   PlanetIcon,
   PlantIcon,
   PlusIcon,
@@ -21,6 +25,7 @@ import {
   RainbowCloudIcon,
   ShuffleIcon,
   SnowflakeIcon,
+  SpeakerHifiIcon,
   SquareIcon,
   SunHorizonIcon,
   TreeEvergreenIcon,
@@ -242,6 +247,16 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <CloudIcon size={32} weight="duotone" />;
     case "arctic":
       return <WindIcon size={32} weight="duotone" />;
+    case "metro":
+      return <SpeakerHifiIcon size={32} weight="duotone" />;
+    case "dorfic":
+      return <OrangeSliceIcon size={32} weight="duotone" />;
+    case "aqua":
+      return <DropIcon size={32} weight="duotone" />;
+    case "vaporwave":
+      return <GridNineIcon size={32} weight="duotone" />;
+    case "bubblegum":
+      return <BalloonIcon size={32} weight="duotone" />;
     case "bliss":
     default:
       return <PlantIcon size={32} weight="duotone" />;

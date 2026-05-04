@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 /* ============================================
    BLISS (default theme)
    ============================================ */
@@ -343,6 +342,95 @@
   --section-6: #1a3850;
 }
 
+[data-theme="metro"] {
+  --sky-top: #0a8ab8;
+  --sky-bottom: #40c8e8;
+  --hill-far: #f0e840;
+  --hill-mid: #78c800;
+  --hill-near: #0a5a78;
+  --footer: #000000;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #78c800;
+  --section-3: #f0e840;
+  --section-4: #0a8ab8;
+  --section-5: #1a1a1a;
+  --section-6: #000000;
+}
+
+[data-theme="dorfic"] {
+  --sky-top: #f0a030;
+  --sky-bottom: #f8d080;
+  --hill-far: #f0c060;
+  --hill-mid: #e88020;
+  --hill-near: #c85e10;
+  --footer: #7a3008;
+  --card-bg: rgba(255, 248, 235, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #a84808;
+  --section-3: #883805;
+  --section-4: #682803;
+  --section-5: #481a02;
+  --section-6: #301001;
+}
+
+[data-theme="aqua"] {
+  --sky-top: #00a8d4;
+  --sky-bottom: #80d8f0;
+  --hill-far: #a0e8f8;
+  --hill-mid: #40c0e8;
+  --hill-near: #0088b8;
+  --footer: #004870;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #006890;
+  --section-3: #004870;
+  --section-4: #003050;
+  --section-5: #001e38;
+  --section-6: #001028;
+}
+
+
+/* ============================================
+   VAPORWAVE
+   ============================================ */
+
+[data-theme="vaporwave"] {
+  --sky-top: #c060d0;
+  --sky-bottom: #e098e0;
+  --hill-far: #80c0f0;
+  --hill-mid: #a060d0;
+  --hill-near: #e03880;
+  --footer: #280838;
+  --card-bg: rgba(255, 240, 255, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #a030a0;
+  --section-3: #6020c0;
+  --section-4: #2040c0;
+  --section-5: #102080;
+  --section-6: #080838;
+}
+
+/* ============================================
+   BUBBLEGUM
+   ============================================ */
+
+[data-theme="bubblegum"] {
+  --sky-top: #f060a0;
+  --sky-bottom: #f8a0c8;
+  --hill-far: #80d0f8;
+  --hill-mid: #f8a0d0;
+  --hill-near: #f03878;
+  --footer: #780828;
+  --card-bg: rgba(255, 240, 248, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #c02860;
+  --section-3: #f060a0;
+  --section-4: #40b8f0;
+  --section-5: #2890c8;
+  --section-6: #186898;
+}
+
 /* ============================================
    DARK MODE
    ============================================ */
@@ -639,6 +727,86 @@
     --section-5: #081028;
     --section-6: #050c1e;
   }
+
+  [data-theme="metro"] {
+    --sky-top: #041420;
+    --sky-bottom: #082030;
+    --hill-far: #485e00;
+    --hill-mid: #2a4800;
+    --hill-near: #042038;
+    --footer: #000000;
+    --card-bg: rgba(4, 20, 32, 0.8);
+    --section-1: #042038;
+    --section-2: #031828;
+    --section-3: #2a4800;
+    --section-4: #485e00;
+    --section-5: #041828;
+    --section-6: #000000;
+  }
+
+  [data-theme="dorfic"] {
+    --sky-top: #180800;
+    --sky-bottom: #281200;
+    --hill-far: #3a1800;
+    --hill-mid: #582000;
+    --hill-near: #782a00;
+    --footer: #0a0400;
+    --card-bg: rgba(24, 8, 0, 0.5);
+    --section-1: #782a00;
+    --section-2: #582000;
+    --section-3: #3a1800;
+    --section-4: #281000;
+    --section-5: #180800;
+    --section-6: #0a0400;
+  }
+
+  [data-theme="aqua"] {
+    --sky-top: #001828;
+    --sky-bottom: #002838;
+    --hill-far: #003848;
+    --hill-mid: #004858;
+    --hill-near: #005870;
+    --footer: #000c18;
+    --card-bg: rgba(0, 24, 40, 0.5);
+    --section-1: #005870;
+    --section-2: #004058;
+    --section-3: #003048;
+    --section-4: #002038;
+    --section-5: #001428;
+    --section-6: #000c18;
+  }
+
+  [data-theme="vaporwave"] {
+    --sky-top: #100820;
+    --sky-bottom: #180e30;
+    --hill-far: #182850;
+    --hill-mid: #381868;
+    --hill-near: #680840;
+    --footer: #080410;
+    --card-bg: rgba(16, 8, 32, 0.5);
+    --section-1: #680840;
+    --section-2: #481058;
+    --section-3: #280878;
+    --section-4: #081848;
+    --section-5: #041030;
+    --section-6: #020818;
+  }
+
+  [data-theme="bubblegum"] {
+    --sky-top: #280810;
+    --sky-bottom: #380e18;
+    --hill-far: #082038;
+    --hill-mid: #481028;
+    --hill-near: #680818;
+    --footer: #100408;
+    --card-bg: rgba(40, 8, 16, 0.5);
+    --section-1: #680818;
+    --section-2: #480810;
+    --section-3: #580820;
+    --section-4: #081828;
+    --section-5: #041018;
+    --section-6: #020c10;
+  }
 }
 
 @theme inline {
@@ -658,12 +826,17 @@ body {
 }
 
 @keyframes hillBreath {
-  0%, 100% { transform: translateY(0) scaleX(1); }
-  50% { transform: translateY(1px) scaleX(1.02); }
+  0%,
+  100% {
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    transform: translateY(1px) scaleX(1.02);
+  }
 }
 
 .section-hill {
-  animation: hillBreath 6s ease-in-out infinite; 
+  animation: hillBreath 6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
