@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -41,6 +42,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
