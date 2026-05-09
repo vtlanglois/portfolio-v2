@@ -1,4 +1,5 @@
 import { TagItem } from "@/types/tagTypes";
+import { Icon } from "@phosphor-icons/react";
 import {
   PersonArmsSpreadIcon,
   RobotIcon,
@@ -28,35 +29,34 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 const variantIcons = {
-  tech: <FlaskIcon weight="duotone" className="inline-block" />,
-  human: <PersonIcon weight="duotone" className="inline-block" />,
-  topic: <ScrollIcon weight="duotone" className="inline-block" />,
-  tool: <WrenchIcon weight="duotone" className="inline-block" />,
-  hobby: <StarIcon weight="duotone" className="inline-block" />,
+  tech: FlaskIcon,
+  human: PersonIcon,
+  topic: ScrollIcon,
+  tool: WrenchIcon,
+  hobby: StarIcon,
 };
 
 
 const icons = {
-  a11y: <PersonArmsSpreadIcon weight="duotone" className="inline-block" />,
-  robot: <RobotIcon weight="duotone" className="inline-block" />,
-  atom: <AtomIcon weight="duotone" className="inline-block" />,
-  palette: <PaletteIcon weight="duotone" className="inline-block" />,
-  figma: <FigmaLogoIcon weight="duotone" className="inline-block" />,
-  git: <GitMergeIcon weight="duotone" className="inline-block" />,
-  github: <GithubLogoIcon weight="duotone" className="inline-block" />,
-  "file-code": <FileCodeIcon weight="duotone" className="inline-block" />,
-  browser: <BrowserIcon weight="duotone" className="inline-block" />,
-  circuit: <CircuitryIcon weight="duotone" className="inline-block" />,
-  users: <UsersIcon weight="duotone" className="inline-block" />,
-  db: <DatabaseIcon weight="duotone" className="inline-block" />,
-  controller: <GameControllerIcon weight="duotone" className="inline-block" />,
-  bug: <BugIcon weight="duotone" className="inline-block" />,
-  lego: <LegoIcon weight="duotone" className="inline-block" />,
-  "potted-plant": <PottedPlantIcon weight="duotone" className="inline-block" />,
-  hiking: <PersonSimpleHikeIcon weight="duotone" className="inline-block" />,
-  cooking: <CookingPotIcon weight="duotone" className="inline-block" />,
-  song: <MusicNoteIcon weight="duotone" className="inline-block" />,
-  book: <BookIcon weight="duotone" className="inline-block" />,
+  a11y: PersonArmsSpreadIcon,
+  robot: RobotIcon,
+  atom: AtomIcon,
+  palette: PaletteIcon,
+  figma: FigmaLogoIcon,
+  git: GitMergeIcon,
+  github: GithubLogoIcon,
+  "file-code": BrowserIcon,
+  circuit: CircuitryIcon,
+  users: UsersIcon,
+  db: DatabaseIcon,
+  controller: GameControllerIcon,
+  bug: BugIcon,
+  lego: LegoIcon,
+  "potted-plant": PottedPlantIcon,
+  hiking: PersonSimpleHikeIcon,
+  cooking: CookingPotIcon,
+  song: MusicNoteIcon,
+  book: BookIcon,
 };
 
 export default function Tag({
@@ -65,19 +65,22 @@ export default function Tag({
   tag: TagItem;
 }) {
   const selectedIcon = () => {
+    let IconComponent: Icon;
     if (tag.icon && tag.icon in icons) {
-      return icons[tag.icon as keyof typeof icons];
+      IconComponent = icons[tag.icon as keyof typeof icons];
+      return <IconComponent weight="duotone" className="inline-block" />
     }
-    return variantIcons[tag.variant ?? "tool"];
+      IconComponent = variantIcons[tag.variant ?? "tool"];
+   return <IconComponent weight="duotone" className="inline-block" />
   };
 
   return (
     <span
       className={
-        "tag rounded-full  px-2 py-0.5 inline-flex items-center gap-1"
+        "tag rounded-full  px-2 py-0.5 inline-flex items-center gap-1 text-sm"
       }
     >
-      {selectedIcon()}
+      {/* {selectedIcon()} */}
       {tag.text}
     </span>
   );
