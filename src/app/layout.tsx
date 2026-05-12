@@ -40,8 +40,8 @@ export default function RootLayout({
         {/* <header>
           Header
         </header> */}
-                <Skipnav />
-              <ThemeSelector />
+        <Skipnav />
+        <ThemeSelector />
         <main id="main">{children}</main>
         <Footer />
         <Analytics />
