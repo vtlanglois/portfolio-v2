@@ -84,6 +84,7 @@ export default function Hero() {
         </svg>
       </div>
       <div className="hero__content">
+        <ThemeToggle />
         <Stack className="hero__card lg:w-2/3">
           <Card className="flex flex-col gap-4">
             <div>
@@ -139,7 +140,6 @@ export default function Hero() {
           Scroll to see more
           <ArrowDownIcon size={16} weight="duotone" />
         </div>
-        <ThemeToggle />
       </div>
     </section>
   );
