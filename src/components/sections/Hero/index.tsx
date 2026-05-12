@@ -9,7 +9,6 @@ import {
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 import Card from "@/components/ui/Card";
 import Orb from "@/components/ui/Orb";
-import ThemeToggle from "@/components/ui/ThemeSelector";
 import GitHubLink from "@/components/ui/GitHubLink";
 import Stack from "@/components/ui/Stack";
 
@@ -84,7 +83,6 @@ export default function Hero() {
         </svg>
       </div>
       <div className="hero__content">
-        <ThemeToggle />
         <Stack className="hero__card lg:w-2/3">
           <Card className="flex flex-col gap-4">
             <div>
