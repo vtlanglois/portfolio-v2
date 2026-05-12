@@ -4,7 +4,8 @@ import "./globals.css";
 import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
+import Skipnav from "@/components/ui/Skipnav";
+import ThemeSelector from "@/components/ui/ThemeSelector";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -39,7 +40,9 @@ export default function RootLayout({
         {/* <header>
           Header
         </header> */}
-        <main>{children}</main>
+        <Skipnav />
+        <ThemeSelector />
+        <main id="main">{children}</main>
         <Footer />
         <Analytics />
         <SpeedInsights />

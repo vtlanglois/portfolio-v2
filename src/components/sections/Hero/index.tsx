@@ -9,7 +9,6 @@ import {
 import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
 import Card from "@/components/ui/Card";
 import Orb from "@/components/ui/Orb";
-import ThemeToggle from "@/components/ui/ThemeSelector";
 import GitHubLink from "@/components/ui/GitHubLink";
 import Stack from "@/components/ui/Stack";
 
@@ -139,7 +138,6 @@ export default function Hero() {
           Scroll to see more
           <ArrowDownIcon size={16} weight="duotone" />
         </div>
-        <ThemeToggle />
       </div>
     </section>
   );
