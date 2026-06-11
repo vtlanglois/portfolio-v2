@@ -29,3 +29,16 @@
       inset 0 0 26px 13px rgba(250, 250, 250, 0.13);
   }
 }
+
+@media (prefers-contrast: more) {
+  .orb {
+    box-shadow: none;
+    border: 2px solid grey;
+  }
+}
+
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  .orb {
+    border-color: white;
+  }
+}

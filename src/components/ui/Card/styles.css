@@ -8,7 +8,8 @@
     inset 0 -1px 0 rgba(250, 250, 250, 0.1),
     inset 0 0 26px 13px rgba(250, 250, 250, 0.13);
   backdrop-filter: blur(10px);
-  transition: background var(--bgc-transition-speed) var(--bgc-transition-easing);
+  transition: background var(--bgc-transition-speed)
+    var(--bgc-transition-easing);
 }
 
 .glass-card.small {
@@ -23,7 +24,7 @@
   padding-inline: 1.5rem;
   padding-block: 0.75rem;
   background: color-mix(in srgb, var(--card-bg) 70%, transparent);
-    box-shadow:
+  box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     inset 0 2px 0 rgba(250, 250, 250, 0.8),
     inset 0 -2px 0 rgba(250, 250, 250, 0.3),
@@ -31,7 +32,7 @@
 }
 
 .glass-card.interface {
-    background: color-mix(in srgb, var(--sky-top) 60%, transparent);
+  background: color-mix(in srgb, var(--sky-top) 60%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,6 +42,27 @@
       inset 0 1px 0 rgba(250, 250, 250, 0.05),
       inset 0 -1px 0 rgba(250, 250, 250, 0.01),
       inset 0 0 26px 13px rgba(250, 250, 250, 0.03);
+  }
+}
+
+@media (prefers-contrast: more) {
+  .glass-card {
+    box-shadow: none;
+    border: 2px solid grey;
+  }
+  .glass-card.heading {
+    box-shadow: none;
+    background: color-mix(in srgb, var(--card-bg) 90%, transparent);
+  }
+  .glass-card.interface {
+    box-shadow: none;
+    background: color-mix(in srgb, var(--sky-top) 90%, transparent);
+  }
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  .glass-card {
+    border-color: white;
   }
 }
 
