@@ -48,7 +48,7 @@
 @media (prefers-contrast: more) {
   .glass-card {
     box-shadow: none;
-    border: 2px solid grey;
+    border: 2px solid var(--contrast-border-color);
   }
   .glass-card.heading {
     box-shadow: none;
@@ -62,7 +62,7 @@
 
 @media (prefers-color-scheme: dark) and (prefers-contrast: more) {
   .glass-card {
-    border-color: white;
+    border-color: var(--contrast-border-color-dark);
   }
 }
 

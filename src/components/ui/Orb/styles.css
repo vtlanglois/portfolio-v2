@@ -33,12 +33,12 @@
 @media (prefers-contrast: more) {
   .orb {
     box-shadow: none;
-    border: 2px solid grey;
+    border: 2px solid var(--contrast-border-color);
   }
 }
 
 @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
   .orb {
-    border-color: white;
+    border-color: var(--contrast-border-color-dark);
   }
 }

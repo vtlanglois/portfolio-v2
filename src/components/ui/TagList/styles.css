@@ -93,12 +93,12 @@
 @media (prefers-contrast: more) {
   .tag {
     box-shadow: none;
-    border: 1px solid grey;
+    border: 1px solid var(--contrast-border-color);
   }
 }
 
 @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
   .tag {
-    border-color: white;
+    border-color: var(--contrast-border-color-dark);
   }
 }
