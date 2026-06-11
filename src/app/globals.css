@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* 
+ Global Variables
+*/
+:root {
+  --bgc-transition-speed: 0.45s;
+  --bgc-transition-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
 /* ============================================
    BLISS (default theme)
    ============================================ */
@@ -851,6 +860,10 @@ body::after {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  :root {
+    --bgc-transition-speed: 0s;
+    --bgc-transition-easing: linear;
+  }
   .section-hill {
     animation: none;
   }

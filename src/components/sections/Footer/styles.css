@@ -14,5 +14,10 @@ footer[data-last-section="4"] svg#footer-divider {
 footer #footer-divider {
   display: block;
   width: 100%;
-    height: 10dvh;
+  height: 10dvh;
+  transition: background-color var(--bgc-transition-speed) var(--bgc-transition-easing);
+}
+
+footer #footer-divider svg path {
+  transition: fill var(--bgc-transition-speed) var(--bgc-transition-easing);
 }

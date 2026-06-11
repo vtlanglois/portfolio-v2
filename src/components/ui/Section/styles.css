@@ -26,11 +26,17 @@
   background: var(--section-color);
   position: relative;
   width: 100%;
+  transition: background-color var(--bgc-transition-speed) var(--bgc-transition-easing);
 }
 
 .section-divider {
   display: block;
   width: 100%;
+  transition: background-color var(--bgc-transition-speed) var(--bgc-transition-easing);
+}
+
+.section-divider svg path {
+  transition: fill var(--bgc-transition-speed) var(--bgc-transition-easing);
 }
 
 .section-divider svg {

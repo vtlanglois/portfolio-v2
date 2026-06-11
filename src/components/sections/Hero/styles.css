@@ -5,6 +5,8 @@
   background: linear-gradient(to bottom, var(--sky-top), var(--sky-bottom));
   overflow: hidden;
   display: grid;
+  transition: background var(--bgc-transition-speed) var(--bgc-transition-easing);
+  transition-delay: var(--bgc-delay-sky); 
 }
 
 .hero__hills {
@@ -29,11 +31,13 @@
 .hill-far {
   animation: hillFar 13s ease-in-out infinite;
   transform-origin: bottom center;
+  transition-delay: var(--bgc-delay-hill-far);
 }
 
 .hill-mid {
   animation: hillMid 9s ease-in-out infinite;
   transform-origin: bottom center;
+  transition-delay: var(--bgc-delay-hill-mid);
 }
 
 .hero__content {
@@ -98,3 +102,9 @@
     transform: translateY(0); /* End at original position */
   }
 }
+
+.hero__hills svg path {
+  transition: fill var(--bgc-transition-speed) var(--bgc-transition-easing);
+}
+
+
