@@ -8,7 +8,7 @@ import { TAGS } from "@/data/skills";
 
 export default function Experience() {
   return (
-    <Section id="experience" sectionNumber={2}>
+    <Section id="experience" sectionNumber={3}>
       <div className="section-divider">
         <svg
           width="100%"
