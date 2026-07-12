@@ -9,7 +9,7 @@ import "./styles.css";
 
 export default function Footer() {
   return (
-    <footer data-last-section="3">
+    <footer data-last-section="4">
       <svg
         id="footer-divider"
         width="100%"

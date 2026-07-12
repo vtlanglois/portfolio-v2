@@ -22,6 +22,10 @@
   --section-color: var(--section-4);
 }
 
+[data-section="4"] .section-divider {
+  background-color: var(--section-3);
+}
+
 .page-section {
   background: var(--section-color);
   position: relative;
