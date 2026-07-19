@@ -45,14 +45,14 @@ export default function Experience() {
             <LaptopIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-cols-1 gap-4">
-            <Card className="flex flex-col gap-2">
+            <Card className="flex flex-col gap-2 timeline">
               <div className="flex flex-row justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold">
                   Senior Software Engineer at Eli Lilly & Company
                 </h3>
                 <p>July 2023 - Present</p>
               </div>
-              <p className="text-sm">Indianapolis, IN</p>
+              <p className="text-sm">Indianapolis, IN • +3 yrs</p>
               <p>
                 Currently working on developing scalable web applications and
                 systems to enhance the customer experience for Lilly&apos;s
@@ -84,14 +84,14 @@ export default function Experience() {
                 ]}
               />
             </Card>
-            <Card className="flex flex-col gap-2">
+            <Card className="flex flex-col gap-2 timeline">
               <div className="flex flex-row justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold">
                   Software Engineer Intern at BCForward
                 </h3>
                 <p>May 2022 - August 2022</p>
               </div>
-              <p className="text-sm">Carmel, IN</p>
+              <p className="text-sm">Carmel, IN • 3mos</p>
               <p>
                 Worked on developing and maintaining the Indiana Prosecutor Case
                 Management System, focused on enhancing user experience and
@@ -113,13 +113,12 @@ export default function Experience() {
             </Card>
             <Card className="flex flex-col gap-2">
               <div className="flex flex-row justify-between gap-1 flex-wrap">
-                <h3 className="text-xl font-semibold mb-2">
-                  Community Outreach Intern at IU Luddy School of Informatics,
-                  Computing, and Engineering
+                <h3 className="text-xl font-semibold">
+                  Community Outreach Intern at IU Luddy School
                 </h3>
                 <p>August 2020 - July 2023</p>
               </div>
-              <p className="text-sm">Bloomington, IN</p>
+              <p className="text-sm">Bloomington, IN • 2 yrs 11mos</p>
               <p>
                 Directed and coordinated community outreach programs, focused on
                 promoting STEM education and engaging with local schools to

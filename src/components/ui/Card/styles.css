@@ -35,6 +35,19 @@
   background: color-mix(in srgb, var(--sky-top) 60%, transparent);
 }
 
+.timeline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  display: block;
+  width: 2px;
+  height: 8px;
+  transform: translateX(-50%) translateY(50%);
+  border-left: 3px solid color-mix(in srgb, var(--card-bg) 70%, transparent);
+  border-style: dotted;
+}
+
 @media (prefers-color-scheme: dark) {
   .glass-card {
     box-shadow:
