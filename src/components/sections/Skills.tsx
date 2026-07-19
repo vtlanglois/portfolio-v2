@@ -50,7 +50,7 @@ export default function Skills() {
             variation="heading"
             className="flex flex-row flex-wrap items-center justify-between"
           >
-            <h2 className="text-3xl font-bold leading-none">Skills</h2>
+            <h2 className="text-3xl font-bold leading-none">Skills and Tools</h2>
             <ListStarIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-2 gap-4">
@@ -69,12 +69,13 @@ export default function Skills() {
                   TAGS.typescript,
                   TAGS.react,
                   TAGS.nextjs,
+                  TAGS.rrv7,
                   TAGS.tailwind,
                   TAGS.bootstrap,
                   TAGS.nodejs,
+                  TAGS.vite,
                   TAGS.accessibility,
                   TAGS.html,
-                  TAGS.semanticHtml,
                   TAGS.css,
                   TAGS.scss,
                   TAGS.storybook,
@@ -82,8 +83,6 @@ export default function Skills() {
                   TAGS.seo,
                   TAGS.wcag,
                   TAGS.apiIntegration,
-                  TAGS.postman,
-                  TAGS.npm,
                 ]}
               />
             </Card>
@@ -101,10 +100,10 @@ export default function Skills() {
                   TAGS.projectManagement,
                   TAGS.teamwork,
                   TAGS.problemSolving,
+                  TAGS.crossFunctionalCollaboration,
                   TAGS.communication,
                   TAGS.documentation,
                   TAGS.empathy,
-                  TAGS.crossFunctionalCollaboration,
                   TAGS.crossCompanyCollaboration,
                   TAGS.adaptability,
                   TAGS.passionate,
@@ -127,6 +126,7 @@ export default function Skills() {
                   TAGS.python,
                   TAGS.c,
                   TAGS.java,
+                  TAGS.bash,
                   TAGS.arduino,
                   TAGS.markdown,
                   TAGS.genai,
@@ -139,11 +139,16 @@ export default function Skills() {
                   TAGS.gameDesign,
                   TAGS.gameTesting,
                   TAGS.promptEngineering,
+                  TAGS.designSystems,
+                  TAGS.uiUX,
                 ]}
               />
             </Card>
             <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 id="skills-tools" className="inline-flex items-center justify-between  text-xl font-semibold mb-2">
+              <h3
+                id="skills-tools"
+                className="inline-flex items-center justify-between  text-xl font-semibold mb-2"
+              >
                 Tools
                 <ToolboxIcon size={24} weight="duotone" />
               </h3>
@@ -154,6 +159,7 @@ export default function Skills() {
                   TAGS.github,
                   TAGS.figma,
                   TAGS.copilot,
+                  TAGS.claudeCode,
                   TAGS.vscode,
                   TAGS.jira,
                   TAGS.confluence,
@@ -161,7 +167,10 @@ export default function Skills() {
                   TAGS.teams,
                   TAGS.voiceover,
                   TAGS.trello,
-                  TAGS.prettier,
+                  TAGS.terminal,
+                  TAGS.cmux,
+                  TAGS.postman,
+                  TAGS.obsidian,
                 ]}
               />
             </Card>

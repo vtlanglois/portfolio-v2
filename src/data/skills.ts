@@ -8,6 +8,12 @@ const frameworkTags = {
     icon: "atom",
     group: "frameworks",
   },
+  rrv7: {
+    text: "React Router v7",
+    variant: "tech",
+    icon: "atom",
+    group: "frameworks"
+  }
 } as const satisfies Record<string, TagItem>;
 
 const languageTags = {
@@ -35,19 +41,19 @@ const languageTags = {
     icon: "file-code",
     group: "languages",
   },
-  c: { text: "C", variant: "tech", icon: "file-code", group: "languages" },
+  c: { text: "C / C++", variant: "tech", icon: "file-code", group: "languages" },
   html: {
     text: "HTML",
     variant: "tech",
     icon: "file-code",
     group: "languages",
   },
-  semanticHtml: {
-    text: "Semantic HTML",
+  bash: {
+    text: "Bash",
     variant: "tech",
-    icon: "a11y",
+    icon: "file-code",
     group: "languages",
-  },
+  }
 } as const satisfies Record<string, TagItem>;
 
 const cssTags = {
@@ -108,6 +114,12 @@ const miscTags = {
     group: "misc",
     icon: "file-code",
   },
+  vite: {
+    text: "Vite",
+    variant: "tech",
+    group: "misc",
+    icon: "file-code",
+  }
 } as const satisfies Record<string, TagItem>;;
 
 const toolTags = {
@@ -155,16 +167,26 @@ const toolTags = {
     variant: "tool",
     group: "tool",
   },
-  prettier: {
-    text: "Prettier",
+  claudeCode: {
+    text: "Claude Code",
+    variant: "tool",
+    group: "tool"
+  },
+  terminal: {
+    text: "Terminal",
     variant: "tool",
     group: "tool",
   },
-  npm: {
-    text: "npm",
+  cmux: {
+    text: "cmux",
     variant: "tool",
     group: "tool",
   },
+  obsidian: {
+    text: "Obsidian",
+    variant: "tool",
+    group: "tool",
+  }
 } as const satisfies Record<string, TagItem>;;
 
 const aiTags = {
@@ -205,6 +227,16 @@ const interpersonalTags = {
     text: "Code Review",
     variant: "topic",
     group: "interpersonal",
+  },
+  designSystems: {
+    text: "Design Systems",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  uiUX: {
+    text: "UI / UX",
+    variant: "topic",
+    group: "interpersonal"
   },
   prototyping: {
     text: "Prototyping",
@@ -276,7 +308,7 @@ const topicTags = {
     icon: "a11y",
     group: "topic",
   },
-  wcag: { text: "WCAG", variant: "topic", icon: "a11y", group: "topic" },
+  wcag: { text: "WCAG 2.1 / 2.2", variant: "topic", icon: "a11y", group: "topic" },
   genai: { text: "GenAI", variant: "topic", icon: "robot", group: "ai" },
   gameDesign: {
     text: "Game Design",
