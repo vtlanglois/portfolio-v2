@@ -41,11 +41,12 @@ export default function Footer() {
 
       <div className="bg-(--footer) text-white">
         <Container>
-          <div className="flex flex-col lg:flex-row justify-between pb-4 lg:pb-0">
+          <div className="flex flex-col lg:flex-row justify-between items-start pb-4 lg:pb-0">
             <div>
               <p className="pb-4 text-center lg:text-start text-sm">
                 Made by Vincent Langlois. <br />
-                Built with Next.js, React, Tailwind CSS, and more!
+                Built with Next.js, React, Tailwind CSS, and more! <br />
+                Inspired by Frutiger Aero and similar 2000s aesthetics.
               </p>
             </div>
             <div className="flex flex-row gap-6 justify-center items-center">
