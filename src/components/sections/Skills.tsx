@@ -54,10 +54,10 @@ export default function Skills() {
             <ListStarIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-2 gap-4">
-            <Card className="row-span-4 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
                 id="skills-web-dev"
-                className="inline-flex items-center justify-between text-xl font-semibold mb-2"
+                className="inline-flex items-center justify-between text-xl font-semibold "
               >
                 Web Dev
                 <GlobeIcon size={24} weight="duotone" />
@@ -86,10 +86,10 @@ export default function Skills() {
                 ]}
               />
             </Card>
-            <Card className="row-span-4 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
                 id="skills-interpersonal"
-                className="inline-flex items-center justify-between text-xl font-semibold mb-2"
+                className="inline-flex items-center justify-between text-xl font-semibold "
               >
                 Interpersonal
                 <UsersThreeIcon size={24} weight="duotone" />
@@ -112,10 +112,10 @@ export default function Skills() {
                 ]}
               />
             </Card>
-            <Card className="row-span-4 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
                 id="skills-technical"
-                className="inline-flex items-center justify-between text-xl font-semibold mb-2"
+                className="inline-flex items-center justify-between text-xl font-semibold "
               >
                 Technical
                 <FileCodeIcon size={24} weight="duotone" />
@@ -144,10 +144,10 @@ export default function Skills() {
                 ]}
               />
             </Card>
-            <Card className="row-span-4 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
                 id="skills-tools"
-                className="inline-flex items-center justify-between  text-xl font-semibold mb-2"
+                className="inline-flex items-center justify-between  text-xl font-semibold "
               >
                 Tools
                 <ToolboxIcon size={24} weight="duotone" />

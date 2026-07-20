@@ -51,7 +51,7 @@ export default function Projects() {
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
             <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 className="text-xl font-semibold mb-2">PyBot</h3>
+              <h3 className="text-xl font-semibold ">PyBot</h3>
               <p>
                 A Python-based chatbot that integrates with various APIs,
                 include OpenAI&apos;s GPT models. Used to demo GenAI to a
@@ -74,7 +74,7 @@ export default function Projects() {
               </div>
             </Card>
             <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold ">
                 OLED Matrix Display Demo
               </h3>
               <p>
@@ -93,7 +93,7 @@ export default function Projects() {
               </div>
             </Card>
             <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold ">
                 Obsidian Markdown Sped Up
               </h3>
               <p>
