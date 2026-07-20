@@ -1,5 +1,5 @@
 .glass-card {
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: var(--border-radius);
   background: var(--card-bg);
   box-shadow:
@@ -21,7 +21,7 @@
 }
 
 .glass-card.heading {
-  padding-inline: 1.5rem;
+  padding-inline: 1.25rem;
   padding-block: 0.75rem;
   background: color-mix(in srgb, var(--card-bg) 70%, transparent);
   box-shadow:
