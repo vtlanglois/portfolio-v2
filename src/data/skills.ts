@@ -186,6 +186,11 @@ const toolTags = {
     text: "Obsidian",
     variant: "tool",
     group: "tool",
+  },
+  ohMyZsh: {
+    text: "Oh My Zsh",
+    variant: "tool",
+    group: "tool",
   }
 } as const satisfies Record<string, TagItem>;;
 

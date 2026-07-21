@@ -171,6 +171,7 @@ export default function Skills() {
                   TAGS.cmux,
                   TAGS.postman,
                   TAGS.obsidian,
+                  TAGS.ohMyZsh
                 ]}
               />
             </Card>
