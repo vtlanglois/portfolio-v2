@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
-  ArrowRightIcon,
+  ArrowFatRightIcon,
   BalloonIcon,
   CactusIcon,
   CloudIcon,
@@ -163,7 +163,7 @@ export default function ThemeSelector() {
                 onClick={previousTheme}
               >
                 <span className="sr-only">Previous theme</span>
-                <ArrowRightIcon
+                <ArrowFatRightIcon
                   size={32}
                   weight="duotone"
                   className="rotate-180"
@@ -176,7 +176,7 @@ export default function ThemeSelector() {
                 onClick={nextTheme}
               >
                 <span className="sr-only">Next theme</span>
-                <ArrowRightIcon size={32} weight="duotone" />
+                <ArrowFatRightIcon size={32} weight="duotone" />
               </Orb>
               <Orb
                 tag="button"
@@ -185,7 +185,7 @@ export default function ThemeSelector() {
                 onClick={selectRandomTheme}
               >
                 <span className="sr-only">Random theme</span>
-                <ShuffleIcon size={32} weight="duotone" />
+                <ShuffleIcon size={32} />
               </Orb>
             </motion.span>
           )}
@@ -220,7 +220,7 @@ export default function ThemeSelector() {
 function ThemeIcon({ theme }: { theme: string }) {
   switch (theme) {
     case "ocean":
-      return <WavesIcon size={32} weight="duotone" />;
+      return <WavesIcon size={32} />;
     case "dunes":
       return <CactusIcon size={32} weight="duotone" />;
     case "lava":
@@ -228,7 +228,7 @@ function ThemeIcon({ theme }: { theme: string }) {
     case "spring":
       return <FlowerIcon size={32} weight="duotone" />;
     case "winter":
-      return <SnowflakeIcon size={32} weight="duotone" />;
+      return <SnowflakeIcon size={32}  />;
     case "pink":
       return <HorseIcon size={32} weight="duotone" />;
     case "rainbow":
@@ -252,7 +252,7 @@ function ThemeIcon({ theme }: { theme: string }) {
     case "cloudy":
       return <CloudIcon size={32} weight="duotone" />;
     case "arctic":
-      return <WindIcon size={32} weight="duotone" />;
+      return <WindIcon size={32} />;
     case "metro":
       return <SpeakerHifiIcon size={32} weight="duotone" />;
     case "dorfic":
