@@ -46,7 +46,7 @@ export default function Experience() {
           </Card>
           <div className="grid grid-cols-1 gap-4">
             <Card className="flex flex-col gap-2 timeline">
-              <div className="flex flex-row justify-between gap-1 flex-wrap">
+              <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold">
                   Senior Software Engineer at Eli Lilly & Company
                 </h3>
@@ -85,7 +85,7 @@ export default function Experience() {
               />
             </Card>
             <Card className="flex flex-col gap-2 timeline">
-              <div className="flex flex-row justify-between gap-1 flex-wrap">
+              <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold">
                   Software Engineer Intern at BCForward
                 </h3>
@@ -112,7 +112,7 @@ export default function Experience() {
               />
             </Card>
             <Card className="flex flex-col gap-2">
-              <div className="flex flex-row justify-between gap-1 flex-wrap">
+              <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold">
                   Community Outreach Intern at IU Luddy School
                 </h3>
