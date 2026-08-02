@@ -4,7 +4,7 @@ import Container from "../ui/Container";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
 import TagList from "../ui/TagList";
-import { TAGS } from "../../data/skills";
+import { hobbyTags, mediaTags, TAGS } from "../../data/skills";
 
 export default function About() {
   return (
@@ -53,20 +53,53 @@ export default function About() {
               </p>
             </Card>
             <Card className="row-span-1 col-span-2">
-              <h3 id="tech-interests" className="text-lg font-bold mb-2">
-                My technical interests
-              </h3>
-              <TagList
-              direction="col"
-                labelledBy="tech-interests"
-                tags={[
-                  TAGS.react,
-                  TAGS.accessibility,
-                  TAGS.educationTech,
-                  TAGS.gameDevelopment,
-                  TAGS.webDevelopment,
-                ]}
-              />
+              <Stack>
+                <div>
+                  <h3 id="tech-interests" className="text-lg font-bold mb-2">
+                    My technical interests
+                  </h3>
+                  <TagList
+                    labelledBy="tech-interests"
+                    tags={[
+                      TAGS.accessibility,
+                      TAGS.educationTech,
+                      TAGS.gameDevelopment,
+                      TAGS.webDevelopment,
+                    ]}
+                  />
+                </div>
+                <div>
+                  <h3
+                    id="personal-interests"
+                    className="text-lg font-bold mb-2"
+                  >
+                    My personal interests
+                  </h3>
+                  <TagList
+                    labelledBy="personal-interests"
+                    tags={[
+                      hobbyTags.legos,
+                      hobbyTags.gardening,
+                      hobbyTags.cooking,
+                      hobbyTags.nature,
+                    ]}
+                  />
+                </div>
+                <div>
+                  <h3 id="favorite-media" className="text-lg font-bold mb-2">
+                    My favorite media
+                  </h3>
+                  <TagList
+                    labelledBy="favorite-media"
+                    tags={[
+                      mediaTags.houseOfLeaves,
+                      mediaTags.starless,
+                      mediaTags.minecraft,
+                      mediaTags.cyberpunk,
+                    ]}
+                  />
+                </div>
+              </Stack>
             </Card>
             <Card className="row-span-1 col-span-2">
               <h3 className="text-lg font-bold">Fun Facts</h3>

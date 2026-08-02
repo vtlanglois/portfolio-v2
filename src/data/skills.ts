@@ -12,8 +12,8 @@ const frameworkTags = {
     text: "React Router v7",
     variant: "tech",
     icon: "atom",
-    group: "frameworks"
-  }
+    group: "frameworks",
+  },
 } as const satisfies Record<string, TagItem>;
 
 const languageTags = {
@@ -41,7 +41,12 @@ const languageTags = {
     icon: "file-code",
     group: "languages",
   },
-  c: { text: "C / C++", variant: "tech", icon: "file-code", group: "languages" },
+  c: {
+    text: "C / C++",
+    variant: "tech",
+    icon: "file-code",
+    group: "languages",
+  },
   html: {
     text: "HTML",
     variant: "tech",
@@ -53,7 +58,7 @@ const languageTags = {
     variant: "tech",
     icon: "file-code",
     group: "languages",
-  }
+  },
 } as const satisfies Record<string, TagItem>;
 
 const cssTags = {
@@ -105,7 +110,7 @@ const hardwareTags = {
     group: "hardware",
     icon: "circuit",
   },
-} as const satisfies Record<string, TagItem>;;
+} as const satisfies Record<string, TagItem>;
 
 const miscTags = {
   markdown: {
@@ -119,8 +124,8 @@ const miscTags = {
     variant: "tech",
     group: "misc",
     icon: "file-code",
-  }
-} as const satisfies Record<string, TagItem>;;
+  },
+} as const satisfies Record<string, TagItem>;
 
 const toolTags = {
   figma: { text: "Figma", variant: "tool", icon: "figma", group: "tool" },
@@ -170,7 +175,7 @@ const toolTags = {
   claudeCode: {
     text: "Claude Code",
     variant: "tool",
-    group: "tool"
+    group: "tool",
   },
   terminal: {
     text: "Terminal",
@@ -191,8 +196,8 @@ const toolTags = {
     text: "Oh My Zsh",
     variant: "tool",
     group: "tool",
-  }
-} as const satisfies Record<string, TagItem>;;
+  },
+} as const satisfies Record<string, TagItem>;
 
 const aiTags = {
   copilot: {
@@ -241,7 +246,7 @@ const interpersonalTags = {
   uiUX: {
     text: "UI / UX",
     variant: "topic",
-    group: "interpersonal"
+    group: "interpersonal",
   },
   prototyping: {
     text: "Prototyping",
@@ -313,7 +318,12 @@ const topicTags = {
     icon: "a11y",
     group: "topic",
   },
-  wcag: { text: "WCAG 2.1 / 2.2", variant: "topic", icon: "a11y", group: "topic" },
+  wcag: {
+    text: "WCAG 2.1 / 2.2",
+    variant: "topic",
+    icon: "a11y",
+    group: "topic",
+  },
   genai: { text: "GenAI", variant: "topic", icon: "robot", group: "ai" },
   gameDesign: {
     text: "Game Design",
@@ -347,6 +357,84 @@ const topicTags = {
   },
 } as const satisfies Record<string, TagItem>;
 
+export const hobbyTags: Record<string, TagItem> = {
+  legos: {
+    text: "LEGOs",
+    variant: "hobby",
+    group: "hobby",
+    icon: "lego",
+  },
+  gardening: {
+    text: "Gardening",
+    variant: "hobby",
+    group: "hobby",
+    icon: "potted-plant",
+  },
+  videoGames: {
+    text: "Video Games",
+    variant: "hobby",
+    group: "hobby",
+    icon: "controller",
+  },
+  nature: {
+    text: "Nature",
+    variant: "hobby",
+    group: "hobby",
+    icon: "hiking",
+  },
+  cooking: {
+    text: "Cooking",
+    variant: "hobby",
+    group: "hobby",
+    icon: "cooking",
+  },
+  reading: {
+    text: "Reading",
+    variant: "hobby",
+    group: "hobby",
+    icon: "book",
+  },
+};
+
+export const mediaTags: Record<string, TagItem> = {
+  houseOfLeaves: {
+    text: "House of Leaves",
+    variant: "hobby",
+    group: "hobby",
+    icon: "book",
+  },
+  mrBlueSky: {
+    text: "Mr Blue Sky",
+    variant: "hobby",
+    group: "hobby",
+    icon: "song",
+  },
+  starless: {
+    text: "Starless",
+    variant: "hobby",
+    group: "hobby",
+    icon: "song",
+  },
+  electricState: {
+    text: "The Electric State",
+    variant: "hobby",
+    group: "hobby",
+    icon: "book",
+  },
+  minecraft: {
+    text: "Minecraft",
+    variant: "hobby",
+    group: "hobby",
+    icon: "controller",
+  },
+  cyberpunk: {
+    text: "Cyberpunk 2077",
+    variant: "hobby",
+    group: "hobby",
+    icon: "controller",
+  },
+};
+
 export const TAGS = {
   ...frameworkTags,
   ...languageTags,
@@ -360,4 +448,4 @@ export const TAGS = {
   ...softSkillTags,
   ...interpersonalTags,
   ...topicTags,
-} as const satisfies Record<string, TagItem> ;
+} as const satisfies Record<string, TagItem>;
