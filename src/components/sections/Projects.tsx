@@ -47,7 +47,7 @@ export default function Projects() {
               tags={pybotProject.tags}
               link={pybotProject.externalUrl}
               altText={pybotProject.linkAltText}
-              className="row-span-4 grid grid-rows-subgrid"
+              className="row-span-3 grid grid-rows-subgrid"
             />
             <ProjectCard
               title={oledMatrixDisplayDemoProject.name}
@@ -55,7 +55,7 @@ export default function Projects() {
               tags={oledMatrixDisplayDemoProject.tags}
               link={oledMatrixDisplayDemoProject.externalUrl}
               altText={oledMatrixDisplayDemoProject.linkAltText}
-              className="row-span-4 grid grid-rows-subgrid"
+              className="row-span-3 grid grid-rows-subgrid"
             />
             <ProjectCard
               title={obsidianMarkdownSpedUpProject.name}
@@ -63,7 +63,7 @@ export default function Projects() {
               tags={obsidianMarkdownSpedUpProject.tags}
               link={obsidianMarkdownSpedUpProject.externalUrl}
               altText={obsidianMarkdownSpedUpProject.linkAltText}
-              className="row-span-4 grid grid-rows-subgrid"
+              className="row-span-3 grid grid-rows-subgrid"
             />
           </div>
         </Stack>

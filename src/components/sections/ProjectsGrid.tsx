@@ -28,7 +28,7 @@ export default function ProjectsGrid() {
                 tags={project.tags}
                 link={project.externalUrl}
                 altText={project.linkAltText}
-                className="row-span-4 grid grid-rows-subgrid"
+                className="row-span-3 grid grid-rows-subgrid"
               />
             ))}
           </div>
@@ -50,7 +50,7 @@ export default function ProjectsGrid() {
                 tags={demo.tags}
                 link={demo.externalUrl}
                 altText={demo.linkAltText}
-                className="row-span-4 grid grid-rows-subgrid"
+                className="row-span-3 grid grid-rows-subgrid"
               />
             ))}
           </div>
