@@ -29,18 +29,6 @@ export default function Skills() {
             fill="var(--section-color)"
             className="section-hill"
           >
-            {/* <animate
-              attributeName="d"
-              dur="10s"
-              repeatCount="indefinite"
-              calcMode="spline"
-              keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
-              values="
-          M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z;
-          M0 30 L0 16 Q120 8 240 14 Q340 20 440 8 Q560 2 680 12 L680 30 Z;
-          M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z
-        "
-            /> */}
           </path>
         </svg>
       </div>
