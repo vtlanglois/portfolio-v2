@@ -1,18 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import "./styles.css";
-import {
-  ArrowDownIcon,
-  CodepenLogoIcon,
-  LinkedinLogoIcon,
-} from "@phosphor-icons/react/dist/ssr";
-import { CODEPEN_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
-import Card from "@/components/ui/Card";
-import Orb from "@/components/ui/Orb";
-import GitHubLink from "@/components/ui/GitHubLink";
-import Stack from "@/components/ui/Stack";
 
-export default function Hero() {
+export default function Hero({ children }: { children?: React.ReactNode }) {
   useEffect(() => {
     const handleScroll = () => {
       const isMobile = window.innerWidth < 768;
@@ -75,17 +65,7 @@ export default function Hero() {
           </g>
         </svg>
       </div>
-      <div className="hero__content">
-        <Stack className="hero__card lg:w-2/3">
-          <Card className="flex flex-col gap-4">
-            <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">Projects</h1>
-            <p>
-              Projects I've worked on, showcasing my skills and experience in web development.
-            </p>
-          </Card>
-
-        </Stack>
-      </div>
+      <div className="hero__content">{children}</div>
     </section>
   );
 }

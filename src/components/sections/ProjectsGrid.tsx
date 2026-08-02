@@ -1,4 +1,4 @@
-import { KanbanIcon } from "@phosphor-icons/react/dist/ssr";
+
 import Card from "../ui/Card";
 import Container from "../ui/Container";
 import GitHubLink from "../ui/GitHubLink";
@@ -92,7 +92,7 @@ export default function Projects() {
               <h3 className="text-xl font-semibold ">RGB LED Demo</h3>
               <p>
                 An interactive educational experience built to demonstrate an
-                Arduino's analog and PWD pins for a young audience. Built for
+                Arduino&apos;s analog and PWD pins for a young audience. Built for
                 developers and educators alike.
               </p>
               <TagList
