@@ -114,7 +114,7 @@ export const jitterEffectDemo: ProjectItem = {
   id: "jitter-effect",
   name: "Jitter Effect Demo",
   summary:
-    "A demo of a jitter effect on letters, words, sentences, and containers. Inspired by the jitter effect on enclose.horse.",
+    "A demo of a jitter effect on letters, words, sentences, and containers. Inspired by enclose.horse.",
   tags: [TAGS.html, TAGS.css, TAGS.javascript],
   externalUrl: "https://codepen.io/vtlanglois/pen/vEKVjNW",
   linkAltText: "Link to Jitter Effect Demo on CodePen",
