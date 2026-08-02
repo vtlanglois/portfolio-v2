@@ -1,4 +1,10 @@
-import { UserCircleIcon } from "@phosphor-icons/react/dist/ssr";
+import {
+  DiscIcon,
+  GearIcon,
+  HandPointingIcon,
+  LegoIcon,
+  UserCircleIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
@@ -55,8 +61,12 @@ export default function About() {
             <Card className="row-span-1 col-span-2">
               <Stack>
                 <div>
-                  <h3 id="tech-interests" className="text-lg font-bold mb-2">
+                  <h3
+                    id="tech-interests"
+                    className="inline-flex w-full items-center justify-between text-lg font-bold mb-2"
+                  >
                     My technical interests
+                    <GearIcon size={20} weight="duotone" aria-hidden />
                   </h3>
                   <TagList
                     labelledBy="tech-interests"
@@ -65,15 +75,17 @@ export default function About() {
                       TAGS.educationTech,
                       TAGS.gameDevelopment,
                       TAGS.webDevelopment,
+                      TAGS.uiUX,
                     ]}
                   />
                 </div>
                 <div>
                   <h3
                     id="personal-interests"
-                    className="text-lg font-bold mb-2"
+                    className="inline-flex w-full items-center justify-between text-lg font-bold mb-2"
                   >
                     My personal interests
+                    <LegoIcon size={20} weight="duotone" aria-hidden />
                   </h3>
                   <TagList
                     labelledBy="personal-interests"
@@ -82,13 +94,17 @@ export default function About() {
                       hobbyTags.gardening,
                       hobbyTags.cooking,
                       hobbyTags.nature,
-                      hobbyTags.photography
+                      hobbyTags.photography,
                     ]}
                   />
                 </div>
                 <div>
-                  <h3 id="favorite-media" className="text-lg font-bold mb-2">
+                  <h3
+                    id="favorite-media"
+                    className="inline-flex w-full items-center justify-between text-lg font-bold mb-2"
+                  >
                     My favorite media
+                    <DiscIcon size={20} weight="duotone" aria-hidden />
                   </h3>
                   <TagList
                     labelledBy="favorite-media"
@@ -103,7 +119,10 @@ export default function About() {
               </Stack>
             </Card>
             <Card className="row-span-1 col-span-2">
-              <h3 className="text-lg font-bold">Fun Facts</h3>
+              <h3 className="inline-flex w-full items-center justify-between text-lg font-bold">
+                Fun Facts
+                <HandPointingIcon size={20} weight="duotone" aria-hidden />
+              </h3>
               <ul className="list-disc list-inside">
                 <li>I love to cook and experiment with new recipes.</li>
                 <li>
