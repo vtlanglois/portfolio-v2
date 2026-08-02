@@ -1,21 +1,7 @@
-"use client";
-import { useEffect } from "react";
 import "./styles.css";
 
 export default function Hero({ children }: { children?: React.ReactNode }) {
-  useEffect(() => {
-    const handleScroll = () => {
-      const isMobile = window.innerWidth < 768;
-      const scrollY = window.scrollY;
-      const hills = document.querySelectorAll("path.hill");
-      hills.forEach((hill, index) => {
-        const speed = (index + 1) * 0.018 * (isMobile ? 0.6 : 1); // Different speed for each layer
-        hill.setAttribute("transform", `translate(0, ${scrollY * speed})`);
-      });
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  
   return (
     <section id="hero" className="hero">
       <div className="hero__hills">
