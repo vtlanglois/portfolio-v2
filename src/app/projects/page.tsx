@@ -14,8 +14,8 @@ export default function ProjectsPage() {
               Projects
             </h1>
             <p>
-              Projects I&apos;ve worked on, showcasing my skills and experience in
-              web development.
+              Projects I&apos;ve worked on, ranging from web development to
+              Arduino!
             </p>
           </Card>
         </Stack>

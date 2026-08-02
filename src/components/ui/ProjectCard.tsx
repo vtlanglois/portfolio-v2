@@ -2,6 +2,7 @@ import { TagItem } from "@/types/tagTypes";
 import Card from "./Card";
 import TagList from "./TagList";
 import GitHubLink from "./GitHubLink";
+import CodePenLink from "./CodePenLink";
 
 export default function ProjectCard({
   title,
@@ -24,7 +25,11 @@ export default function ProjectCard({
       <p>{summary}</p>
       <TagList labelledBy="skills-tag-label" tags={tags} />
       <div className="text-end">
-        <GitHubLink href={link} alt={altText} />
+        {link.includes("github") ? (
+          <GitHubLink href={link} alt={altText} />
+        ) : (
+          <CodePenLink href={link} alt={altText} />
+        )}
       </div>
     </Card>
   );
