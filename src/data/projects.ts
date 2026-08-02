@@ -55,7 +55,7 @@ export const pybotProject: ProjectItem = {
   name: "PyBot",
   summary:
     "A Discord chatbot using OpenAI's GPT models. Used to demo LLMs at a youth STEM fair.",
-  tags: [TAGS.python, TAGS.genai, TAGS.educationTech, TAGS.apiIntegration],
+  tags: [TAGS.python, TAGS.genai, TAGS.apiIntegration],
   externalUrl: "https://github.com/vtlanglois/PyBot",
   linkAltText: "Link to PyBot on GitHub",
 };

@@ -82,6 +82,7 @@ export default function About() {
                       hobbyTags.gardening,
                       hobbyTags.cooking,
                       hobbyTags.nature,
+                      hobbyTags.photography
                     ]}
                   />
                 </div>

@@ -394,6 +394,12 @@ export const hobbyTags: Record<string, TagItem> = {
     group: "hobby",
     icon: "book",
   },
+  photography: {
+    text: "Photography",
+    variant: "hobby",
+    group: "hobby",
+    icon: "book",
+  }
 };
 
 export const mediaTags: Record<string, TagItem> = {
