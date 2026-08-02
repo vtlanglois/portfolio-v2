@@ -122,7 +122,7 @@ export const jitterEffectDemo: ProjectItem = {
 
 export const colorInterpolationMethodsDemo: ProjectItem = {
   id: "color-interpolation",
-  name: "Color Interpolation Methods Demo",
+  name: "Color Interpolation Methods",
   summary:
     "Demo of how different color interpolation methods change the final computed gradient.",
   tags: [TAGS.html, TAGS.css],
