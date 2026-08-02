@@ -27,8 +27,8 @@ export default function Hero() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section id="hero" className="hero">
-      <div className="hero__hills">
+    <section id="hero" className="home-hero">
+      <div className="home-hero__hills">
         <svg
           width="100%"
           viewBox="0 0 680 300"
@@ -82,8 +82,8 @@ export default function Hero() {
           </g>
         </svg>
       </div>
-      <div className="hero__content">
-        <Stack className="hero__card lg:w-2/3">
+      <div className="home-hero__content">
+        <Stack className="home-hero__card lg:w-2/3">
           <Card className="flex flex-col gap-4">
             <div>
               <p>Hello! My name is</p>
@@ -134,7 +134,7 @@ export default function Hero() {
             </div>
           </Card>
         </Stack>
-        <div className="hero__scroll flex flex-col items-center">
+        <div className="home-hero__scroll flex flex-col items-center">
           Scroll to see more
           <ArrowDownIcon size={16} weight="duotone" />
         </div>
