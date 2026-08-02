@@ -1,11 +1,14 @@
 import { KanbanIcon } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
-import GitHubLink from "../ui/GitHubLink";
 import Section from "../ui/Section";
 import Stack from "../ui/Stack";
-import TagList from "../ui/TagList";
-import { TAGS } from "@/data/skills";
+import ProjectCard from "../ui/ProjectCard";
+import {
+  obsidianMarkdownSpedUpProject,
+  oledMatrixDisplayDemoProject,
+  pybotProject,
+} from "@/data/projects";
 
 export default function Projects() {
   return (
@@ -50,64 +53,30 @@ export default function Projects() {
             <KanbanIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
-            <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 className="text-xl font-semibold ">PyBot</h3>
-              <p>
-                A Python-based chatbot that integrates with various APIs,
-                include OpenAI&apos;s GPT models. Used to demo GenAI to a
-                younger audience at a STEM event.
-              </p>
-              <TagList
-                labelledBy="skills-tag-label"
-                tags={[
-                  TAGS.python,
-                  TAGS.genai,
-                  TAGS.educationTech,
-                  TAGS.apiIntegration,
-                ]}
-              />
-              <div className="text-end">
-                <GitHubLink
-                  href="https://github.com/vtlanglois/PyBot"
-                  alt="Link to PyBot on GitHub"
-                />
-              </div>
-            </Card>
-            <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 className="text-xl font-semibold ">
-                OLED Matrix Display Demo
-              </h3>
-              <p>
-                A showcase of the capabilities of an OLED Screen for Arduino
-                devices for data visualization and animation.
-              </p>
-              <TagList
-                labelledBy="skills-tag-label"
-                tags={[TAGS.arduino, TAGS.educationTech]}
-              />
-              <div className="text-end">
-                <GitHubLink
-                  href="https://github.com/vtlanglois/OLED-Demo"
-                  alt="Link to OLED Matrix Display Demo on GitHub"
-                />
-              </div>
-            </Card>
-            <Card className="row-span-4 grid grid-rows-subgrid">
-              <h3 className="text-xl font-semibold ">
-                Obsidian Markdown Sped Up
-              </h3>
-              <p>
-                A set of custom Markdown snippets for Obsidian to speed up your
-                notetaking.
-              </p>
-              <TagList labelledBy="skills-tag-label" tags={[TAGS.typescript]} />
-              <div className="text-end">
-                <GitHubLink
-                  href="https://github.com/vtlanglois/obsidian-MarkdownSpedUp"
-                  alt="Link to Obsidian Markdown Sped Up on GitHub"
-                />
-              </div>
-            </Card>
+            <ProjectCard
+              title={pybotProject.name}
+              summary={pybotProject.summary}
+              tags={pybotProject.tags}
+              link={pybotProject.externalUrl}
+              altText={pybotProject.linkAltText}
+              className="row-span-4 grid grid-rows-subgrid"
+            />
+            <ProjectCard
+              title={oledMatrixDisplayDemoProject.name}
+              summary={oledMatrixDisplayDemoProject.summary}
+              tags={oledMatrixDisplayDemoProject.tags}
+              link={oledMatrixDisplayDemoProject.externalUrl}
+              altText={oledMatrixDisplayDemoProject.linkAltText}
+              className="row-span-4 grid grid-rows-subgrid"
+            />
+            <ProjectCard
+              title={obsidianMarkdownSpedUpProject.name}
+              summary={obsidianMarkdownSpedUpProject.summary}
+              tags={obsidianMarkdownSpedUpProject.tags}
+              link={obsidianMarkdownSpedUpProject.externalUrl}
+              altText={obsidianMarkdownSpedUpProject.linkAltText}
+              className="row-span-4 grid grid-rows-subgrid"
+            />
           </div>
         </Stack>
       </Container>
