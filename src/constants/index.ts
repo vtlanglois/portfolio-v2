@@ -15,7 +15,6 @@ export const THEMES = [
   "lava",
   "galaxy",
   "vaporwave",
-  "cmyk",
   "metro",
   "aqua",
   "dorfic",

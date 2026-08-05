@@ -14,14 +14,12 @@ import {
   HorseIcon,
   IceCreamIcon,
   LegoIcon,
-  LightningIcon,
   MeteorIcon,
   MinusIcon,
   OrangeSliceIcon,
   PlanetIcon,
   PlantIcon,
   PlusIcon,
-  PrinterIcon,
   RainbowCloudIcon,
   ShuffleIcon,
   SnowflakeIcon,
@@ -233,8 +231,6 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <HorseIcon size={32} weight="duotone" />;
     case "rainbow":
       return <RainbowCloudIcon size={32} weight="duotone" />;
-    case "cmyk":
-      return <PrinterIcon size={32} weight="duotone" />;
     case "neopolitan":
       return <IceCreamIcon size={32} weight="duotone" />;
     case "misty":

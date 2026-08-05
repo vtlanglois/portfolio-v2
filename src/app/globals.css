@@ -175,24 +175,6 @@
 }
 
 /* ============================================
-   CMYK
-   ============================================ */
-[data-theme="cmyk"] {
-  --sky-top: #ffffff;
-  --sky-bottom: #ffffff;
-  --hill-far: #00b8d4;
-  --hill-mid: #e800a0;
-  --hill-near: #f0e000;
-  --footer: #1a1a1a;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --section-1: var(--hill-near);
-  --section-2: #e800a0;
-  --section-3: #00b8d4;
-  --section-4: #a000c8;
-  --section-5: #0a6e00;
-  --section-6: #1a1a1a;
-}
-/* ============================================
    MISTY
    ============================================ */
 [data-theme="misty"] {
@@ -564,22 +546,6 @@
     --section-4: #503060;
     --section-5: #385830;
     --section-6: #583040;
-  }
-
-  [data-theme="cmyk"] {
-    --sky-top: #1a1a1a;
-    --sky-bottom: #2a2a2a;
-    --hill-far: #007a8a;
-    --hill-mid: #a00070;
-    --hill-near: #a09800;
-    --footer: #000000;
-    --card-bg: rgba(26, 26, 26, 0.5);
-    --section-1: #a09800;
-    --section-2: #a00070;
-    --section-3: #007a8a;
-    --section-4: #6a0088;
-    --section-5: #064800;
-    --section-6: #000000;
   }
 
   [data-theme="misty"] {
