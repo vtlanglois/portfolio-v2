@@ -11,7 +11,6 @@ import {
   DropIcon,
   FlowerIcon,
   GridNineIcon,
-  HorseIcon,
   IceCreamIcon,
   LegoIcon,
   MeteorIcon,
@@ -227,8 +226,6 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <FlowerIcon size={32} weight="duotone" />;
     case "winter":
       return <SnowflakeIcon size={32}  />;
-    case "pink":
-      return <HorseIcon size={32} weight="duotone" />;
     case "rainbow":
       return <RainbowCloudIcon size={32} weight="duotone" />;
     case "neopolitan":

@@ -21,7 +21,6 @@ export const THEMES = [
   "blocks",
   "bubblegum",
   "neopolitan",
-  "pink",
   "rainbow",
   "plain",
 ];
