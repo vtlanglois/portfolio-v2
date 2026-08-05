@@ -5,7 +5,6 @@ import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
   ArrowFatRightIcon,
-  BalloonIcon,
   CactusIcon,
   CloudIcon,
   DropIcon,
@@ -252,8 +251,6 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <DropIcon size={32} weight="duotone" />;
     case "vaporwave":
       return <GridNineIcon size={32} weight="duotone" />;
-    case "bubblegum":
-      return <BalloonIcon size={32} weight="duotone" />;
     case "bliss":
     default:
       return <PlantIcon size={32} weight="duotone" />;

@@ -19,7 +19,6 @@ export const THEMES = [
   "aqua",
   "dorfic",
   "blocks",
-  "bubblegum",
   "neopolitan",
   "rainbow",
   "plain",
