@@ -243,8 +243,6 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <LegoIcon size={32} weight="duotone" />;
     case "plain":
       return <SquareIcon size={32} weight="duotone" />;
-    case "neon":
-      return <LightningIcon size={32} weight="duotone" />;
     case "galaxy":
       return <PlanetIcon size={32} weight="duotone" />;
     case "sunset":
