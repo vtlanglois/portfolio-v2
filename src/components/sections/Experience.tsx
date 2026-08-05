@@ -119,9 +119,6 @@ export default function Experience() {
                   TAGS.projectManagement,
                   TAGS.teamwork,
                   TAGS.communication,
-                  TAGS.empathy,
-                  TAGS.crossFunctionalCollaboration,
-                  TAGS.crossCompanyCollaboration,
                   TAGS.adaptability,
                 ]}
               />

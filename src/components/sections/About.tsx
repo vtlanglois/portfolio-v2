@@ -1,4 +1,5 @@
 import {
+  ArrowSquareOutIcon,
   DiscIcon,
   GearIcon,
   HandPointingIcon,
@@ -27,21 +28,33 @@ export default function About() {
             </Card>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4">
-            <Card className="row-span-2 col-span-2 flex flex-col gap-2 text-pretty">
+            <Card className="row-span-2 col-span-2 flex flex-col gap-3 text-pretty">
               <p>
                 I&apos;m a passionate software engineer with a focus on web
-                development and accessibility. I graduated from Indiana
-                University with a Bachelor&apos;s degree in Computer Science and
-                a minor in Game Design. I have a strong foundation in computer
-                science principles and a keen interest in creating inclusive
-                digital experiences.
+                development, UI / UX, and accessibility. I graduated from Indiana
+                University in 2023 with a Bachelor&apos;s of Science in Computer
+                Science and a minor in Game Design. I have a strong foundation
+                in software development and have a keen interest in making digital experiences worth using.
               </p>
               <p>
-                I grew up surrounded by technology, from the early days on
+                I currently work at Eli Lilly. My work has included the initial release of LillyDirect®, which
+                you can see on{" "}
+                <a
+                  href="https://www.nbcnews.com/now/video/eli-lilly-launches-new-website-to-help-patients-get-weight-loss-drugs-201386053731"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline inline-flex items-center-safe"
+                >
+                  NBC News<ArrowSquareOutIcon/><span className="sr-only">(opens in new tab)</span>
+                </a>,
+                and various micro-frontends for Lilly digital experiences.
+              </p>
+              <p>
+                I grew up surrounded by technological innovation, from the early days of
                 online games to the rise of smartphones. I even had a desktop at
-                the age of 3, which sparked my curiosity about how things work
-                behind the scenes. This led to me to build my own personal games
-                and websites, and eventually to pursue a career in software
+                3 years old, which sparked my curiosity about how things work
+                behind the scenes. This led to me to build my own games
+                and websites and eventually to pursue a career in software
                 engineering.
               </p>
               <p>
@@ -49,13 +62,6 @@ export default function About() {
                 LEGO sets, Minecraft worlds, video games, furniture, paintings,
                 meals, and more! Give me something I can build, and I&apos;ll be
                 happy.
-              </p>
-              <p>
-                This website is my fourth revision of my portfolio. For this
-                take, I wanted to build off of what I learned about properly
-                designing a website and build something both technically and
-                aesthetically interesting. More sections and features will be
-                added in future updates!
               </p>
             </Card>
             <Card className="row-span-1 col-span-2">
