@@ -20,6 +20,5 @@ export const THEMES = [
   "dorfic",
   "blocks",
   "neopolitan",
-  "rainbow",
   "plain",
 ];

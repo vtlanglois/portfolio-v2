@@ -18,7 +18,6 @@ import {
   PlanetIcon,
   PlantIcon,
   PlusIcon,
-  RainbowCloudIcon,
   ShuffleIcon,
   SnowflakeIcon,
   SpeakerHifiIcon,
@@ -108,11 +107,8 @@ export default function ThemeSelector() {
       >
         <Orb
           tag="div"
-          className={
-            theme !== "rainbow"
-              ? "bg-(--hill-near) hover:bg-(--hill-far) mr-2 !hover:scale-100"
-              : "rainbow-orb filter hover:hue-rotate-30 mr-2 !hover:scale-100"
-          }
+          className=
+"bg-(--hill-near) hover:bg-(--hill-far) mr-2 !hover:scale-100"
           title={`Current theme: ${theme}.`}
         >
           {mounted ? (
@@ -225,8 +221,7 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <FlowerIcon size={32} weight="duotone" />;
     case "winter":
       return <SnowflakeIcon size={32}  />;
-    case "rainbow":
-      return <RainbowCloudIcon size={32} weight="duotone" />;
+
     case "neopolitan":
       return <IceCreamIcon size={32} weight="duotone" />;
     case "misty":
