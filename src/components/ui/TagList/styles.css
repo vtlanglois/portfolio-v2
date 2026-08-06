@@ -74,6 +74,13 @@
   transition: background-color var(--bgc-transition-speed) var(--bgc-transition-easing), border-color var(--bgc-transition-speed) var(--bgc-transition-easing);
 }
 
+[data-theme="blocks"] {
+  .tag {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .tag-list {
     --bg-alpha: 60%;
