@@ -90,8 +90,9 @@ export default function Nav() {
             >
               <NavLink href="/">Home</NavLink>
 
-              <NavLink href="/projects" className="md:mr-2">
-                Projects
+              <NavLink href="/projects">Projects</NavLink>
+              <NavLink href="/themes" className="md:mr-2">
+                Themes
               </NavLink>
             </motion.ul>
           )}
