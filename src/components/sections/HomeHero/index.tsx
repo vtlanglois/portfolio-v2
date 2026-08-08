@@ -91,9 +91,9 @@ export default function Hero() {
                 Vincent Langlois
               </h1>
             </div>
-            <p>
-              Engineer by trade, tinkerer by nature | Building things, breaking
-              things, learning everything
+            <p className="text-pretty">
+              Engineer by trade, tinkerer by nature. <br />
+              Building things, breaking things, learning everything.
             </p>
           </Card>
 
