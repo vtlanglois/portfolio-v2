@@ -51,31 +51,32 @@ export default function Experience() {
                 Indianapolis, IN •
                 <TimerIcon weight="duotone" aria-hidden /> +3 yrs
               </p>
-              <p className="text-pretty">
-                Currently working on developing scalable web applications and
-                systems to enhance the customer experience for Lilly&apos;s
-                online services, focusing on accessible user interfaces. Leading
-                a full-stack development team to deliver high-quality software
-                solutions.
-              </p>
+              <div className="flex flex-col gap-2">
+                <p>
+                  Currently revamping the logged-in experience for Lilly users.
+                </p>
+                <p className="text-pretty">
+                  Worked on developing scalable web applications and
+                  systems to enhance the customer experience for Lilly&apos;s
+                  online services, focusing on accessible user interfaces.
+                  Led a full-stack development team to deliver high-quality
+                  software solutions.
+                </p>
+                <p className="text-pretty">
+                  Worked on the initial launch of LillyDirect®. Learned the ropes of software engineering in a real-world, high-profile project.
+                </p>
+              </div>
               <span id="skills-tag-label" className="sr-only">
                 Skills
               </span>
               <TagList
                 labelledBy="skills-tag-label"
                 tags={[
-                  TAGS.typescript,
-                  TAGS.javascript,
-                  TAGS.react,
                   TAGS.webDevelopment,
-                  TAGS.bugHunting,
-                  TAGS.bugFixing,
                   TAGS.accessibility,
                   TAGS.nextjs,
-                  TAGS.documentation,
+                  TAGS.rrv7,
                   TAGS.codeReview,
-                  TAGS.tailwind,
-                  TAGS.apiIntegration,
                   TAGS.crossFunctionalCollaboration,
                   TAGS.adaptability,
                   TAGS.teamwork,
@@ -98,7 +99,8 @@ export default function Experience() {
               <p className="text-pretty">
                 Worked on developing features for the Indiana Prosecutor Case
                 Management System, focused on enhancing user experience and
-                customer support. Reduced customer support calls by the hundreds.
+                customer support. Reduced customer support calls by the
+                hundreds.
               </p>
               <TagList
                 labelledBy="skills-tag-label"
@@ -129,7 +131,8 @@ export default function Experience() {
               <p className="text-pretty">
                 Directed and coordinated community outreach programs, focused on
                 promoting STEM education and engaging with local schools to
-                inspire the next generation of technologists. Engaged students within the Luddy school.
+                inspire the next generation of technologists. Engaged students
+                within the Luddy school.
               </p>
               <TagList
                 labelledBy="skills-tag-label"
