@@ -1,0 +1,48 @@
+.theme-palette * {
+  height: 60px;
+  width: 10%;
+}
+
+.block-sky-top {
+  background-color: var(--sky-top);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.block-sky-bottom {
+  background-color: var(--sky-bottom);
+}
+
+.block-hill-far {
+  background-color: var(--hill-far);
+}
+
+.block-hill-mid {
+  background-color: var(--hill-mid);
+}
+
+.block-hill-near {
+  background-color: var(--hill-near);
+}
+
+.block-section-2 {
+  background-color: var(--section-2);
+}
+
+.block-section-3 {
+  background-color: var(--section-3);
+}
+
+.block-section-4 {
+  background-color: var(--section-4);
+}
+
+.block-section-5 {
+  background-color: var(--section-5);
+}
+
+.block-footer {
+  background-color: var(--footer);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}

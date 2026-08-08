@@ -5,29 +5,12 @@ import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
   ArrowFatRightIcon,
-  CactusIcon,
-  CloudIcon,
-  DropIcon,
-  FlowerIcon,
-  GridNineIcon,
-  IceCreamIcon,
-  LegoIcon,
-  MeteorIcon,
   MinusIcon,
-  OrangeSliceIcon,
-  PlanetIcon,
-  PlantIcon,
   PlusIcon,
   ShuffleIcon,
-  SnowflakeIcon,
-  SpeakerHifiIcon,
-  SquareIcon,
-  SunHorizonIcon,
-  TreeEvergreenIcon,
-  WavesIcon,
-  WindIcon,
 } from "@phosphor-icons/react";
 import Card from "./Card";
+import { ThemeIcon } from "./ThemeIcon";
 
 const variants: Variants = {
   initial: (d: number) => ({
@@ -206,47 +189,4 @@ export default function ThemeSelector() {
       </Card>
     </div>
   );
-}
-
-function ThemeIcon({ theme }: { theme: string }) {
-  switch (theme) {
-    case "ocean":
-      return <WavesIcon size={32} />;
-    case "dunes":
-      return <CactusIcon size={32} weight="duotone" />;
-    case "lava":
-      return <MeteorIcon size={32} weight="duotone" />;
-    case "spring":
-      return <FlowerIcon size={32} weight="duotone" />;
-    case "winter":
-      return <SnowflakeIcon size={32}  />;
-
-    case "neopolitan":
-      return <IceCreamIcon size={32} weight="duotone" />;
-    case "misty":
-      return <TreeEvergreenIcon size={32} weight="duotone" />;
-    case "blocks":
-      return <LegoIcon size={32} weight="duotone" />;
-    case "plain":
-      return <SquareIcon size={32} weight="duotone" />;
-    case "galaxy":
-      return <PlanetIcon size={32} weight="duotone" />;
-    case "sunset":
-      return <SunHorizonIcon size={32} weight="duotone" />;
-    case "cloudy":
-      return <CloudIcon size={32} weight="duotone" />;
-    case "arctic":
-      return <WindIcon size={32} />;
-    case "metro":
-      return <SpeakerHifiIcon size={32} weight="duotone" />;
-    case "dorfic":
-      return <OrangeSliceIcon size={32} weight="duotone" />;
-    case "aqua":
-      return <DropIcon size={32} weight="duotone" />;
-    case "vaporwave":
-      return <GridNineIcon size={32} weight="duotone" />;
-    case "bliss":
-    default:
-      return <PlantIcon size={32} weight="duotone" />;
-  }
 }
