@@ -197,6 +197,11 @@ const toolTags = {
     variant: "tool",
     group: "tool",
   },
+  biome: {
+    text: "Biome",
+    variant: "tool",
+    group: "tool",
+  },
 } as const satisfies Record<string, TagItem>;
 
 const aiTags = {
@@ -243,8 +248,13 @@ const interpersonalTags = {
     variant: "topic",
     group: "interpersonal",
   },
-  uiUX: {
-    text: "UI / UX",
+  ui: {
+    text: "User Interface",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  ux: {
+    text: "User Experience",
     variant: "topic",
     group: "interpersonal",
   },
@@ -399,7 +409,7 @@ export const hobbyTags: Record<string, TagItem> = {
     variant: "hobby",
     group: "hobby",
     icon: "book",
-  }
+  },
 };
 
 export const mediaTags: Record<string, TagItem> = {

@@ -54,24 +54,26 @@ export default function Skills() {
               <TagList
                 labelledBy="skills-web-dev"
                 tags={[
-                  TAGS.javascript,
-                  TAGS.typescript,
                   TAGS.react,
                   TAGS.nextjs,
                   TAGS.rrv7,
-                  TAGS.tailwind,
-                  TAGS.bootstrap,
                   TAGS.nodejs,
                   TAGS.vite,
-                  TAGS.accessibility,
+                  TAGS.typescript,
+                  TAGS.javascript,
                   TAGS.html,
+                  TAGS.tailwind,
+                  TAGS.bootstrap,
                   TAGS.css,
                   TAGS.scss,
+                  TAGS.accessibility,
+                  TAGS.wcag,
                   TAGS.storybook,
                   TAGS.jest,
                   TAGS.seo,
-                  TAGS.wcag,
                   TAGS.apiIntegration,
+                  TAGS.ui,
+                  TAGS.ux,
                 ]}
               />
             </Card>
@@ -129,7 +131,6 @@ export default function Skills() {
                   TAGS.gameTesting,
                   TAGS.promptEngineering,
                   TAGS.designSystems,
-                  TAGS.uiUX,
                 ]}
               />
             </Card>
@@ -161,6 +162,7 @@ export default function Skills() {
                   TAGS.postman,
                   TAGS.obsidian,
                   TAGS.ohMyZsh,
+                  TAGS.biome,
                 ]}
               />
             </Card>

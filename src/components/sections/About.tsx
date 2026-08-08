@@ -85,7 +85,8 @@ export default function About() {
                       TAGS.educationTech,
                       TAGS.gameDevelopment,
                       TAGS.webDevelopment,
-                      TAGS.uiUX,
+                      TAGS.ui,
+                      TAGS.ux,
                     ]}
                   />
                 </div>
