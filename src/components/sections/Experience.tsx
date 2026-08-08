@@ -96,9 +96,9 @@ export default function Experience() {
                 <TimerIcon weight="duotone" aria-hidden /> 3mos
               </p>
               <p className="text-pretty">
-                Worked on developing and maintaining the Indiana Prosecutor Case
+                Worked on developing features for the Indiana Prosecutor Case
                 Management System, focused on enhancing user experience and
-                performance.
+                customer support. Reduced customer support calls by the hundreds.
               </p>
               <TagList
                 labelledBy="skills-tag-label"
@@ -129,7 +129,7 @@ export default function Experience() {
               <p className="text-pretty">
                 Directed and coordinated community outreach programs, focused on
                 promoting STEM education and engaging with local schools to
-                inspire the next generation of technologists.
+                inspire the next generation of technologists. Engaged students within the Luddy school.
               </p>
               <TagList
                 labelledBy="skills-tag-label"

@@ -24,7 +24,7 @@ export const youtubeKidControllerProject: ProjectItem = {
   id: "youtube-kid-controller",
   name: "YouTube Kid Controller",
   summary:
-    "A YouTube controller for kids. Built with Arduino and Legos, designed for Windows & Chrome.",
+    "A YouTube controller designed for kids. Built with Arduino and Legos, works with Windows & Chrome.",
   tags: [TAGS.c, TAGS.arduino],
   externalUrl: "https://github.com/vtlanglois/ArduinoKidController-I341",
   linkAltText: "Link to YouTube Kid Controller on GitHub",
@@ -34,7 +34,7 @@ export const oledMatrixDisplayDemoProject: ProjectItem = {
   id: "oled-matrix-display-demo",
   name: "OLED Matrix Display Demo",
   summary:
-    "A showcase of the capabilities of an OLED Screen for Arduino devices.",
+    "A showcase of the capabilities of an OLED Screen for Arduino devices. Includes complex animation demos.",
   tags: [TAGS.c, TAGS.arduino, TAGS.educationTech],
   externalUrl: "https://github.com/vtlanglois/OLED-Demo",
   linkAltText: "Link to OLED Matrix Display Demo on GitHub",
@@ -64,8 +64,8 @@ export const runGZDoomProject: ProjectItem = {
   id: "run-gzdoom",
   name: "Run GZDoom S(hell)",
   summary:
-    "A very simple GZDoom file manager. Built as an experiment in writing BASH scripts.",
-  tags: [TAGS.bash],
+    "A very simple GZDoom file manager for the terminal. Built as an experiment in writing BASH scripts.",
+  tags: [TAGS.bash, TAGS.terminal],
   externalUrl: "https://github.com/vtlanglois/run-gzdoom.sh",
   linkAltText: "Link to Run GZDoom Sh(ell) on GitHub",
 };

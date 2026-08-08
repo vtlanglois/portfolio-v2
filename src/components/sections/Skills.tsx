@@ -28,8 +28,7 @@ export default function Skills() {
             d="M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z"
             fill="var(--section-color)"
             className="section-hill"
-          >
-          </path>
+          ></path>
         </svg>
       </div>
       <Container>
@@ -38,7 +37,9 @@ export default function Skills() {
             variation="heading"
             className="flex flex-row flex-wrap items-center justify-between"
           >
-            <h2 className="text-3xl font-bold leading-none">Skills and Tools</h2>
+            <h2 className="text-3xl font-bold leading-none">
+              Skills and Tools
+            </h2>
             <ListStarIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-2 gap-4">
@@ -159,7 +160,7 @@ export default function Skills() {
                   TAGS.cmux,
                   TAGS.postman,
                   TAGS.obsidian,
-                  TAGS.ohMyZsh
+                  TAGS.ohMyZsh,
                 ]}
               />
             </Card>

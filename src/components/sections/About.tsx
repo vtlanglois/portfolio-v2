@@ -31,31 +31,35 @@ export default function About() {
             <Card className="row-span-2 col-span-2 flex flex-col gap-3 text-pretty">
               <p>
                 I&apos;m a passionate software engineer with a focus on web
-                development, UI / UX, and accessibility. I graduated from Indiana
-                University in 2023 with a Bachelor&apos;s of Science in Computer
-                Science and a minor in Game Design. I have a strong foundation
-                in software development and have a keen interest in making digital experiences worth using.
+                development, UI / UX, and accessibility. I graduated from
+                Indiana University Bloomington in 2023 with a Bachelor&apos;s of
+                Science in Computer Science and a minor in Game Design. I have a
+                strong foundation in software development and have a keen
+                interest in making digital experiences worth using by everyone
+                and anyone.
               </p>
               <p>
-                I currently work at Eli Lilly. My work has included the initial release of LillyDirect®, which
-                you can see on{" "}
+                I currently work at Eli Lilly. My work includes the initial
+                release of LillyDirect®, which you can see on{" "}
                 <a
                   href="https://www.nbcnews.com/now/video/eli-lilly-launches-new-website-to-help-patients-get-weight-loss-drugs-201386053731"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-700 underline inline-flex items-center-safe"
                 >
-                  NBC News<ArrowSquareOutIcon/><span className="sr-only">(opens in new tab)</span>
-                </a>,
-                and various micro-frontends for Lilly digital experiences.
+                  NBC News
+                  <ArrowSquareOutIcon />
+                  <span className="sr-only">(opens in new tab)</span>
+                </a>
+                , and various micro-frontends for Lilly websites.
               </p>
               <p>
-                I grew up surrounded by technological innovation, from the early days of
-                online games to the rise of smartphones. I even had a desktop at
-                3 years old, which sparked my curiosity about how things work
-                behind the scenes. This led to me to build my own games
-                and websites and eventually to pursue a career in software
-                engineering.
+                As a 2000s kid, I grew up alongside technological innovation, from the early
+                days of online games to the rise of smartphones. I even had a
+                desktop at 3 years-old, which sparked my curiosity about how
+                tech worked behind the scenes. This led to me to build my own
+                games and websites. Eventually, this led me to pursue a career
+                in software engineering.
               </p>
               <p>
                 I&apos;m also a big fan of building and making things, including
@@ -96,10 +100,10 @@ export default function About() {
                   <TagList
                     labelledBy="personal-interests"
                     tags={[
+                      hobbyTags.nature,
                       hobbyTags.legos,
                       hobbyTags.gardening,
                       hobbyTags.cooking,
-                      hobbyTags.nature,
                       hobbyTags.photography,
                     ]}
                   />
@@ -136,16 +140,14 @@ export default function About() {
                   narratives and immersive worlds.
                 </li>
                 <li>
-                  I got a reasonable-sized collection of LEGO sets and comic
-                  books, which I love to display and show off.
+                  I grown a collection of LEGO sets and comic
+                  books throughout the years.
                 </li>
                 <li>
-                  I have a passion for photography and enjoy capturing moments
-                  in nature and urban settings.
+                  I have a passion for photography, especially nature, urban, and liminal spaces.
                 </li>
                 <li>
-                  I enjoy worldbuilding and creating immersive experiences,
-                  whether in games or through storytelling.
+                  I enjoy writing stories and worlds, especially sci-fi and modern settings.
                 </li>
               </ul>
             </Card>
