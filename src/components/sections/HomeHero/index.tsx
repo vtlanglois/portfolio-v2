@@ -86,7 +86,7 @@ export default function Hero() {
         <Stack className="home-hero__card lg:w-2/3">
           <Card className="flex flex-col gap-4">
             <div>
-              <p>Hello! My name is</p>
+              <p>Hello! I am</p>
               <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
                 Vincent Langlois
               </h1>
@@ -105,7 +105,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-700 hover:bg-blue-800"
-                title="Link to Vincent's LinkedIn profile"
+                title="Link to Vincent Langlois's LinkedIn profile (opens in new tab)"
               >
                 <LinkedinLogoIcon
                   size={32}
@@ -115,7 +115,7 @@ export default function Hero() {
               </Orb>
               <GitHubLink
                 href={GITHUB_URL}
-                alt="Link to Vincent's GitHub profile"
+                alt="Link to Vincent Langlois's GitHub profile (opens in new tab)"
               />
               <Orb
                 tag="a"
@@ -123,7 +123,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-gray-900"
-                title="Link to Vincent's Codepen profile"
+                title="Link to Vincent Langlois's Codepen profile (opens in new tab)"
               >
                 <CodepenLogoIcon
                   size={32}
