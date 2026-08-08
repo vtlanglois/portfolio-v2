@@ -99,6 +99,7 @@ export default function Nav() {
         <Orb
           tag="button"
           className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+          aria-label={hidden ? "Open navigation" : "Close navigation"}
           onClick={toggleHidden}
         >
           <ListIcon size={32} />
