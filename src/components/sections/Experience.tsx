@@ -63,7 +63,7 @@ export default function Experience() {
                   software solutions.
                 </p>
                 <p className="text-pretty">
-                  Worked on the initial launch of LillyDirect®. Learned the ropes of software engineering in a real-world, high-profile project.
+                  Worked on the initial launch of LillyDirect®. Learned the ropes of software development practices and lifecycle in a real-world, high-profile project.
                 </p>
               </div>
               <span id="skills-tag-label" className="sr-only">
