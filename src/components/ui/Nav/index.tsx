@@ -4,7 +4,7 @@ import "./styles.css";
 import Orb from "../Orb";
 import { AnimatePresence, motion } from "framer-motion";
 import Card from "../Card";
-import { ListIcon } from "@phosphor-icons/react/dist/ssr";
+import { ListIcon, XIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 const desktopVariants = {
@@ -102,7 +102,21 @@ export default function Nav() {
           aria-label={hidden ? "Open navigation" : "Close navigation"}
           onClick={toggleHidden}
         >
-          <ListIcon size={32} />
+          <AnimatePresence mode="popLayout" initial={false}>
+            <motion.div
+              key={hidden ? "open" : "close"}
+              initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+              animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+              exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+              transition={{
+                type: "spring",
+                duration: 0.4,
+                bounce: 0,
+              }}
+            >
+              {hidden ? <ListIcon size={32} /> : <XIcon size={32} />}
+            </motion.div>
+          </AnimatePresence>
         </Orb>
       </Card>
     </nav>
