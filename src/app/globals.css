@@ -115,26 +115,6 @@
 }
 
 /* ============================================
-   PINK
-   ============================================ */
-
-[data-theme="pink"] {
-  --sky-top: #90d8f0;
-  --sky-bottom: #c8eef8;
-  --hill-far: #f0c8e0;
-  --hill-mid: #e878a8;
-  --hill-near: #d44888;
-  --footer: #6a1a48;
-  --card-bg: rgba(255, 245, 250, 0.8);
-  --section-1: var(--hill-near);
-  --section-2: #b83878;
-  --section-3: #922860;
-  --section-4: #6e1a48;
-  --section-5: #521238;
-  --section-6: #3a0c28;
-}
-
-/* ============================================
    WINTER
    ============================================ */
 
@@ -154,44 +134,6 @@
   --section-6: #2a4858;
 }
 
-/* ============================================
-   RAINBOW
-   ============================================ */
-
-[data-theme="rainbow"] {
-  --sky-top: #60c8f0;
-  --sky-bottom: #b8e8f8;
-  --hill-far: #c0a0e0;
-  --hill-mid: #e8a0b8;
-  --hill-near: #a0d8b0;
-  --footer: #8a7a9a;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --section-1: var(--hill-near);
-  --section-2: #a0c8e8;
-  --section-3: #e8c8a0;
-  --section-4: #c8a0c0;
-  --section-5: #a8d0a0;
-  --section-6: #d0a8b0;
-}
-
-/* ============================================
-   CMYK
-   ============================================ */
-[data-theme="cmyk"] {
-  --sky-top: #ffffff;
-  --sky-bottom: #ffffff;
-  --hill-far: #00b8d4;
-  --hill-mid: #e800a0;
-  --hill-near: #f0e000;
-  --footer: #1a1a1a;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --section-1: var(--hill-near);
-  --section-2: #e800a0;
-  --section-3: #00b8d4;
-  --section-4: #a000c8;
-  --section-5: #0a6e00;
-  --section-6: #1a1a1a;
-}
 /* ============================================
    MISTY
    ============================================ */
@@ -283,24 +225,7 @@
   --section-5: #20050f;
   --section-6: #140308;
 }
-/* ============================================
-   NEON
-   ============================================ */
-[data-theme="neon"] {
-  --sky-top: #0a0a0a;
-  --sky-bottom: #140a1e;
-  --hill-far: #0af0e0;
-  --hill-mid: #e000f0;
-  --hill-near: #00f040;
-  --footer: #050505;
-  --card-bg: rgba(250, 250, 250, 0.8);
-  --section-1: var(--hill-near);
-  --section-2: #f0e000;
-  --section-3: #f06000;
-  --section-4: #0060f0;
-  --section-5: #e000f0;
-  --section-6: #0a0a0a;
-}
+
 /* ============================================
    GALAXY
    ============================================ */
@@ -426,26 +351,6 @@
 }
 
 /* ============================================
-   BUBBLEGUM
-   ============================================ */
-
-[data-theme="bubblegum"] {
-  --sky-top: #f060a0;
-  --sky-bottom: #f8a0c8;
-  --hill-far: #80d0f8;
-  --hill-mid: #f8a0d0;
-  --hill-near: #f03878;
-  --footer: #780828;
-  --card-bg: rgba(255, 240, 248, 0.8);
-  --section-1: var(--hill-near);
-  --section-2: #c02860;
-  --section-3: #f060a0;
-  --section-4: #40b8f0;
-  --section-5: #2890c8;
-  --section-6: #186898;
-}
-
-/* ============================================
    DARK MODE
    ============================================ */
 
@@ -517,22 +422,6 @@
     --section-6: #2e1e06;
   }
 
-  [data-theme="pink"] {
-    --sky-top: #14080e;
-    --sky-bottom: #221018;
-    --hill-far: #3a1828;
-    --hill-mid: #6a1a40;
-    --hill-near: #8a2258;
-    --footer: #3a0c28;
-    --card-bg: rgba(20, 8, 14, 0.5);
-    --section-1: #8a2258;
-    --section-2: #6e1a48;
-    --section-3: #521238;
-    --section-4: #3a0c28;
-    --section-5: #280820;
-    --section-6: #1a0518;
-  }
-
   [data-theme="spring"] {
     --background: #14080e;
     --foreground: #f8e0ee;
@@ -565,38 +454,6 @@
     --section-4: #101820;
     --section-5: #0c1418;
     --section-6: #080e14;
-  }
-
-  [data-theme="rainbow"] {
-    --sky-top: #0d1b2a;
-    --sky-bottom: #1a3048;
-    --hill-far: #4a3a6a;
-    --hill-mid: #6a3a50;
-    --hill-near: #3a6048;
-    --footer: #2a2038;
-    --card-bg: rgba(18, 14, 26, 0.5);
-    --section-1: #3a6048;
-    --section-2: #3a5068;
-    --section-3: #6a5430;
-    --section-4: #503060;
-    --section-5: #385830;
-    --section-6: #583040;
-  }
-
-  [data-theme="cmyk"] {
-    --sky-top: #1a1a1a;
-    --sky-bottom: #2a2a2a;
-    --hill-far: #007a8a;
-    --hill-mid: #a00070;
-    --hill-near: #a09800;
-    --footer: #000000;
-    --card-bg: rgba(26, 26, 26, 0.5);
-    --section-1: #a09800;
-    --section-2: #a00070;
-    --section-3: #007a8a;
-    --section-4: #6a0088;
-    --section-5: #064800;
-    --section-6: #000000;
   }
 
   [data-theme="misty"] {
@@ -676,22 +533,6 @@
     --section-4: #301020;
     --section-5: #200a18;
     --section-6: #140510;
-  }
-
-  [data-theme="neon"] {
-    --sky-top: #050505;
-    --sky-bottom: #0a0514;
-    --hill-far: #07a89c;
-    --hill-mid: #9a00a8;
-    --hill-near: #00a82c;
-    --footer: #020202;
-    --card-bg: rgba(5, 5, 5, 0.8);
-    --section-1: #00a82c;
-    --section-2: #a89c00;
-    --section-3: #a84200;
-    --section-4: #0042a8;
-    --section-5: #9a00a8;
-    --section-6: #050505;
   }
 
   [data-theme="galaxy"] {

@@ -5,24 +5,19 @@ import Orb from "./Orb";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import {
   ArrowFatRightIcon,
-  BalloonIcon,
   CactusIcon,
   CloudIcon,
   DropIcon,
   FlowerIcon,
   GridNineIcon,
-  HorseIcon,
   IceCreamIcon,
   LegoIcon,
-  LightningIcon,
   MeteorIcon,
   MinusIcon,
   OrangeSliceIcon,
   PlanetIcon,
   PlantIcon,
   PlusIcon,
-  PrinterIcon,
-  RainbowCloudIcon,
   ShuffleIcon,
   SnowflakeIcon,
   SpeakerHifiIcon,
@@ -112,11 +107,7 @@ export default function ThemeSelector() {
       >
         <Orb
           tag="div"
-          className={
-            theme !== "rainbow"
-              ? "bg-(--hill-near) hover:bg-(--hill-far) mr-1 md:mr-2 !hover:scale-100"
-              : "rainbow-orb filter hover:hue-rotate-30 mr-1 md:mr-2 !hover:scale-100"
-          }
+          className="bg-(--hill-near) hover:bg-(--hill-far) mr-2 !hover:scale-100"
           title={`Current theme: ${theme}.`}
         >
           {mounted ? (
@@ -229,12 +220,7 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <FlowerIcon size={32} weight="duotone" />;
     case "winter":
       return <SnowflakeIcon size={32}  />;
-    case "pink":
-      return <HorseIcon size={32} weight="duotone" />;
-    case "rainbow":
-      return <RainbowCloudIcon size={32} weight="duotone" />;
-    case "cmyk":
-      return <PrinterIcon size={32} weight="duotone" />;
+
     case "neopolitan":
       return <IceCreamIcon size={32} weight="duotone" />;
     case "misty":
@@ -243,8 +229,6 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <LegoIcon size={32} weight="duotone" />;
     case "plain":
       return <SquareIcon size={32} weight="duotone" />;
-    case "neon":
-      return <LightningIcon size={32} weight="duotone" />;
     case "galaxy":
       return <PlanetIcon size={32} weight="duotone" />;
     case "sunset":
@@ -261,8 +245,6 @@ function ThemeIcon({ theme }: { theme: string }) {
       return <DropIcon size={32} weight="duotone" />;
     case "vaporwave":
       return <GridNineIcon size={32} weight="duotone" />;
-    case "bubblegum":
-      return <BalloonIcon size={32} weight="duotone" />;
     case "bliss":
     default:
       return <PlantIcon size={32} weight="duotone" />;

@@ -21,10 +21,10 @@ export default function ProjectCard({
 }) {
   return (
     <Card className={className}>
-      <h3 className="text-xl font-semibold ">{title}</h3>
-      <p>{summary}</p>
+      <h3 className="text-xl font-semibold text-balance">{title}</h3>
+      <p className="text-pretty">{summary}</p>
       <div className="flex items-start justify-between text-end">
-              <TagList labelledBy="skills-tag-label" tags={tags} />
+        <TagList labelledBy="skills-tag-label" tags={tags} />
         {link.includes("github") ? (
           <GitHubLink href={link} alt={altText} />
         ) : (

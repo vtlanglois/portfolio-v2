@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import "./styles.css";
 import {
-  ArrowDownIcon,
+  ArrowCircleDownIcon,
   CodepenLogoIcon,
   LinkedinLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
@@ -136,7 +136,7 @@ export default function Hero() {
         </Stack>
         <div className="home-hero__scroll flex flex-col items-center">
           Scroll to see more
-          <ArrowDownIcon size={16} weight="duotone" />
+          <ArrowCircleDownIcon size={24} weight="duotone" />
         </div>
       </div>
     </section>
