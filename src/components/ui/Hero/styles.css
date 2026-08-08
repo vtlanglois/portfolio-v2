@@ -25,7 +25,7 @@
 .hero__hills svg {
   display: block;
   width: 100%;
-  height: auto;
+  height: 50svh;
   margin-bottom: -2px;
 }
 
@@ -65,7 +65,7 @@
 
 @media (min-width: 768px) {
   .hero__hills svg {
-    height: 40dvh;
+    height: 40svh;
   }
 }
 
