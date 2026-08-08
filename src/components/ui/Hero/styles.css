@@ -25,7 +25,7 @@
 .hero__hills svg {
   display: block;
   width: 100%;
-  height: 40dvh;
+  height: 45dvh;
   margin-bottom: -2px;
 }
 
@@ -61,6 +61,12 @@
     inset 0 -1px 0 rgba(250, 250, 250, 0.1),
     inset 0 0 26px 13px rgba(250, 250, 250, 0.13);
   backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+  .hero__hills svg {
+    height: 40dvh;
+  }
 }
 
 @keyframes hillFar {
