@@ -105,7 +105,7 @@ export default function ThemeSelector() {
       <Card
         size="small"
         variation="interface"
-        className="absolute lg:fixed top-4 left-4 flex flex-row z-10"
+        className="absolute fixed top-4 left-4 flex flex-row z-10"
         aria-expanded={!hidden}
         aria-label="Theme selector. Click to expand or collapse theme options."
         aria-description="Allows you to change the website theme. Click the arrows to cycle through themes, or the shuffle icon to select a random theme."
@@ -114,8 +114,8 @@ export default function ThemeSelector() {
           tag="div"
           className={
             theme !== "rainbow"
-              ? "bg-(--hill-near) hover:bg-(--hill-far) mr-2 !hover:scale-100"
-              : "rainbow-orb filter hover:hue-rotate-30 mr-2 !hover:scale-100"
+              ? "bg-(--hill-near) hover:bg-(--hill-far) mr-1 md:mr-2 !hover:scale-100"
+              : "rainbow-orb filter hover:hue-rotate-30 mr-1 md:mr-2 !hover:scale-100"
           }
           title={`Current theme: ${theme}.`}
         >
@@ -153,7 +153,7 @@ export default function ThemeSelector() {
                 transformOrigin: "left center",
                 overflow: hidden ? "hidden" : "inherit",
               }}
-              className="flex flex-row gap-2 "
+              className="flex flex-row gap-1 md:gap-2 "
               key="box"
             >
               <Orb
@@ -193,7 +193,7 @@ export default function ThemeSelector() {
 
         <Orb
           tag="button"
-          className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 ml-2 "
+          className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 ml-1 md:ml-2 "
           title={hidden ? "Expand theme selector" : "Collapse Theme Selector"}
           onClick={toggleHidden}
         >
