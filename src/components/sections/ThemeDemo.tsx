@@ -175,7 +175,7 @@ export default function ThemeDemo() {
             className="flex flex-row flex-wrap items-center justify-between"
           >
             <h2 className="text-3xl font-bold leading-none">
-              Online Aesthetic Themes
+              Internet Themes
             </h2>
             <GlobeIcon size={30} weight="duotone" />
           </Card>
