@@ -13,9 +13,13 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Vincent Langlois - Software Engineer",
+  title: {
+    template: "%s | Vincent Langlois - Software Engineer",
+    default: "Vincent Langlois - Software Engineer"
+  },
   description:
     "Portfolio website for Vincent Langlois, a software engineer specializing in frontend development.",
+  creator: "Vincent Langlois",
 };
 
 export default function RootLayout({
