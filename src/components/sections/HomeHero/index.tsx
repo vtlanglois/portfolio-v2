@@ -38,11 +38,15 @@ export default function Hero() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  // Remove SMIL <animate> elements on mount when the user prefers reduced motion.
+  // Remove SMIL <animate> elements on mount for reduced-motion users and on
+  // mobile, where the continuous d-attribute repaint competes with scroll input.
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mq.matches) {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const isMobile = window.innerWidth < 768;
+    if (prefersReducedMotion || isMobile) {
       const svgs = document.querySelectorAll(".home-hero__hills svg");
       svgs.forEach((svg) => {
         svg

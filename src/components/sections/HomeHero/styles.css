@@ -37,12 +37,14 @@
   animation: hillFar 13s ease-in-out infinite;
   transform-origin: bottom center;
   transition-delay: var(--bgc-delay-hill-far);
+  will-change: transform;
 }
 
 .hill-mid {
   animation: hillMid 9s ease-in-out infinite;
   transform-origin: bottom center;
   transition-delay: var(--bgc-delay-hill-mid);
+  will-change: transform;
 }
 
 .home-hero__content {
