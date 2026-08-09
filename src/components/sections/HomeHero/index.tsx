@@ -12,21 +12,30 @@ import Orb from "@/components/ui/Orb";
 import GitHubLink from "@/components/ui/GitHubLink";
 import Stack from "@/components/ui/Stack";
 
-
 export default function Hero() {
   useEffect(() => {
+    const shouldReduceScroll = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    if (shouldReduceScroll) return;
+    const hills = document.querySelectorAll<SVGPathElement>("path.hill");
+    let ticking = false;
+
     const handleScroll = () => {
-      const shouldReduceScroll = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (shouldReduceScroll) return;
-      const isMobile = window.innerWidth < 768;
-      const scrollY = window.scrollY;
-      const hills = document.querySelectorAll("path.hill");
-      hills.forEach((hill, index) => {
-        const speed = (index + 1) * 0.018 * (isMobile ? 0.6 : 1); // Different speed for each layer
-        hill.setAttribute("transform", `translate(0, ${scrollY * speed})`);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const isMobile = window.innerWidth < 768;
+        const scrollY = window.scrollY;
+        hills.forEach((hill, index) => {
+          const speed = (index + 1) * 0.018 * (isMobile ? 0.6 : 1);
+          hill.style.transform = `translateY(${scrollY * speed}px)`; // CSS transform, GPU-friendly
+        });
+        ticking = false;
       });
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   // Remove SMIL <animate> elements on mount when the user prefers reduced motion.
@@ -36,7 +45,9 @@ export default function Hero() {
     if (mq.matches) {
       const svgs = document.querySelectorAll(".home-hero__hills svg");
       svgs.forEach((svg) => {
-        svg.querySelectorAll("animate, animateTransform").forEach((el) => el.remove());
+        svg
+          .querySelectorAll("animate, animateTransform")
+          .forEach((el) => el.remove());
       });
     }
   }, []);
