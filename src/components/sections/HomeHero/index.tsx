@@ -17,7 +17,8 @@ export default function Hero() {
     const shouldReduceScroll = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    if (shouldReduceScroll) return;
+    const isMobile = window.innerWidth < 768;
+    if (shouldReduceScroll || isMobile) return;
     const hills = document.querySelectorAll<SVGPathElement>("path.hill");
     let ticking = false;
 
@@ -25,10 +26,9 @@ export default function Hero() {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
-        const isMobile = window.innerWidth < 768;
         const scrollY = window.scrollY;
         hills.forEach((hill, index) => {
-          const speed = (index + 1) * 0.018 * (isMobile ? 0.6 : 1);
+          const speed = (index + 1) * 0.018;
           hill.style.transform = `translateY(${scrollY * speed}px)`; // CSS transform, GPU-friendly
         });
         ticking = false;
