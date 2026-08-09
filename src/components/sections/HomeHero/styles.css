@@ -87,6 +87,24 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .home-hero * {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+
+  .home-hero__hills * {
+    animation-play-state: paused !important;
+  }
+
+  .home-hero__card,
+  .home-hero__scroll {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 @media (prefers-contrast: more) {
   .home-hero__scroll {
     padding: 0.75rem;
@@ -99,7 +117,7 @@
 
 @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
   .home-hero__scroll {
-        border-color: var(--contrast-border-color-dark);
+    border-color: var(--contrast-border-color-dark);
   }
 }
 

@@ -12,9 +12,12 @@ import Orb from "@/components/ui/Orb";
 import GitHubLink from "@/components/ui/GitHubLink";
 import Stack from "@/components/ui/Stack";
 
+
 export default function Hero() {
   useEffect(() => {
     const handleScroll = () => {
+      const shouldReduceScroll = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (shouldReduceScroll) return;
       const isMobile = window.innerWidth < 768;
       const scrollY = window.scrollY;
       const hills = document.querySelectorAll("path.hill");
@@ -25,6 +28,17 @@ export default function Hero() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  // Remove SMIL <animate> elements on mount when the user prefers reduced motion.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (mq.matches) {
+      const svgs = document.querySelectorAll(".home-hero__hills svg");
+      svgs.forEach((svg) => {
+        svg.querySelectorAll("animate, animateTransform").forEach((el) => el.remove());
+      });
+    }
   }, []);
   return (
     <section id="hero" className="home-hero">

@@ -2,7 +2,7 @@
 import { ReactNode, useState, useEffect } from "react";
 import "./styles.css";
 import Orb from "../Orb";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import Card from "../Card";
 import { ListIcon, XIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
@@ -64,62 +64,63 @@ export default function Nav() {
 
   return (
     <nav className="relative">
-      <Card
-        size="small"
-        variation="interface"
-        className="absolute fixed top-4 right-4 flex flex-row z-10"
-        aria-expanded={!hidden}
-      >
-        <AnimatePresence initial={hidden}>
-          {!hidden && (
-            <motion.ul
-              initial={
-                isMobile ? mobileVariants.initial : desktopVariants.initial
-              }
-              animate={
-                isMobile ? mobileVariants.animate : desktopVariants.animate
-              }
-              exit={isMobile ? mobileVariants.exit : desktopVariants.exit}
-              transition={{ type: "spring", duration: 0.35, bounce: 0 }}
-              style={{
-                transformOrigin: "right center",
-                overflow: hidden ? "hidden" : "inherit",
-              }}
-              className={`flex ${isMobile ? "flex-col items-stretch absolute top-full right-0 pt-2 nav-menu" : "flex-row"} gap-2 items-center`}
-              key="box"
-            >
-              <NavLink href="/">Home</NavLink>
-
-              <NavLink href="/projects">Projects</NavLink>
-              <NavLink href="/themes" className="md:mr-2">
-                Themes
-              </NavLink>
-            </motion.ul>
-          )}
-        </AnimatePresence>
-        <Orb
-          tag="button"
-          className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
-          aria-label={hidden ? "Open navigation" : "Close navigation"}
-          onClick={toggleHidden}
+      <MotionConfig reducedMotion="user">
+        <Card
+          size="small"
+          variation="interface"
+          className="absolute fixed top-4 right-4 flex flex-row z-10"
+          aria-expanded={!hidden}
         >
-          <AnimatePresence mode="popLayout" initial={false}>
-            <motion.div
-              key={hidden ? "open" : "close"}
-              initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
-              animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-              exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
-              transition={{
-                type: "spring",
-                duration: 0.4,
-                bounce: 0,
-              }}
-            >
-              {hidden ? <ListIcon size={32} /> : <XIcon size={32} />}
-            </motion.div>
+          <AnimatePresence initial={hidden}>
+            {!hidden && (
+              <motion.ul
+                initial={
+                  isMobile ? mobileVariants.initial : desktopVariants.initial
+                }
+                animate={
+                  isMobile ? mobileVariants.animate : desktopVariants.animate
+                }
+                exit={isMobile ? mobileVariants.exit : desktopVariants.exit}
+                transition={{ type: "spring", duration: 0.35, bounce: 0 }}
+                style={{
+                  transformOrigin: "right center",
+                  overflow: hidden ? "hidden" : "inherit",
+                }}
+                className={`flex ${isMobile ? "flex-col items-stretch absolute top-full right-0 pt-2 nav-menu" : "flex-row"} gap-2 items-center`}
+                key="box"
+              >
+                <NavLink href="/">Home</NavLink>
+                <NavLink href="/projects">Projects</NavLink>
+                <NavLink href="/themes" className="md:mr-2">
+                  Themes
+                </NavLink>
+              </motion.ul>
+            )}
           </AnimatePresence>
-        </Orb>
-      </Card>
+          <Orb
+            tag="button"
+            className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+            aria-label={hidden ? "Open navigation" : "Close navigation"}
+            onClick={toggleHidden}
+          >
+            <AnimatePresence mode="popLayout" initial={false}>
+              <motion.div
+                key={hidden ? "open" : "close"}
+                initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+                animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+                transition={{
+                  type: "spring",
+                  duration: 0.4,
+                  bounce: 0,
+                }}
+              >
+                {hidden ? <ListIcon size={32} /> : <XIcon size={32} />}
+              </motion.div>
+            </AnimatePresence>
+          </Orb>
+        </Card>
+      </MotionConfig>
     </nav>
   );
 }
