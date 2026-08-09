@@ -21,7 +21,7 @@ body:has(main > section[data-section="4"]:last-child) svg#footer-divider {
 footer #footer-divider {
   display: block;
   width: 100%;
-  height: 10dvh;
+  height: 10svh;
   transition: background-color var(--bgc-transition-speed) var(--bgc-transition-easing);
 }
 
