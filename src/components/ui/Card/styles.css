@@ -22,7 +22,6 @@
 .glass-card.heading {
   padding-inline: 1rem;
   padding-block: 0.75rem;
-  background: color-mix(in srgb, var(--sky-top) 30%, var(--card-bg) 60%);
   background: linear-gradient(
     to bottom,
     color-mix(in srgb, var(--sky-top) 30%, var(--card-bg) 60%),
