@@ -23,8 +23,7 @@ export default function Footer() {
           d="M-10 45 L-10 12 Q60 2 150 8 Q220 14 280 6 Q320 1 360 8 Q410 16 480 7 Q570 -2 690 14 L690 45 Z"
           fill="var(--footer)"
           className="section-hill"
-        >
-        </path>
+        ></path>
       </svg>
 
       <div className="bg-(--footer) text-white">
@@ -38,18 +37,6 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-row gap-6 justify-center items-center">
-              <a
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Link to Vincent's LinkedIn profile"
-              >
-                <LinkedinLogoIcon
-                  size={32}
-                  weight="duotone"
-                  className="text-slate-50"
-                />
-              </a>
               <a
                 href={GITHUB_URL}
                 target="_blank"
@@ -69,6 +56,18 @@ export default function Footer() {
                 title="Link to Vincent's Codepen profile"
               >
                 <CodepenLogoIcon
+                  size={32}
+                  weight="duotone"
+                  className="text-slate-50"
+                />
+              </a>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Link to Vincent's LinkedIn profile"
+              >
+                <LinkedinLogoIcon
                   size={32}
                   weight="duotone"
                   className="text-slate-50"
