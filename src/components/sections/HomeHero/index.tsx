@@ -128,19 +128,6 @@ export default function Hero() {
 
           <Card size="small" variation="interface">
             <div className="flex flex-row gap-6 lg:gap-12 justify-center items-center flex-wrap">
-              <Orb
-                tag="a"
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="dark:bg-slate-600 bg-slate-200 hover:bg-blue-800 hover:text-slate-50"
-                title="Link to Vincent Langlois's LinkedIn profile (opens in new tab)"
-              >
-                <LinkedinLogoIcon
-                  size={32}
-                  weight="duotone"
-                />
-              </Orb>
               <GitHubLink
                 href={GITHUB_URL}
                 alt="Link to Vincent Langlois's GitHub profile (opens in new tab)"
@@ -153,10 +140,17 @@ export default function Hero() {
                 className="dark:bg-slate-600 bg-slate-200 hover:bg-gray-900 hover:text-slate-50"
                 title="Link to Vincent Langlois's Codepen profile (opens in new tab)"
               >
-                <CodepenLogoIcon
-                  size={32}
-                  weight="duotone"
-                />
+                <CodepenLogoIcon size={32} weight="duotone" />
+              </Orb>
+              <Orb
+                tag="a"
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:bg-slate-600 bg-slate-200 hover:bg-blue-800 hover:text-slate-50"
+                title="Link to Vincent Langlois's LinkedIn profile (opens in new tab)"
+              >
+                <LinkedinLogoIcon size={32} weight="duotone" />
               </Orb>
             </div>
           </Card>
