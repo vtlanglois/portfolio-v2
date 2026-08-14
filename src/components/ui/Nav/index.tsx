@@ -99,7 +99,7 @@ export default function Nav() {
           </AnimatePresence>
           <Orb
             tag="button"
-            className={`${hidden ? "bg-slate-200/80 hover:bg-slate-400" : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
+            className={`${hidden ? "bg-green-400/80 hover:bg-green-600" : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
             aria-label={hidden ? "Open navigation" : "Close navigation"}
             onClick={toggleHidden}
           >
