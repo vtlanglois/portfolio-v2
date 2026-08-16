@@ -1,4 +1,4 @@
-import { LaptopIcon } from "@phosphor-icons/react/dist/ssr";
+import { LaptopIcon  } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
@@ -7,7 +7,7 @@ import TagList from "../ui/TagList";
 import { TAGS } from "@/data/skills";
 import {
   MapPinSimpleAreaIcon,
-  TimerIcon,
+  TimerIcon 
 } from "@phosphor-icons/react/dist/ssr";
 
 export default function Experience() {
@@ -36,7 +36,7 @@ export default function Experience() {
             className="flex flex-row flex-wrap items-center justify-between"
           >
             <h2 className="text-3xl font-bold leading-none">Experience</h2>
-            <LaptopIcon size={30} weight="duotone" />
+            <LaptopIcon className="colored-icon" size={30} weight="duotone" />
           </Card>
           <div className="grid grid-cols-1 gap-4">
             <Card className="flex flex-col gap-2 timeline">
@@ -47,9 +47,9 @@ export default function Experience() {
                 <p>July 2023 - Present</p>
               </div>
               <p className="text-sm inline-flex items-center gap-1">
-                <MapPinSimpleAreaIcon weight="duotone" aria-hidden />{" "}
+                <MapPinSimpleAreaIcon className="colored-icon" weight="duotone" aria-hidden />{" "}
                 Indianapolis, IN •
-                <TimerIcon weight="duotone" aria-hidden /> +3 yrs
+                <TimerIcon className="colored-icon" weight="duotone" aria-hidden /> +3 yrs
               </p>
               <div className="flex flex-col gap-2">
                 <p>
@@ -92,9 +92,9 @@ export default function Experience() {
               </div>
               <p className="text-sm inline-flex items-center gap-1">
                 {" "}
-                <MapPinSimpleAreaIcon weight="duotone" aria-hidden />
+                <MapPinSimpleAreaIcon className="colored-icon" weight="duotone" aria-hidden />
                 Carmel, IN •
-                <TimerIcon weight="duotone" aria-hidden /> 3mos
+                <TimerIcon className="colored-icon" weight="duotone" aria-hidden /> 3mos
               </p>
               <p className="text-pretty">
                 Worked on developing features for the Indiana Prosecutor Case
@@ -124,8 +124,8 @@ export default function Experience() {
                 <p>August 2020 - July 2023</p>
               </div>
               <p className="text-sm inline-flex items-center gap-1">
-                <MapPinSimpleAreaIcon weight="duotone" aria-hidden />{" "}
-                Bloomington, IN • <TimerIcon weight="duotone" aria-hidden /> 2
+                <MapPinSimpleAreaIcon className="colored-icon" weight="duotone" aria-hidden />{" "}
+                Bloomington, IN • <TimerIcon className="colored-icon" weight="duotone" aria-hidden /> 2
                 yrs 11mos
               </p>
               <p className="text-pretty">

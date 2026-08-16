@@ -713,3 +713,14 @@ body::after {
     animation: none;
   }
 }
+
+h2 ~ svg path[opacity="0.2"] {
+  color: var(--hill-near);
+  opacity: 0.4 !important;
+}
+
+h3 svg path[opacity="0.2"],
+.colored-icon path[opacity="0.2"] {
+  color: var(--sky-top);
+  opacity: 0.2 !important;
+}

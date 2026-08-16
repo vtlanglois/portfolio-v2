@@ -1,7 +1,7 @@
 import {
-  FileCodeIcon,
   GlobeIcon,
   ListStarIcon,
+  RobotIcon,
   ToolboxIcon,
   UsersThreeIcon,
 } from "@phosphor-icons/react/dist/ssr";
@@ -109,7 +109,7 @@ export default function Skills() {
                 className="inline-flex items-center justify-between text-xl font-semibold "
               >
                 Technical
-                <FileCodeIcon size={24} weight="duotone" />
+                <RobotIcon size={24} weight="duotone" />
               </h3>
               <TagList
                 labelledBy="skills-technical"
