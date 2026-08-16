@@ -36,7 +36,7 @@ export default function Experience() {
             className="flex flex-row flex-wrap items-center justify-between"
           >
             <h2 className="text-3xl font-bold leading-none">Experience</h2>
-            <LaptopIcon className="colored-icon" size={30} weight="duotone" />
+            <LaptopIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-cols-1 gap-4">
             <Card className="flex flex-col gap-2 timeline">
