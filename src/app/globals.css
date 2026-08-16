@@ -724,3 +724,11 @@ h3 svg path[opacity="0.2"],
   color: var(--sky-top);
   opacity: 0.2 !important;
 }
+
+ul.list-disc li:nth-child(2n)::marker {
+  color: var(--section-4);
+}
+
+ul.list-disc li:nth-child(2n+1)::marker {
+  color: var(--section-5);
+}
