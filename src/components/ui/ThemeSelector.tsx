@@ -84,7 +84,7 @@ export default function ThemeSelector() {
         <Card
           size="small"
           variation="interface"
-          className="absolute fixed top-4 left-4 flex flex-row z-10"
+          className="absolute fixed top-4 left-4 flex flex-row z-10 !rounded-full"
           aria-expanded={!hidden}
           aria-label="Theme selector. Click to expand or collapse theme options."
           aria-description="Allows you to change the website theme. Click the arrows to cycle through themes, or the shuffle icon to select a random theme."

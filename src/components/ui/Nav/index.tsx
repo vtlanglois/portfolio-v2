@@ -68,7 +68,7 @@ export default function Nav() {
         <Card
           size="small"
           variation="interface"
-          className="absolute fixed top-4 right-4 flex flex-row z-10"
+          className="absolute fixed top-4 right-4 flex flex-row z-10 !rounded-full"
           aria-expanded={!hidden}
         >
           <AnimatePresence initial={hidden}>
@@ -99,7 +99,7 @@ export default function Nav() {
           </AnimatePresence>
           <Orb
             tag="button"
-            className={`${hidden ? "bg-green-400/80 hover:bg-green-600" : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
+            className={`${hidden ? "dark:bg-slate-600 bg-slate-200 hover:bg-slate-400 " : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
             aria-label={hidden ? "Open navigation" : "Close navigation"}
             onClick={toggleHidden}
           >
