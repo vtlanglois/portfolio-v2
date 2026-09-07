@@ -1,5 +1,6 @@
 "use client";
 import { ReactNode, useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import "./styles.css";
 import Orb from "../Orb";
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
@@ -41,6 +42,8 @@ export default function Nav() {
     setHidden(!hidden);
   };
 
+  const pathname = usePathname();
+
   function NavLink({
     href,
     className,
@@ -54,7 +57,8 @@ export default function Nav() {
       <li>
         <Link
           href={href}
-          className={`nav-link font-bold rounded-full flex w-full md:w-auto items-center justify-center md:justify-start opacity-80 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600 bg-slate-200 hover:bg-slate-400 !hover:scale-100 active:scale-90 ${className ? className : ""}`}
+          aria-current={pathname === href}
+          className={`aria-[current="true"]:bg-slate-400 nav-link font-bold rounded-full flex w-full md:w-auto items-center justify-center md:justify-start opacity-80 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600 bg-slate-200 hover:bg-slate-400 !hover:scale-100 active:scale-90 ${className ? className : ""}`}
         >
           {children}
         </Link>
