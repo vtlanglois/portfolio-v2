@@ -42,7 +42,7 @@ export default function Experience() {
             <Card className="flex flex-col gap-2 timeline">
               <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold text-balance">
-                  Senior Software Engineer at Eli Lilly & Company
+                Senior Software Engineer at <i>Eli Lilly & Company</i>
                 </h3>
                 <p>July 2023 - Present</p>
               </div>
@@ -86,7 +86,7 @@ export default function Experience() {
             <Card className="flex flex-col gap-2 timeline">
               <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold text-balance">
-                  Software Engineer Intern at BCForward
+                  Software Engineer Intern at <i>BCForward</i>
                 </h3>
                 <p>May 2022 - August 2022</p>
               </div>
@@ -119,7 +119,7 @@ export default function Experience() {
             <Card className="flex flex-col gap-2">
               <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
                 <h3 className="text-xl font-semibold text-balance">
-                  Community Outreach Intern at IU Luddy School
+                  Community Outreach Intern at <i>IU Luddy School</i>
                 </h3>
                 <p>August 2020 - July 2023</p>
               </div>
