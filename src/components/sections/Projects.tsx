@@ -1,4 +1,4 @@
-import { KanbanIcon } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRightIcon, KanbanIcon } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
@@ -9,6 +9,7 @@ import {
   oledMatrixDisplayDemoProject,
   pybotProject,
 } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -27,8 +28,7 @@ export default function Projects() {
             d="M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z"
             fill="var(--section-color)"
             className="section-hill"
-          >
-          </path>
+          ></path>
         </svg>
       </div>
       <Container>
@@ -40,7 +40,7 @@ export default function Projects() {
             <h2 className="text-3xl font-bold leading-none">Projects</h2>
             <KanbanIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-rows-1 lg:grid-cols-4 gap-4">
             <ProjectCard
               title={pybotProject.name}
               summary={pybotProject.summary}
@@ -65,6 +65,16 @@ export default function Projects() {
               altText={obsidianMarkdownSpedUpProject.linkAltText}
               className="row-span-3 grid grid-rows-subgrid"
             />
+            <Card className="row-span-3 grid grid-rows-subgrid">
+              <p>...and many more!</p>
+              <div style={{ visibility: "hidden" }} />
+              <Link
+                href="/projects"
+                className="flex items-center justify-between gap-2 font-bold rounded-full opacity-80 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600 bg-slate-200 hover:bg-slate-400 "
+              >
+                View all projects <ArrowRightIcon size={24} weight="bold" />
+              </Link>
+            </Card>
           </div>
         </Stack>
       </Container>
