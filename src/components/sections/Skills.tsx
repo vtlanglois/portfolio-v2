@@ -43,7 +43,7 @@ export default function Skills() {
             <ListStarIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-2 gap-4">
-            <Card className="row-span-2 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid lg:!rounded-br-[3px]">
               <h3
                 id="skills-web-dev"
                 className="inline-flex items-center justify-between text-xl font-semibold "
@@ -77,10 +77,10 @@ export default function Skills() {
                 ]}
               />
             </Card>
-            <Card className="row-span-2 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid lg:!rounded-bl-[3px]">
               <h3
                 id="skills-interpersonal"
-                className="inline-flex items-center justify-between text-xl font-semibold "
+                className="inline-flex items-center justify-between text-xl font-semibold"
               >
                 Interpersonal
                 <UsersThreeIcon size={24} weight="duotone" />
@@ -103,7 +103,7 @@ export default function Skills() {
                 ]}
               />
             </Card>
-            <Card className="row-span-2 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid lg:!rounded-tr-[3px]">
               <h3
                 id="skills-technical"
                 className="inline-flex items-center justify-between text-xl font-semibold "
@@ -134,7 +134,7 @@ export default function Skills() {
                 ]}
               />
             </Card>
-            <Card className="row-span-2 grid grid-rows-subgrid">
+            <Card className="row-span-2 grid grid-rows-subgrid lg:!rounded-tl-[3px]">
               <h3
                 id="skills-tools"
                 className="inline-flex items-center justify-between  text-xl font-semibold "
