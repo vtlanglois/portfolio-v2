@@ -19,7 +19,7 @@
 
 .glass-card.heading {
   padding-inline: 1rem;
-  padding-block: 0.75rem;
+  /* padding-block: 0.75rem; */
   background: linear-gradient(
     to bottom,
     color-mix(in srgb, var(--sky-top) 30%, transparent 60%),
