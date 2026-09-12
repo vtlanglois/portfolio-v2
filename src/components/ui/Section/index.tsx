@@ -19,7 +19,7 @@ export function SectionDivider({
     <div className="section-divider">
       <svg
         width="100%"
-        viewBox="0 0 680 30"
+        viewBox="0 0 680 25"
         preserveAspectRatio="xMidYMax slice"
         xmlns="http://www.w3.org/2000/svg"
         style={{ display: "block" }}
