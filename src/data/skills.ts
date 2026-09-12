@@ -134,6 +134,11 @@ const toolTags = {
     variant: "tool",
     group: "tool",
   },
+  ghActions: {
+    text: "GitHub Actions",
+    variant: "tool",
+    group: "tool",
+  },
   storybook: {
     text: "Storybook",
     variant: "tool",

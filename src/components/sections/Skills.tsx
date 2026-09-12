@@ -147,10 +147,11 @@ export default function Skills() {
                 tags={[
                   TAGS.git,
                   TAGS.github,
-                  TAGS.figma,
+                  TAGS.ghActions,
                   TAGS.copilot,
                   TAGS.claudeCode,
                   TAGS.vscode,
+                  TAGS.figma,
                   TAGS.jira,
                   TAGS.confluence,
                   TAGS.slack,
