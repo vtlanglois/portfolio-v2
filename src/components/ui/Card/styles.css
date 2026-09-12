@@ -22,8 +22,8 @@
   padding-block: 0.75rem;
   background: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--sky-top) 30%, var(--card-bg) 60%),
-    color-mix(in srgb, var(--sky-bottom) 40%, var(--card-bg) 50%)
+    color-mix(in srgb, var(--sky-top) 30%, transparent 60%),
+    color-mix(in srgb, var(--sky-bottom) 40%, var(--card-bg) 40%)
   );
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
