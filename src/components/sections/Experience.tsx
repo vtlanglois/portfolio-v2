@@ -1,7 +1,7 @@
 import { LaptopIcon  } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
-import Section from "../ui/Section";
+import Section, { SectionDivider } from "../ui/Section";
 import Stack from "../ui/Stack";
 import TagList from "../ui/TagList";
 import { TAGS } from "@/data/skills";
@@ -13,22 +13,7 @@ import {
 export default function Experience() {
   return (
     <Section id="experience" sectionNumber={3}>
-      <div className="section-divider">
-        <svg
-          width="100%"
-          viewBox="0 0 680 30"
-          preserveAspectRatio="xMidYMax slice"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{ display: "block" }}
-          fill="var(--section-color)"
-          className="mb-[-4px]"
-        >
-          <path
-            d="M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z"
-            className="section-hill"
-          ></path>
-        </svg>
-      </div>
+      <SectionDivider variant="wave" />
       <Container>
         <Stack>
           <Card
