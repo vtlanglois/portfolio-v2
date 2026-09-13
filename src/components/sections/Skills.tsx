@@ -50,6 +50,7 @@ export default function Skills() {
                   TAGS.bootstrap,
                   TAGS.css,
                   TAGS.scss,
+                  TAGS.motion,
                   TAGS.accessibility,
                   TAGS.wcag,
                   TAGS.storybook,

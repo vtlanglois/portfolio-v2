@@ -109,6 +109,11 @@ const miscTags = {
     variant: "tech",
     group: "misc",
   },
+  motion: {
+    text: "Framer Motion",
+    variant: "tech",
+    group: "misc"
+  }
 } as const satisfies Record<string, TagItem>;
 
 const toolTags = {
