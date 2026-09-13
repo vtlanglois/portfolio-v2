@@ -10,7 +10,7 @@ export const portfolioProject: ProjectItem = {
   linkAltText: "",
 };
 
-export const altasM1Project: ProjectItem = {
+export const atlasM1Project: ProjectItem = {
   id: "atlas-m-1",
   name: "Atlas M-1",
   summary:
@@ -149,9 +149,10 @@ export const codePenDemos: Array<ProjectItem> = [
   colorInterpolationMethodsDemo,
 ];
 
+export const miscellaneousProjects: Array<ProjectItem> = [atlasM1Project];
+
 const projects: Array<ProjectItem> = [
   // portfolioProject,
-  // altasM1Project,
   pybotProject,
   youtubeKidControllerProject,
   oledMatrixDisplayDemoProject,

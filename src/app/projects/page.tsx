@@ -2,6 +2,7 @@ import ProjectsGrid from "@/components/sections/GitHubProjectsGrid";
 import Card from "@/components/ui/Card";
 import Hero from "@/components/ui/Hero";
 import CodepenProjectsGrid from "@/components/sections/CodepenProjectsGrid";
+import MiscProjectsGrid from "@/components/sections/MiscProjectsGrid";
 import Stack from "@/components/ui/Stack";
 
 export default function ProjectsPage() {
@@ -22,6 +23,7 @@ export default function ProjectsPage() {
       </Hero>
       <ProjectsGrid />
       <CodepenProjectsGrid />
+      <MiscProjectsGrid />
     </>
   );
 }
