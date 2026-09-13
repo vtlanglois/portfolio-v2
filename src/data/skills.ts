@@ -1,17 +1,15 @@
 import type { TagItem } from "../types/tagTypes";
 
 const frameworkTags = {
-  react: { text: "React", variant: "tech", icon: "atom", group: "frameworks" },
+  react: { text: "React", variant: "tech", group: "frameworks" },
   nextjs: {
     text: "Next.js",
     variant: "tech",
-    icon: "atom",
     group: "frameworks",
   },
   rrv7: {
     text: "React Router v7",
     variant: "tech",
-    icon: "atom",
     group: "frameworks",
   },
 } as const satisfies Record<string, TagItem>;
@@ -20,43 +18,36 @@ const languageTags = {
   javascript: {
     text: "JavaScript",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
   typescript: {
     text: "TypeScript",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
   python: {
     text: "Python",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
   java: {
     text: "Java",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
   c: {
     text: "C / C++",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
   html: {
     text: "HTML",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
   bash: {
     text: "Bash",
     variant: "tech",
-    icon: "file-code",
     group: "languages",
   },
 } as const satisfies Record<string, TagItem>;
@@ -65,21 +56,18 @@ const cssTags = {
   tailwind: {
     text: "Tailwind",
     variant: "tech",
-    icon: "palette",
     group: "css",
   },
   bootstrap: {
     text: "Bootstrap",
     variant: "tech",
-    icon: "palette",
     group: "css",
   },
-  css: { text: "CSS", variant: "tech", icon: "file-code", group: "css" },
-  scss: { text: "SCSS", variant: "tech", icon: "file-code", group: "css" },
+  css: { text: "CSS", variant: "tech", group: "css" },
+  scss: { text: "SCSS", variant: "tech", group: "css" },
   sql: {
     text: "SQL",
     variant: "tech",
-    icon: "db",
     group: "misc",
   },
 } as const satisfies Record<string, TagItem>;
@@ -94,11 +82,10 @@ const backendTags = {
 } as const satisfies Record<string, TagItem>;
 
 const versionControlTags = {
-  git: { text: "Git", variant: "tool", icon: "git", group: "version control" },
+  git: { text: "Git", variant: "tool", group: "version control" },
   github: {
     text: "GitHub",
     variant: "tool",
-    icon: "github",
     group: "version control",
   },
 } as const satisfies Record<string, TagItem>;
@@ -108,7 +95,6 @@ const hardwareTags = {
     text: "Arduino",
     variant: "tech",
     group: "hardware",
-    icon: "circuit",
   },
 } as const satisfies Record<string, TagItem>;
 
@@ -117,18 +103,16 @@ const miscTags = {
     text: "Markdown",
     variant: "tech",
     group: "misc",
-    icon: "file-code",
   },
   vite: {
     text: "Vite",
     variant: "tech",
     group: "misc",
-    icon: "file-code",
   },
 } as const satisfies Record<string, TagItem>;
 
 const toolTags = {
-  figma: { text: "Figma", variant: "tool", icon: "figma", group: "tool" },
+  figma: { text: "Figma", variant: "tool", group: "tool" },
   vscode: {
     text: "Visual Studio Code",
     variant: "tool",
@@ -142,35 +126,30 @@ const toolTags = {
   storybook: {
     text: "Storybook",
     variant: "tool",
-    icon: "file-code",
     group: "tool",
   },
-  jest: { text: "Jest", variant: "tool", icon: "file-code", group: "tool" },
-  jira: { text: "JIRA", variant: "tool", group: "tool", icon: "browser" },
+  jest: { text: "Jest", variant: "tool", group: "tool" },
+  jira: { text: "JIRA", variant: "tool", group: "tool" },
   confluence: {
     text: "Confluence",
     variant: "tool",
     group: "tool",
-    icon: "browser",
   },
-  slack: { text: "Slack", variant: "tool", group: "tool", icon: "browser" },
+  slack: { text: "Slack", variant: "tool", group: "tool" },
   teams: {
     text: "Microsoft Teams",
     variant: "tool",
     group: "tool",
-    icon: "browser",
   },
   postman: {
     text: "Postman",
     variant: "tool",
     group: "tool",
-    icon: "browser",
   },
   voiceover: {
     text: "VoiceOver",
     variant: "tool",
     group: "tool",
-    icon: "a11y",
   },
   trello: {
     text: "Trello",
@@ -213,13 +192,11 @@ const aiTags = {
   copilot: {
     text: "GitHub Copilot",
     variant: "tool",
-    icon: "robot",
     group: "ai",
   },
   promptEngineering: {
     text: "Prompt Engineering",
     variant: "topic",
-    icon: "robot",
     group: "ai",
   },
 } as const satisfies Record<string, TagItem>;
@@ -229,19 +206,16 @@ const interpersonalTags = {
     text: "Project Management",
     variant: "human",
     group: "interpersonal",
-    icon: "users",
   },
   bugHunting: {
     text: "Bug Hunting",
     variant: "topic",
     group: "interpersonal",
-    icon: "bug",
   },
   bugFixing: {
     text: "Bug Fixing",
     variant: "topic",
     group: "interpersonal",
-    icon: "bug",
   },
   codeReview: {
     text: "Code Review",
@@ -278,13 +252,11 @@ const interpersonalTags = {
     text: "Cross-Functional Collaboration",
     variant: "human",
     group: "interpersonal",
-    icon: "users",
   },
   crossCompanyCollaboration: {
     text: "Cross-Company Collaboration",
     variant: "human",
     group: "interpersonal",
-    icon: "users",
   },
 } as const satisfies Record<string, TagItem>;
 
@@ -293,7 +265,6 @@ const softSkillTags = {
     text: "Teamwork",
     variant: "human",
     group: "soft",
-    icon: "users",
   },
   problemSolving: {
     text: "Problem Solving",
@@ -309,13 +280,11 @@ const softSkillTags = {
     text: "Mentorship",
     variant: "human",
     group: "soft",
-    icon: "users",
   },
   communication: {
     text: "Communication",
     variant: "human",
     group: "soft",
-    icon: "users",
   },
   passionate: { text: "Passionate", variant: "human", group: "soft" },
   continuousLearning: {
@@ -330,44 +299,37 @@ const topicTags = {
   accessibility: {
     text: "Accessibility",
     variant: "topic",
-    icon: "a11y",
     group: "topic",
   },
   wcag: {
     text: "WCAG 2.1 / 2.2",
     variant: "topic",
-    icon: "a11y",
     group: "topic",
   },
-  genai: { text: "GenAI", variant: "topic", icon: "robot", group: "ai" },
+  genai: { text: "GenAI", variant: "topic", group: "ai" },
   gameDesign: {
     text: "Game Design",
     variant: "topic",
     group: "topic",
-    icon: "palette",
   },
   gameDevelopment: {
     text: "Game Development",
     variant: "topic",
     group: "topic",
-    icon: "controller",
   },
   gameTesting: {
     text: "Game Testing",
     variant: "topic",
     group: "topic",
-    icon: "bug",
   },
   webDevelopment: {
     text: "Web Development",
     variant: "topic",
-    icon: "atom",
     group: "topic",
   },
   educationTech: {
     text: "Educational Tech",
     variant: "topic",
-    icon: "book",
     group: "topic",
   },
 } as const satisfies Record<string, TagItem>;
@@ -377,43 +339,36 @@ export const hobbyTags: Record<string, TagItem> = {
     text: "LEGOs",
     variant: "hobby",
     group: "hobby",
-    icon: "lego",
   },
   gardening: {
     text: "Gardening",
     variant: "hobby",
     group: "hobby",
-    icon: "potted-plant",
   },
   videoGames: {
     text: "Video Games",
     variant: "hobby",
     group: "hobby",
-    icon: "controller",
   },
   nature: {
     text: "Nature",
     variant: "hobby",
     group: "hobby",
-    icon: "hiking",
   },
   cooking: {
     text: "Cooking",
     variant: "hobby",
     group: "hobby",
-    icon: "cooking",
   },
   reading: {
     text: "Reading",
     variant: "hobby",
     group: "hobby",
-    icon: "book",
   },
   photography: {
     text: "Photography",
     variant: "hobby",
     group: "hobby",
-    icon: "book",
   },
 };
 
@@ -422,37 +377,31 @@ export const mediaTags: Record<string, TagItem> = {
     text: "House of Leaves",
     variant: "hobby",
     group: "hobby",
-    icon: "book",
   },
   mrBlueSky: {
     text: "Mr Blue Sky",
     variant: "hobby",
     group: "hobby",
-    icon: "song",
   },
   starless: {
     text: "Starless",
     variant: "hobby",
     group: "hobby",
-    icon: "song",
   },
   electricState: {
     text: "The Electric State",
     variant: "hobby",
     group: "hobby",
-    icon: "book",
   },
   minecraft: {
     text: "Minecraft",
     variant: "hobby",
     group: "hobby",
-    icon: "controller",
   },
   cyberpunk: {
     text: "Cyberpunk 2077",
     variant: "hobby",
     group: "hobby",
-    icon: "controller",
   },
 };
 
