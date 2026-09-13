@@ -11,8 +11,19 @@ import Card from "@/components/ui/Card";
 import Orb from "@/components/ui/Orb";
 import GitHubLink from "@/components/ui/GitHubLink";
 import Stack from "@/components/ui/Stack";
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 export default function Hero() {
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [150, 300], [1, 0]);
+  const scale = useTransform(scrollY, [150, 300], [1, 0.8]);
+  const prefersReducedMotion = useReducedMotion();
+
   useEffect(() => {
     const shouldReduceScroll = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
@@ -55,6 +66,7 @@ export default function Hero() {
       });
     }
   }, []);
+
   return (
     <section id="hero" className="home-hero">
       <div className="home-hero__hills">
@@ -155,10 +167,18 @@ export default function Hero() {
             </div>
           </Card>
         </Stack>
-        <div className="home-hero__scroll flex flex-col items-center">
-          Scroll to see more
-          <ArrowCircleDownIcon size={24} weight="duotone" />
-        </div>
+        <motion.div
+          id="scroll-more"
+          className="home-hero__scroll flex flex-col items-center"
+          style={
+            prefersReducedMotion ? { opacity: 1, scale: 1 } : { opacity, scale }
+          }
+        >
+          <div className="home-hero__scroll-callout flex flex-col items-center">
+            Scroll to see more
+            <ArrowCircleDownIcon size={24} weight="duotone" />
+          </div>
+        </motion.div>
       </div>
     </section>
   );
