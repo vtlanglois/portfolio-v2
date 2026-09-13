@@ -30,6 +30,7 @@
 }
 
 .hero__hills svg path {
+  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.1));
   transition: fill var(--bgc-transition-speed) var(--bgc-transition-easing);
 }
 
@@ -66,6 +67,12 @@
 @media (min-width: 768px) {
   .hero__hills svg {
     height: 40svh;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero__hills svg path {
+    filter: none;
   }
 }
 
