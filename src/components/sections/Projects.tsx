@@ -21,7 +21,7 @@ export default function Projects() {
             variation="heading"
             className="flex flex-row flex-wrap items-center justify-between"
           >
-            <h2 className="text-3xl font-bold leading-none">Projects</h2>
+            <h2 className="text-2xl font-bold leading-none">Projects</h2>
             <KanbanIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-4 gap-4">

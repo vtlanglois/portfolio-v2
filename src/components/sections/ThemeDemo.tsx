@@ -20,7 +20,7 @@ export default function ThemeDemo() {
               variation="heading"
               className="flex flex-row flex-wrap items-center justify-between"
             >
-              <h2 className="text-3xl font-bold leading-none">
+              <h2 className="text-2xl font-bold leading-none">
                 Design Approach
               </h2>
               <BlueprintIcon size={30} weight="duotone" />
@@ -105,7 +105,7 @@ export default function ThemeDemo() {
               variation="heading"
               className="flex flex-row flex-wrap items-center justify-between"
             >
-              <h2 className="text-3xl font-bold leading-none">Nature Themes</h2>
+              <h2 className="text-2xl font-bold leading-none">Nature Themes</h2>
               <MountainsIcon size={30} weight="duotone" />
             </Card>
             <div className="grid grid-rows-1 lg:grid-cols-4 gap-4">
@@ -196,7 +196,7 @@ export default function ThemeDemo() {
               variation="heading"
               className="flex flex-row flex-wrap items-center justify-between"
             >
-              <h2 className="text-3xl font-bold leading-none">
+              <h2 className="text-2xl font-bold leading-none">
                 Internet Themes
               </h2>
               <GlobeIcon size={30} weight="duotone" />
@@ -241,7 +241,7 @@ export default function ThemeDemo() {
               variation="heading"
               className="flex flex-row flex-wrap items-center justify-between"
             >
-              <h2 className="text-3xl font-bold leading-none">Misc Themes</h2>
+              <h2 className="text-2xl font-bold leading-none">Misc Themes</h2>
               <LightbulbIcon size={30} weight="duotone" />
             </Card>
             <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">

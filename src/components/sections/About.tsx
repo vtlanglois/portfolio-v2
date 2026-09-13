@@ -23,7 +23,7 @@ export default function About() {
               variation="heading"
               className="flex flex-row flex-wrap items-center justify-between"
             >
-              <h2 className="text-3xl font-bold leading-none">About Me</h2>
+              <h2 className="text-2xl font-bold leading-none">About Me</h2>
               <UserCircleIcon size={30} weight="duotone" />
             </Card>
           </div>

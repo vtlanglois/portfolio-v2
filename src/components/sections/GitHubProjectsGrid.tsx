@@ -16,7 +16,7 @@ export default function ProjectsGrid() {
             variation="heading"
             className="flex flex-row flex-wrap items-center justify-between"
           >
-            <h2 className="text-3xl font-bold leading-none">GitHub Projects</h2>
+            <h2 className="text-2xl font-bold leading-none">GitHub Projects</h2>
             <GitForkIcon size={30} weight="duotone" />
           </Card>
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">

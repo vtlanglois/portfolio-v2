@@ -17,7 +17,7 @@ export default function CodepenProjectsGrid() {
             variation="heading"
             className="flex flex-row flex-wrap items-center justify-between"
           >
-            <h2 className="text-3xl font-bold leading-none">
+            <h2 className="text-2xl font-bold leading-none">
               CodePen Projects
             </h2>
             <TabsIcon size={30} weight="duotone" />
