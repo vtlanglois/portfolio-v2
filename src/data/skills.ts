@@ -8,7 +8,7 @@ const frameworkTags = {
     group: "frameworks",
   },
   rrv7: {
-    text: "React Router v7",
+    text: "React Router",
     variant: "tech",
     group: "frameworks",
   },

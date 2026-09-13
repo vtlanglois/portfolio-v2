@@ -28,7 +28,7 @@ export default function About() {
             </Card>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4">
-            <Card className="row-span-2 col-span-2 flex flex-col gap-3 text-pretty">
+            <Card className="row-span-2 col-span-2 flex flex-col justify-between gap-3 text-pretty">
               <p>
                 I&apos;m a passionate software engineer with a focus on web
                 development, UI / UX, and accessibility. I graduated from
