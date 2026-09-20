@@ -68,7 +68,7 @@ export default function About() {
                 happy.
               </p>
             </Card>
-            <Card className="row-span-1 col-span-2 lg:!rounded-bl-[3px]">
+            <Card className="row-span-1 col-span-2">
               <Stack>
                 <div>
                   <h3
@@ -129,7 +129,7 @@ export default function About() {
                 </div>
               </Stack>
             </Card>
-            <Card className="row-span-1 col-span-2 lg:!rounded-tl-[3px]">
+            <Card className="row-span-1 col-span-2">
               <h3 className="inline-flex w-full items-center justify-between text-lg font-bold">
                 Fun Facts
                 <HandPointingIcon size={20} weight="duotone" aria-hidden />
