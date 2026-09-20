@@ -14,7 +14,7 @@ export default function GitHubLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="dark:bg-slate-600 bg-slate-200 hover:bg-purple-600 hover:text-slate-50"
+      className="dark:bg-slate-600 bg-slate-200 hover:bg-[#8534F3] hover:text-slate-50"
       title={alt}
     >
       <GithubLogoIcon size={32} weight="duotone"  />

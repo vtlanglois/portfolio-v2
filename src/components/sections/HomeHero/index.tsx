@@ -159,7 +159,7 @@ export default function Hero() {
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="dark:bg-slate-600 bg-slate-200 hover:bg-blue-800 hover:text-slate-50"
+                className="dark:bg-slate-600 bg-slate-200 hover:bg-[#0077b5] hover:text-slate-50"
                 title="Link to Vincent Langlois's LinkedIn profile (opens in new tab)"
               >
                 <LinkedinLogoIcon size={32} weight="duotone" />

@@ -14,7 +14,7 @@ export default function CodePenLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-gray-800 hover:bg-gray-900"
+      className="bg-gray-800 hover:bg-[#1F1E26]"
       title={alt}
     >
       <CodepenLogoIcon size={32} weight="duotone" className="text-slate-50 " />
