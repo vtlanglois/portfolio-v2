@@ -41,50 +41,23 @@ export default function Skills() {
                   TAGS.react,
                   TAGS.nextjs,
                   TAGS.rrv7,
-                  TAGS.nodejs,
-                  TAGS.vite,
                   TAGS.typescript,
                   TAGS.javascript,
+                  TAGS.nodejs,
+                  TAGS.apiIntegration,
                   TAGS.html,
-                  TAGS.tailwind,
-                  TAGS.bootstrap,
                   TAGS.css,
+                  TAGS.tailwind,
                   TAGS.scss,
-                  TAGS.motion,
+                  TAGS.bootstrap,
                   TAGS.accessibility,
                   TAGS.wcag,
                   TAGS.storybook,
                   TAGS.jest,
+                  TAGS.motion,
                   TAGS.seo,
-                  TAGS.apiIntegration,
                   TAGS.ui,
                   TAGS.ux,
-                ]}
-              />
-            </Card>
-            <Card className="row-span-2 grid grid-rows-subgrid">
-              <h3
-                id="skills-interpersonal"
-                className="inline-flex items-center justify-between text-xl font-semibold"
-              >
-                Interpersonal
-                <UsersThreeIcon size={24} weight="duotone" />
-              </h3>
-              <TagList
-                labelledBy="skills-interpersonal"
-                tags={[
-                  TAGS.projectManagement,
-                  TAGS.teamwork,
-                  TAGS.problemSolving,
-                  TAGS.crossFunctionalCollaboration,
-                  TAGS.communication,
-                  TAGS.documentation,
-                  TAGS.empathy,
-                  TAGS.crossCompanyCollaboration,
-                  TAGS.adaptability,
-                  TAGS.passionate,
-                  TAGS.mentorship,
-                  TAGS.continuousLearning,
                 ]}
               />
             </Card>
@@ -100,22 +73,22 @@ export default function Skills() {
                 labelledBy="skills-technical"
                 tags={[
                   TAGS.python,
+                  TAGS.sql,
+                  TAGS.bash,
                   TAGS.c,
                   TAGS.java,
-                  TAGS.bash,
-                  TAGS.arduino,
-                  TAGS.markdown,
                   TAGS.genai,
+                  TAGS.codeReview,
                   TAGS.bugHunting,
                   TAGS.bugFixing,
-                  TAGS.codeReview,
+                  TAGS.designSystems,
                   TAGS.prototyping,
-                  TAGS.sql,
+                  TAGS.promptEngineering,
+                  TAGS.markdown,
+                  TAGS.arduino,
                   TAGS.gameDevelopment,
                   TAGS.gameDesign,
                   TAGS.gameTesting,
-                  TAGS.promptEngineering,
-                  TAGS.designSystems,
                 ]}
               />
             </Card>
@@ -133,22 +106,48 @@ export default function Skills() {
                   TAGS.git,
                   TAGS.github,
                   TAGS.ghActions,
-                  TAGS.copilot,
-                  TAGS.claudeCode,
-                  TAGS.vscode,
                   TAGS.figma,
+                  TAGS.vscode,
+                  TAGS.postman,
                   TAGS.jira,
                   TAGS.confluence,
                   TAGS.slack,
                   TAGS.teams,
                   TAGS.voiceover,
                   TAGS.trello,
+                  TAGS.copilot,
+                  TAGS.claudeCode,
                   TAGS.terminal,
-                  TAGS.cmux,
-                  TAGS.postman,
+                  TAGS.biome,
                   TAGS.obsidian,
                   TAGS.ohMyZsh,
-                  TAGS.biome,
+                  TAGS.cmux,
+                ]}
+              />
+            </Card>
+            <Card className="row-span-2 grid grid-rows-subgrid">
+              <h3
+                id="skills-interpersonal"
+                className="inline-flex items-center justify-between text-xl font-semibold"
+              >
+                Interpersonal
+                <UsersThreeIcon size={24} weight="duotone" />
+              </h3>
+              <TagList
+                labelledBy="skills-interpersonal"
+                tags={[
+                  TAGS.projectManagement,
+                  TAGS.crossFunctionalCollaboration,
+                  TAGS.communication,
+                  TAGS.teamwork,
+                  TAGS.codeReview,
+                  TAGS.documentation,
+                  TAGS.problemSolving,
+                  TAGS.adaptability,
+                  TAGS.mentorship,
+                  TAGS.empathy,
+                  TAGS.ux,
+                  TAGS.continuousLearning,
                 ]}
               />
             </Card>
