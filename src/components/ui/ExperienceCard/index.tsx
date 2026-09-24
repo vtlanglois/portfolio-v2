@@ -19,12 +19,12 @@ export default function ExperienceCard({
         <h3 className="text-xl font-semibold text-balance">
           {experience.role} at <i>{experience.company}</i>
         </h3>
-        <span className="inline-flex items-center gap-1 justify-around">
+        <span className="inline-flex items-center gap-1 justify-around lg:flex-[0_1_220px]">
         <CalendarDotsIcon className="colored-icon" weight="duotone" aria-hidden />
         <p>{experience.dates}</p>
         </span>
       </div>
-      <p className="text-sm inline-flex items-center gap-1">
+      <p className="text-sm inline-flex items-center gap-1 ">
         <MapPinSimpleAreaIcon className="colored-icon" weight="duotone" aria-hidden />
         {experience.location} •
         <TimerIcon className="colored-icon" weight="duotone" aria-hidden />
