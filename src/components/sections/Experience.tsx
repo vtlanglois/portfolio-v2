@@ -61,10 +61,10 @@ export default function Experience() {
                   TAGS.accessibility,
                   TAGS.nextjs,
                   TAGS.rrv7,
-                  TAGS.codeReview,
                   TAGS.crossFunctionalCollaboration,
-                  TAGS.adaptability,
+                  TAGS.codeReview,
                   TAGS.teamwork,
+                  TAGS.adaptability,
                 ]}
               />
             </Card>
@@ -96,8 +96,8 @@ export default function Experience() {
                   TAGS.sql,
                   TAGS.bootstrap,
                   TAGS.webDevelopment,
-                  TAGS.prototyping,
                   TAGS.problemSolving,
+                  TAGS.prototyping,
                 ]}
               />
             </Card>
@@ -122,10 +122,10 @@ export default function Experience() {
               <TagList
                 labelledBy="skills-tag-label"
                 tags={[
-                  TAGS.educationTech,
                   TAGS.projectManagement,
-                  TAGS.teamwork,
                   TAGS.communication,
+                  TAGS.teamwork,
+                  TAGS.educationTech,
                   TAGS.adaptability,
                 ]}
               />

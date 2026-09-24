@@ -25,7 +25,7 @@ export const youtubeKidControllerProject: ProjectItem = {
   name: "YouTube Kid Controller",
   summary:
     "A YouTube controller designed for kids. Built with Arduino and Legos, works with Windows & Chrome.",
-  tags: [TAGS.c, TAGS.arduino],
+  tags: [TAGS.c, TAGS.arduino, TAGS.educationTech],
   externalUrl: "https://github.com/vtlanglois/ArduinoKidController-I341",
   linkAltText: "Link to YouTube Kid Controller on GitHub",
 };

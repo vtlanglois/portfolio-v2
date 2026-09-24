@@ -81,12 +81,12 @@ export default function About() {
                   <TagList
                     labelledBy="tech-interests"
                     tags={[
-                      TAGS.accessibility,
-                      TAGS.educationTech,
-                      TAGS.gameDevelopment,
                       TAGS.webDevelopment,
+                      TAGS.accessibility,
                       TAGS.ui,
                       TAGS.ux,
+                      TAGS.educationTech,
+                      TAGS.gameDevelopment,
                     ]}
                   />
                 </div>
