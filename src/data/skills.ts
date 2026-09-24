@@ -212,13 +212,8 @@ const interpersonalTags = {
     variant: "human",
     group: "interpersonal",
   },
-  bugHunting: {
-    text: "Bug Hunting",
-    variant: "topic",
-    group: "interpersonal",
-  },
-  bugFixing: {
-    text: "Bug Fixing",
+  debugging: {
+    text: "Debugging",
     variant: "topic",
     group: "interpersonal",
   },
@@ -244,6 +239,16 @@ const interpersonalTags = {
   },
   prototyping: {
     text: "Prototyping",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  productMindset: {
+    text: "Product Mindset",
+    variant: "topic",
+    group: "interpersonal",
+  },
+  userCentricApproach: {
+    text: "User-Centric Approach",
     variant: "topic",
     group: "interpersonal",
   },

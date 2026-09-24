@@ -79,16 +79,16 @@ export default function Skills() {
                   TAGS.java,
                   TAGS.genai,
                   TAGS.codeReview,
-                  TAGS.bugHunting,
-                  TAGS.bugFixing,
+                  TAGS.debugging,
                   TAGS.designSystems,
                   TAGS.prototyping,
                   TAGS.promptEngineering,
-                  TAGS.markdown,
                   TAGS.arduino,
                   TAGS.gameDevelopment,
                   TAGS.gameDesign,
                   TAGS.gameTesting,
+                  TAGS.productMindset,
+                  TAGS.userCentricApproach,
                 ]}
               />
             </Card>
