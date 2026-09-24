@@ -71,7 +71,7 @@
       color-mix(in srgb, var(--color-foreground) 70%, transparent);
     border-style: dotted;
   }
-  
+
   [data-theme="sunset"] .glass-card.heading,
   [data-theme="galaxy"] .glass-card.heading {
     color: var(--color-foreground);
@@ -110,5 +110,17 @@
   .glass-card.interface {
     background: color-mix(in srgb, var(--sky-top) 90%, transparent);
     backdrop-filter: none;
+  }
+
+  [data-theme="sunset"] .glass-card.heading,
+  [data-theme="galaxy"] .glass-card.heading {
+    color: initial;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) and (prefers-color-scheme: dark) {
+  [data-theme="sunset"] .glass-card.heading,
+  [data-theme="galaxy"] .glass-card.heading {
+    color: var(--color-foreground);
   }
 }
