@@ -133,7 +133,7 @@ export default function ThemeSelector() {
               >
                 <Orb
                   tag="button"
-                  className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+                  className="dark:bg-slate-600/80 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 active:scale-90"
                   title="Previous theme"
                   onClick={previousTheme}
                 >
@@ -146,7 +146,7 @@ export default function ThemeSelector() {
                 </Orb>
                 <Orb
                   tag="button"
-                  className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+                  className="dark:bg-slate-600/80 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 active:scale-90"
                   title="Next theme"
                   onClick={nextTheme}
                 >
@@ -155,7 +155,7 @@ export default function ThemeSelector() {
                 </Orb>
                 <Orb
                   tag="button"
-                  className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 active:scale-90"
+                  className="dark:bg-slate-600/80 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 active:scale-90"
                   title="Random theme"
                   onClick={selectRandomTheme}
                 >
@@ -167,7 +167,7 @@ export default function ThemeSelector() {
           </AnimatePresence>
           <Orb
             tag="button"
-            className="dark:bg-slate-600/80 bg-slate-200/80 hover:bg-slate-400 !hover:scale-100 ml-1 md:ml-2"
+            className="dark:bg-slate-600/80 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 ml-1 md:ml-2"
             title={hidden ? "Expand theme selector" : "Collapse Theme Selector"}
             onClick={toggleHidden}
           >

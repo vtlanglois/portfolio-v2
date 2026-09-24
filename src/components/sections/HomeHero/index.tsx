@@ -149,7 +149,7 @@ export default function Hero() {
                 href={CODEPEN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="dark:bg-slate-600 bg-slate-200 hover:bg-gray-900 hover:text-slate-50"
+                className="dark:bg-slate-600/50 bg-slate-200/50 hover:bg-gray-900 hover:text-slate-50"
                 title="Link to Vincent Langlois's Codepen profile (opens in new tab)"
               >
                 <CodepenLogoIcon size={32} weight="duotone" />
@@ -159,7 +159,7 @@ export default function Hero() {
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="dark:bg-slate-600 bg-slate-200 hover:bg-[#0077b5] hover:text-slate-50"
+                className="dark:bg-slate-600/50 bg-slate-200/50 hover:bg-[#0077b5] hover:text-slate-50"
                 title="Link to Vincent Langlois's LinkedIn profile (opens in new tab)"
               >
                 <LinkedinLogoIcon size={32} weight="duotone" />
