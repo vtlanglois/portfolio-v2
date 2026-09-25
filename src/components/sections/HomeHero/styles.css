@@ -144,7 +144,7 @@
     transform: translateY(0) scaleX(1) scaleY(1) rotate(0deg);
   }
   50% {
-    transform: translateY(-3px) scaleX(1.01) scaleY(1.008) rotate(0.3deg);
+    transform: translateY(-1.5px) scaleX(1.005) scaleY(1.004) rotate(0.15deg);
   }
 }
 
@@ -154,7 +154,7 @@
     transform: translateY(0) scaleX(1) scaleY(1) rotate(0deg);
   }
   50% {
-    transform: translateY(-4px) scaleX(1.015) scaleY(1.012) rotate(-0.4deg);
+    transform: translateY(-2px) scaleX(1.008) scaleY(1.006) rotate(-0.2deg);
   }
 }
 
