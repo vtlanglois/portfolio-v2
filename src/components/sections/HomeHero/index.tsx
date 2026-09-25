@@ -96,7 +96,7 @@ export default function Hero() {
             />
 
             <path
-              d="M-10 235 Q100 210 220 218 Q340 228 460 168 Q550 128 640 172 Q665 185 690 180 L690 400 L-10 400 Z"
+              d="M-10 235 Q100 218 200 220 Q310 223 430 195 Q520 170 610 182 Q655 190 690 185 L690 400 L-10 400 Z"
               fill="var(--hill-mid)"
               opacity="0.75"
               className="hill hill-mid"

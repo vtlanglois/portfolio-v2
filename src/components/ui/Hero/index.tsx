@@ -24,7 +24,7 @@ export default function Hero({ children }: { children?: React.ReactNode }) {
           </defs>
           <g clipPath="url(#hillsClip)">
             <path
-              d="M-10 200 Q120 155 240 175 Q340 192 450 138 Q540 100 620 145 Q655 162 690 155 L690 400 L-10 400 Z"
+              d="M-10 200 Q90 155 200 168 Q300 180 390 142 Q470 108 560 146 Q625 178 690 155 L690 400 L-10 400 Z"
               fill="var(--hill-far)"
               opacity="0.55"
               className="hill hill-far"
