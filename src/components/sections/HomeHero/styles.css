@@ -39,9 +39,10 @@
   transition: fill var(--bgc-transition-speed) var(--bgc-transition-easing);
 }
 
-.hill-far {
+.home-hero__hills svg path.hill-far {
   animation: hillFar 13s ease-in-out infinite;
   transform-origin: bottom center;
+  fill: oklch(from var(--hill-far) calc(l + 0.06) calc(c * 0.55) h);
   transition-delay: var(--bgc-delay-hill-far);
   will-change: transform;
 }
@@ -101,6 +102,10 @@
 @media (prefers-color-scheme: dark) {
   .home-hero__hills svg path {
     filter: none;
+  }
+
+  .home-hero__hills svg path.hill-far {
+    fill: color-mix(in oklch, var(--hill-far) 82%, var(--sky-bottom));
   }
 }
 
