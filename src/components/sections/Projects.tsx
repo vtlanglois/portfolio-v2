@@ -24,7 +24,7 @@ export default function Projects() {
             <h2 className="text-2xl font-bold leading-none">Projects</h2>
             <KanbanIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-4 gap-4">
+          <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
             <ProjectCard
               title={pybotProject.name}
               summary={pybotProject.summary}
@@ -49,17 +49,15 @@ export default function Projects() {
               altText={obsidianMarkdownSpedUpProject.linkAltText}
               className="row-span-3 grid grid-rows-subgrid"
             />
-            <Card className="row-span-3 grid grid-rows-subgrid">
-              <p>...and many more!</p>
-              <div style={{ visibility: "hidden" }} />
-              <Link
-                href="/projects"
-                className="flex items-center justify-between gap-2 font-bold rounded-full opacity-80 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600 bg-slate-200 hover:bg-slate-400 "
-              >
-                View all projects <ArrowRightIcon size={24} weight="bold" />
-              </Link>
-            </Card>
           </div>
+          <Card size="small" variation="interface" className="flex items-center justify-end">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 rounded-full p-2 font-bold opacity-80 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600/50 bg-slate-200/50 dark:hover:bg-slate-500/50 hover:bg-slate-400/50"
+            >
+              View all projects <ArrowRightIcon size={24} weight="bold" />
+            </Link>
+          </Card>
         </Stack>
       </Container>
     </Section>
