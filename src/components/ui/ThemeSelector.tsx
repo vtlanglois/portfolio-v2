@@ -28,6 +28,12 @@ const variants: Variants = {
   }),
 };
 
+const persistTheme = (theme: string) => {
+  try {
+    window.localStorage.setItem("theme", theme);
+  } catch {}
+};
+
 export default function ThemeSelector() {
   const [mounted, setMounted] = useState(false);
   const [theme, setTheme] = useState("bliss");
@@ -43,6 +49,7 @@ export default function ThemeSelector() {
     const currentIndex = THEMES.indexOf(theme);
     const newTheme = THEMES[(currentIndex + 1) % THEMES.length];
     document.documentElement.setAttribute("data-theme", newTheme);
+    persistTheme(newTheme);
     window.history.replaceState(null, "", `?theme=${newTheme}`);
     setDirection(1);
     setTheme(newTheme);
@@ -52,6 +59,7 @@ export default function ThemeSelector() {
     const currentIndex = THEMES.indexOf(theme);
     const newTheme = THEMES[(currentIndex - 1 + THEMES.length) % THEMES.length];
     document.documentElement.setAttribute("data-theme", newTheme);
+    persistTheme(newTheme);
     window.history.replaceState(null, "", `?theme=${newTheme}`);
     setDirection(-1);
     setTheme(newTheme);
@@ -70,6 +78,7 @@ export default function ThemeSelector() {
       setDirection(1);
     }
     document.documentElement.setAttribute("data-theme", randomTheme);
+    persistTheme(randomTheme);
     window.history.replaceState(null, "", `?theme=${randomTheme}`);
     setTheme(randomTheme);
   };

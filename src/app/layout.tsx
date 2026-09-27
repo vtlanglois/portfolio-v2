@@ -7,6 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Skipnav from "@/components/ui/Skipnav";
 import ThemeSelector from "@/components/ui/ThemeSelector";
 import Nav from "@/components/ui/Nav";
+import { THEMES } from "@/constants";
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -33,9 +34,22 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              const theme = new URLSearchParams(window.location.search).get('theme');
+              const themes = ${JSON.stringify(THEMES)};
+              const requestedTheme = new URLSearchParams(window.location.search).get('theme');
+              let storedTheme = null;
+              try {
+                storedTheme = localStorage.getItem('theme');
+              } catch {}
+              const theme = themes.includes(requestedTheme)
+                ? requestedTheme
+                : themes.includes(storedTheme)
+                  ? storedTheme
+                  : null;
               if (theme) {
                 document.documentElement.setAttribute('data-theme', theme);
+                try {
+                  localStorage.setItem('theme', theme);
+                } catch {}
               }
             `,
           }}
