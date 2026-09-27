@@ -473,18 +473,18 @@
   }
 
   [data-theme="blocks"] {
-    --sky-top: #004a80;
-    --sky-bottom: #004a80;
-    --hill-far: #007a38;
-    --hill-mid: #c8a000;
-    --hill-near: #a80008;
+    --sky-top: #002b4a;
+    --sky-bottom: #002b4a;
+    --hill-far: #005c2c;
+    --hill-mid: #987500;
+    --hill-near: #850006;
     --footer: #000000;
     --card-bg: rgba(0, 0, 0, 0.5);
-    --section-1: #a80008;
-    --section-2: #c8a000;
-    --section-3: #007a38;
-    --section-4: #004a80;
-    --section-5: #a80008;
+    --section-1: #850006;
+    --section-2: #987500;
+    --section-3: #005c2c;
+    --section-4: #002b4a;
+    --section-5: #850006;
     --section-6: #0a0a0a;
   }
 
