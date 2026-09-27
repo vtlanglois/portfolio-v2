@@ -67,3 +67,8 @@ Any UI change should be checked across mobile and desktop viewports, light and d
 - Do not replace the Frutiger Aero and Bliss-inspired visual direction with a generic minimalist layout.
 - Do not add new themes, projects, or experience without explicit direction.
 - Do not introduce a settings panel for preferences that can be handled by the user's device or browser.
+
+## Contributing
+If a contribution or code change matches with a GitHub issue, always include a keyword in your commit to tie the commit to the issue. Use `fix` for bugfixes and `closes` for features.
+
+Vince wants to check the changes before he tells you to commit. He may also commit it himself

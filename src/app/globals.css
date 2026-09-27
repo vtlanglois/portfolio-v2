@@ -9,6 +9,7 @@
   --contrast-border-color: grey;
   --contrast-border-color-dark: #fafafa;
   --border-radius: 20px;
+  --interface-border-radius: 9999px;
 }
 
 /* ============================================
@@ -206,6 +207,7 @@
   --section-5: #e3000b;
   --section-6: #1a1a1a;
   --border-radius: 0px;
+  --interface-border-radius: 0px;
 }
 /* ============================================
    SUNSET

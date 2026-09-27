@@ -4,6 +4,7 @@ nav {
 }
 
 .nav-link {
+  border-radius: var(--interface-border-radius);
   padding-inline: 0.5rem;
   padding-block: 0.75rem;
 }
