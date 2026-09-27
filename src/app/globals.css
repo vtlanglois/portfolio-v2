@@ -725,6 +725,10 @@ h3 svg path[opacity="0.2"],
   opacity: 0.2 !important;
 }
 
+[data-theme="plain"] svg path[opacity="0.2"] {
+  color: var(--hill-near);
+}
+
 ul.list-disc li:nth-child(2n)::marker {
   color: var(--section-4);
 }
