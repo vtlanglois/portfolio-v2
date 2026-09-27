@@ -57,6 +57,7 @@
 }
 
 [data-theme="sunset"] .glass-card.heading,
+[data-theme="misty"] .glass-card.heading,
 [data-theme="galaxy"] .glass-card.heading {
   color: var(--color-background);
 }
@@ -73,6 +74,7 @@
   }
 
   [data-theme="sunset"] .glass-card.heading,
+  [data-theme="misty"] .glass-card.heading,
   [data-theme="galaxy"] .glass-card.heading {
     color: var(--color-foreground);
   }
@@ -113,6 +115,7 @@
   }
 
   [data-theme="sunset"] .glass-card.heading,
+  [data-theme="misty"] .glass-card.heading,
   [data-theme="galaxy"] .glass-card.heading {
     color: initial;
   }
@@ -120,6 +123,7 @@
 
 @media (prefers-reduced-transparency: reduce) and (prefers-color-scheme: dark) {
   [data-theme="sunset"] .glass-card.heading,
+  [data-theme="misty"] .glass-card.heading,
   [data-theme="galaxy"] .glass-card.heading {
     color: var(--color-foreground);
   }
