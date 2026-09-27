@@ -69,6 +69,6 @@ Any UI change should be checked across mobile and desktop viewports, light and d
 - Do not introduce a settings panel for preferences that can be handled by the user's device or browser.
 
 ## Contributing
-If a contribution or code change matches with a GitHub issue, always include a keyword in your commit to tie the commit to the issue. Use `fix` for bugfixes and `closes` for features.
+If a contribution or code change matches with a GitHub issue, always include the issue keyword and number in the commit subject. Use `fix #NUMBER` for bug fixes and `closes #NUMBER` for features (for example, `fix #56`).
 
 Vince wants to check the changes before he tells you to commit. He may also commit it himself
