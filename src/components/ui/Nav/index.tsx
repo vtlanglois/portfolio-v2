@@ -73,7 +73,6 @@ export default function Nav() {
           size="small"
           variation="interface"
           className="absolute fixed top-4 right-4 flex flex-row z-10"
-          aria-expanded={!hidden}
         >
           <AnimatePresence initial={hidden}>
             {!hidden && (
@@ -91,6 +90,7 @@ export default function Nav() {
                   overflow: hidden ? "hidden" : "inherit",
                 }}
                 className={`flex ${isMobile ? "flex-col items-stretch absolute top-full right-0 pt-2 nav-menu" : "flex-row"} gap-2 items-center`}
+                id="primary-navigation"
                 key="box"
               >
                 <NavLink href="/">Home</NavLink>
@@ -105,6 +105,8 @@ export default function Nav() {
             tag="button"
             className={`${hidden ? "dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 " : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
             aria-label={hidden ? "Open navigation" : "Close navigation"}
+            aria-expanded={!hidden}
+            aria-controls={!hidden ? "primary-navigation" : undefined}
             onClick={toggleHidden}
           >
             <AnimatePresence mode="popLayout" initial={false}>
