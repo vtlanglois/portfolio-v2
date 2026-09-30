@@ -24,7 +24,7 @@ export default function Projects() {
             <h2 className="text-2xl font-bold leading-none">Projects</h2>
             <KanbanIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
             <ProjectCard
               title={pybotProject.name}
               summary={pybotProject.summary}

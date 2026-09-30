@@ -26,7 +26,7 @@ export default function Skills() {
             </h2>
             <ListStarIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-rows-1 lg:grid-cols-2 gap-3">
             <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
                 id="skills-web-dev"

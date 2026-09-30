@@ -125,7 +125,7 @@ export default function Hero() {
       </div>
       <div className="home-hero__content">
         <Stack className="home-hero__card lg:w-2/3">
-          <Card className="flex flex-col gap-4">
+          <Card className="flex flex-col gap-3">
             <div>
               <p>Hello! I am</p>
               <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">

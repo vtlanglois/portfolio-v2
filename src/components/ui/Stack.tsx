@@ -6,6 +6,6 @@ export default function Stack({
   className?: string;
 }) {
   return (
-    <div className={`grid auto-rows-auto gap-4 ${className}`}>{children}</div>
+    <div className={`grid auto-rows-auto gap-3 ${className}`}>{children}</div>
   );
 }

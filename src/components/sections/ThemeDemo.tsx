@@ -108,7 +108,7 @@ export default function ThemeDemo() {
               <h2 className="text-2xl font-bold leading-none">Nature Themes</h2>
               <MountainsIcon size={30} weight="duotone" />
             </Card>
-            <div className="grid grid-rows-1 lg:grid-cols-4 gap-4">
+            <div className="grid grid-rows-1 lg:grid-cols-4 gap-3">
               <ThemeCard theme="bliss">
                 <p>
                   The site&apos;s default theme. Based on the default Windows XP
@@ -201,7 +201,7 @@ export default function ThemeDemo() {
               </h2>
               <GlobeIcon size={30} weight="duotone" />
             </Card>
-            <div className="grid grid-rows-1 lg:grid-cols-4 gap-4">
+            <div className="grid grid-rows-1 lg:grid-cols-4 gap-3">
               <ThemeCard theme="vaporwave">
                 <p>
                   I couldn&apos;t go 10 feet on the 2010s internet w/o seeing
@@ -244,7 +244,7 @@ export default function ThemeDemo() {
               <h2 className="text-2xl font-bold leading-none">Misc Themes</h2>
               <LightbulbIcon size={30} weight="duotone" />
             </Card>
-            <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
+            <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
               <ThemeCard theme="blocks">
                 <p>
                   LEGOs were the initial design approach I had for the site

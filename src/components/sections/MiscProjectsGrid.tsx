@@ -22,7 +22,7 @@ export default function MiscProjectsGrid() {
             </h2>
             <PinwheelIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
             {miscellaneousProjects.map((project: ProjectItem) => (
               <ProjectCard
                 key={project.id}

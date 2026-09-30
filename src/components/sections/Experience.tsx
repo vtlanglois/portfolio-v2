@@ -97,7 +97,7 @@ export default function Experience() {
             <h2 className="text-2xl font-bold leading-none">Experience</h2>
             <LaptopIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-3">
             {experiences.map((experience) => (
               <ExperienceCard key={experience.id} experience={experience} />
             ))}

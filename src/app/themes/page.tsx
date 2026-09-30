@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <>
       <Hero>
         <Stack className="hero__card lg:w-3/4">
-          <Card className="flex flex-col gap-4">
+          <Card className="flex flex-col gap-3">
             <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
               Themes
             </h1>

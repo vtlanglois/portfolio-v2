@@ -9,7 +9,7 @@ export default function ErrorPage() {
   return (
     <section className="error">
       <Stack className="items-center justify-center ">
-        <Card className="flex flex-col items-start justify-center gap-4">
+        <Card className="flex flex-col items-start justify-center gap-3">
           <h1 className="text-4xl lg:text-6xl font-bold italic text-balance">
             Oops!
           </h1>
