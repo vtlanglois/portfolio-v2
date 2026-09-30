@@ -69,6 +69,6 @@ Any UI change should be checked across mobile and desktop viewports, light and d
 - Do not introduce a settings panel for preferences that can be handled by the user's device or browser.
 
 ## Contributing
-If a contribution or code change matches with a GitHub issue, always include the issue keyword and number in the commit subject. Use `fix #NUMBER` for bug fixes and `closes #NUMBER` for features (for example, `fix #56`).
+Every commit subject must start with a Conventional Commits type followed by a colon, whether or not it references an issue (for example, `fix:`, `feat:`, `docs:`, or `chore:`). If a contribution or code change matches with a GitHub issue, also include the issue keyword and number in the subject after the type. Use `fix #NUMBER` for bug fixes and `closes #NUMBER` for features (for example, `fix: improve navigation (fix #56)`).
 
 Vince wants to check the changes before he tells you to commit. He may also commit it himself
