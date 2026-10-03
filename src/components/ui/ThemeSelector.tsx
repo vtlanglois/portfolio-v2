@@ -7,6 +7,7 @@ import {
   ArrowFatRightIcon,
   MinusIcon,
   PlusIcon,
+  XIcon,
   ShuffleIcon,
 } from "@phosphor-icons/react";
 import Card from "./Card";
@@ -186,12 +187,16 @@ export default function ThemeSelector() {
             <AnimatePresence mode="popLayout">
               <motion.div
                 key={hidden ? "plus" : "minus"}
-                initial={{ opacity: 0, rotate: -90, scale: 0.5 }}
-                animate={{ opacity: 1, rotate: 0, scale: 1 }}
-                exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+                animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                exit={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
+                transition={{
+                  type: "spring",
+                  duration: 0.4,
+                  bounce: 0,
+                }}
               >
-                {hidden ? <PlusIcon size={32} /> : <MinusIcon size={32} />}
+                {hidden ? <PlusIcon size={32} /> : <XIcon size={32} />}
               </motion.div>
             </AnimatePresence>
           </Orb>
