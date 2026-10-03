@@ -5,7 +5,6 @@ import Orb from "./Orb";
 import { AnimatePresence, motion, Variants, MotionConfig } from "framer-motion";
 import {
   ArrowFatRightIcon,
-  MinusIcon,
   PlusIcon,
   XIcon,
   ShuffleIcon,
