@@ -242,6 +242,11 @@ const interpersonalTags = {
     variant: "topic",
     group: "interpersonal",
   },
+  techDemos: {
+    text: "Tech Demos",
+    variant: "topic",
+    group: "interpersonal",
+  },
   productMindset: {
     text: "Product Mindset",
     variant: "topic",

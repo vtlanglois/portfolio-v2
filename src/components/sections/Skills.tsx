@@ -1,9 +1,10 @@
 import {
   GlobeIcon,
   ListStarIcon,
-  RobotIcon,
   ToolboxIcon,
   UsersThreeIcon,
+  FilesIcon,
+  GearSixIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import Card from "../ui/Card";
 import Container from "../ui/Container";
@@ -41,52 +42,60 @@ export default function Skills() {
                   TAGS.react,
                   TAGS.nextjs,
                   TAGS.rrv7,
-                  TAGS.typescript,
-                  TAGS.javascript,
-                  TAGS.nodejs,
-                  TAGS.apiIntegration,
-                  TAGS.html,
-                  TAGS.css,
-                  TAGS.tailwind,
-                  TAGS.scss,
-                  TAGS.bootstrap,
                   TAGS.accessibility,
                   TAGS.wcag,
-                  TAGS.storybook,
-                  TAGS.jest,
-                  TAGS.motion,
-                  TAGS.seo,
+                  TAGS.nodejs,
+                  TAGS.apiIntegration,
+                  TAGS.tailwind,
                   TAGS.ui,
                   TAGS.ux,
+                  TAGS.motion,
                 ]}
               />
             </Card>
             <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
-                id="skills-technical"
+                id="skills-languages"
                 className="inline-flex items-center justify-between text-xl font-semibold "
               >
-                Technical
-                <RobotIcon size={24} weight="duotone" />
+                Languages
+                <FilesIcon size={24} weight="duotone" />
               </h3>
               <TagList
-                labelledBy="skills-technical"
+                labelledBy="skills-languages"
                 tags={[
+                  TAGS.typescript,
+                  TAGS.javascript,
+                  TAGS.html,
+                  TAGS.css,
+                  TAGS.scss,
                   TAGS.python,
                   TAGS.sql,
                   TAGS.bash,
                   TAGS.c,
                   TAGS.java,
-                  TAGS.genai,
+                ]}
+              />
+            </Card>
+          </div>
+          <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
+            <Card className="row-span-2 grid grid-rows-subgrid">
+              <h3
+                id="skills-engineering-practices"
+                className="inline-flex items-center justify-between text-xl font-semibold"
+              >
+                Engineering Practices
+                <GearSixIcon size={24} weight="duotone" />
+              </h3>
+              <TagList
+                labelledBy="skills-engineering-practices"
+                tags={[
+                  TAGS.designSystems,
                   TAGS.codeReview,
                   TAGS.debugging,
-                  TAGS.designSystems,
                   TAGS.prototyping,
-                  TAGS.promptEngineering,
-                  TAGS.arduino,
-                  TAGS.gameDevelopment,
-                  TAGS.gameDesign,
-                  TAGS.gameTesting,
+                  TAGS.techDemos,
+                  TAGS.documentation,
                   TAGS.productMindset,
                   TAGS.userCentricApproach,
                 ]}
@@ -95,7 +104,7 @@ export default function Skills() {
             <Card className="row-span-2 grid grid-rows-subgrid">
               <h3
                 id="skills-tools"
-                className="inline-flex items-center justify-between  text-xl font-semibold "
+                className="inline-flex items-center justify-between text-xl font-semibold"
               >
                 Tools
                 <ToolboxIcon size={24} weight="duotone" />
@@ -106,22 +115,15 @@ export default function Skills() {
                   TAGS.git,
                   TAGS.github,
                   TAGS.ghActions,
+                  TAGS.jest,
+                  TAGS.storybook,
                   TAGS.figma,
-                  TAGS.vscode,
                   TAGS.postman,
+                  TAGS.biome,
                   TAGS.jira,
                   TAGS.confluence,
-                  TAGS.slack,
-                  TAGS.teams,
-                  TAGS.voiceover,
-                  TAGS.trello,
                   TAGS.copilot,
                   TAGS.claudeCode,
-                  TAGS.terminal,
-                  TAGS.biome,
-                  TAGS.obsidian,
-                  TAGS.ohMyZsh,
-                  TAGS.cmux,
                 ]}
               />
             </Card>
@@ -136,18 +138,12 @@ export default function Skills() {
               <TagList
                 labelledBy="skills-interpersonal"
                 tags={[
-                  TAGS.projectManagement,
                   TAGS.crossFunctionalCollaboration,
                   TAGS.communication,
+                  TAGS.projectManagement,
                   TAGS.teamwork,
-                  TAGS.codeReview,
-                  TAGS.documentation,
                   TAGS.problemSolving,
-                  TAGS.adaptability,
                   TAGS.mentorship,
-                  TAGS.empathy,
-                  TAGS.ux,
-                  TAGS.continuousLearning,
                 ]}
               />
             </Card>
