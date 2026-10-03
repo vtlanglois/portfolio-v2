@@ -1,8 +1,12 @@
 import PaletteDemo from "@/components/sections/ThemeDemo";
 import Card from "@/components/ui/Card";
 import Hero from "@/components/ui/Hero";
-
+import type { Metadata } from "next";
 import Stack from "@/components/ui/Stack";
+
+export const metadata: Metadata = {
+  title: "Themes",
+};
 
 export default function ProjectsPage() {
   return (

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Vincent Langlois - Software Engineer"
   },
   description:
-    "Portfolio website for Vincent Langlois, a software engineer specializing in frontend development.",
+    "Portfolio website for Vincent Langlois, a senior software engineer specializing in frontend development.",
   creator: "Vincent Langlois",
 };
 

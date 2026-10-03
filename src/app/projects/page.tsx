@@ -4,6 +4,11 @@ import Hero from "@/components/ui/Hero";
 import CodepenProjectsGrid from "@/components/sections/CodepenProjectsGrid";
 import MiscProjectsGrid from "@/components/sections/MiscProjectsGrid";
 import Stack from "@/components/ui/Stack";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+};
 
 export default function ProjectsPage() {
   return (
