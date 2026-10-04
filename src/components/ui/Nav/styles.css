@@ -9,20 +9,12 @@ nav {
   padding-block: 0.75rem;
 }
 
-.nav-menu {
-  padding-inline: 0.5rem;
-  padding-block: 0.75rem;
-  margin-top: 0.5rem;
+.glass-card.interface.nav-menu-surface {
   border-radius: var(--border-radius);
-  background: color-mix(in srgb, var(--sky-top) 70%, var(--card-bg) 20%);
-  box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(250, 250, 250, 0.5),
-    inset 0 -1px 0 rgba(250, 250, 250, 0.1),
-    inset 0 0 26px 13px rgba(250, 250, 250, 0.13);
-  backdrop-filter: blur(10px);
-  transition: background var(--bgc-transition-speed)
-    var(--bgc-transition-easing);
+}
+
+.nav-menu {
+  padding: 0;
   align-items: stretch;
 }
 
@@ -34,10 +26,12 @@ nav {
 }
 
 @media (prefers-contrast: more) {
-  .nav-menu {
+  .glass-card.interface.nav-menu-surface {
     box-shadow: none;
     border: 2px solid var(--contrast-border-color);
+    background: color-mix(in srgb, var(--sky-top) 90%, transparent) !important;
     backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .nav-menu li a {
@@ -46,14 +40,15 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) and (prefers-contrast: more) {
-  .nav-menu {
+  .glass-card.interface.nav-menu-surface {
     border-color: var(--contrast-border-color-dark);
-    backdrop-filter: none;
   }
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .nav-menu {
-    background: var(--sky-top);
+  .glass-card.interface.nav-menu-surface {
+    background: var(--sky-top) !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 }

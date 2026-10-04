@@ -58,7 +58,7 @@ export default function Nav() {
         <Link
           href={href}
           aria-current={pathname === href}
-          className={`aria-[current="true"]:bg-slate-400 nav-link font-bold flex w-full md:w-auto items-center justify-center md:justify-start opacity-80 hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 active:scale-90 ${className ? className : ""}`}
+          className={`aria-[current="true"]:bg-slate-400 nav-link font-bold flex w-full md:w-auto items-center justify-center md:justify-start hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 active:scale-90 ${className ? className : ""}`}
         >
           {children}
         </Link>
@@ -66,38 +66,40 @@ export default function Nav() {
     );
   }
 
+  const navLinks = (
+    <>
+      <NavLink href="/">Home</NavLink>
+      <NavLink href="/projects">Projects</NavLink>
+      <NavLink href="/themes" className="md:mr-2">
+        Themes
+      </NavLink>
+    </>
+  );
+
   return (
     <nav className="relative">
       <MotionConfig reducedMotion="user">
         <Card
           size="small"
           variation="interface"
-          className="absolute fixed top-4 right-4 flex flex-row z-10"
+          className="nav-shell absolute fixed top-4 right-4 flex flex-row z-10"
         >
           <AnimatePresence initial={hidden}>
-            {!hidden && (
+            {!hidden && !isMobile && (
               <motion.ul
-                initial={
-                  isMobile ? mobileVariants.initial : desktopVariants.initial
-                }
-                animate={
-                  isMobile ? mobileVariants.animate : desktopVariants.animate
-                }
-                exit={isMobile ? mobileVariants.exit : desktopVariants.exit}
+                initial={desktopVariants.initial}
+                animate={desktopVariants.animate}
+                exit={desktopVariants.exit}
                 transition={{ type: "spring", duration: 0.35, bounce: 0 }}
                 style={{
                   transformOrigin: "right center",
                   overflow: hidden ? "hidden" : "inherit",
                 }}
-                className={`flex ${isMobile ? "flex-col items-stretch absolute top-full right-0 pt-2 nav-menu" : "flex-row"} gap-2 items-center`}
+                className="flex flex-row gap-2 items-center"
                 id="primary-navigation"
                 key="box"
               >
-                <NavLink href="/">Home</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/themes" className="md:mr-2">
-                  Themes
-                </NavLink>
+                {navLinks}
               </motion.ul>
             )}
           </AnimatePresence>
@@ -106,7 +108,13 @@ export default function Nav() {
             className={`${hidden ? "dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 " : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
             aria-label={hidden ? "Open navigation" : "Close navigation"}
             aria-expanded={!hidden}
-            aria-controls={!hidden ? "primary-navigation" : undefined}
+            aria-controls={
+              !hidden
+                ? isMobile
+                  ? "mobile-primary-navigation"
+                  : "primary-navigation"
+                : undefined
+            }
             onClick={toggleHidden}
           >
             <AnimatePresence mode="popLayout" initial={false}>
@@ -126,6 +134,32 @@ export default function Nav() {
             </AnimatePresence>
           </Orb>
         </Card>
+        <AnimatePresence initial={false}>
+          {isMobile && !hidden && (
+            <motion.div
+              initial={mobileVariants.initial}
+              animate={mobileVariants.animate}
+              exit={mobileVariants.exit}
+              transition={{ type: "spring", duration: 0.35, bounce: 0 }}
+              style={{ transformOrigin: "right top" }}
+              className="fixed top-22 right-4 z-10"
+              key="mobile-navigation"
+            >
+              <Card
+                size="small"
+                variation="interface"
+                className="nav-menu-surface"
+              >
+                <ul
+                  className="nav-menu flex flex-col items-stretch gap-2"
+                  id="mobile-primary-navigation"
+                >
+                  {navLinks}
+                </ul>
+              </Card>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </MotionConfig>
     </nav>
   );
