@@ -176,14 +176,14 @@ export default function ThemeSelector() {
           </AnimatePresence>
           <Orb
             tag="button"
-            className="dark:bg-slate-600/80 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 ml-1 md:ml-2"
+            className={`${hidden ? "dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 " : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 ml-1 md:ml-2`}
             title={hidden ? "Expand theme selector" : "Collapse Theme Selector"}
             onClick={toggleHidden}
           >
             <span className="sr-only">
               {hidden ? "Expand theme selector" : "Collapse Theme Selector"}
             </span>
-            <AnimatePresence mode="popLayout">
+            <AnimatePresence mode="popLayout" initial={false}>
               <motion.div
                 key={hidden ? "plus" : "minus"}
                 initial={{ opacity: 0, scale: 0.25, filter: "blur(4px)" }}
