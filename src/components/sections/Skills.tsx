@@ -96,6 +96,7 @@ export default function Skills() {
                   TAGS.prototyping,
                   TAGS.techDemos,
                   TAGS.documentation,
+                  TAGS.aiAssistedDevelopment,
                   TAGS.productMindset,
                   TAGS.userCentricApproach,
                 ]}
@@ -118,6 +119,7 @@ export default function Skills() {
                   TAGS.jest,
                   TAGS.storybook,
                   TAGS.figma,
+                  TAGS.figjam,
                   TAGS.postman,
                   TAGS.biome,
                   TAGS.jira,
@@ -143,6 +145,7 @@ export default function Skills() {
                   TAGS.projectManagement,
                   TAGS.teamwork,
                   TAGS.problemSolving,
+                  TAGS.adaptability,
                   TAGS.mentorship,
                 ]}
               />

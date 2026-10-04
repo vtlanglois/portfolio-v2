@@ -118,8 +118,8 @@ const miscTags = {
 
 const toolTags = {
   figma: { text: "Figma", variant: "tool", group: "tool" },
-  vscode: {
-    text: "Visual Studio Code",
+  figjam: {
+    text: "FigJam",
     variant: "tool",
     group: "tool",
   },
@@ -201,6 +201,11 @@ const aiTags = {
   },
   promptEngineering: {
     text: "Prompt Engineering",
+    variant: "topic",
+    group: "ai",
+  },
+  aiAssistedDevelopment: {
+    text: "AI-Assisted Development",
     variant: "topic",
     group: "ai",
   },
