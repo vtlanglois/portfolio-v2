@@ -58,7 +58,7 @@ export default function Nav() {
         <Link
           href={href}
           aria-current={pathname === href}
-          className={`aria-[current="true"]:bg-slate-400 nav-link font-bold flex w-full md:w-auto items-center justify-center md:justify-start hover:scale-125 p-2 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 !hover:scale-100 active:scale-90 ${className ? className : ""}`}
+          className={`aria-[current="true"]:bg-slate-400 nav-link font-bold flex w-full md:w-auto items-center justify-center md:justify-start p-2 hover:scale-110 focus-visible:scale-110 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 active:scale-90 ${className ? className : ""}`}
         >
           {children}
         </Link>
@@ -105,7 +105,7 @@ export default function Nav() {
           </AnimatePresence>
           <Orb
             tag="button"
-            className={`${hidden ? "dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 " : "bg-red-600/80 hover:bg-red-800"} !hover:scale-100 active:scale-90`}
+            className={`${hidden ? "dark:bg-slate-600/50 bg-slate-200/50 hover:bg-slate-400 " : "bg-red-600/80 hover:bg-red-800"} active:scale-90`}
             aria-label={hidden ? "Open navigation" : "Close navigation"}
             aria-expanded={!hidden}
             aria-controls={
