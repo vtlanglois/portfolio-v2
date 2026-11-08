@@ -44,6 +44,7 @@ The site has a set of selectable themes. This allows users to see how the rollin
 - Misc: any theme that is not based on the above.
 
 For now, do not add new production themes without explicit direction.
+Keep Plain as the final theme in both the selectable theme cycle and the theme gallery. Add any new themes before Plain.
 
 ### User preferences
 

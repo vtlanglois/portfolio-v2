@@ -1,11 +1,16 @@
 import {
   CactusIcon,
   CloudIcon,
+  CoffeeIcon,
+  DiscIcon,
   DropIcon,
+  IslandIcon,
   FlowerIcon,
+  GameControllerIcon,
   GridNineIcon,
   IceCreamIcon,
   LegoIcon,
+  LeafIcon,
   MeteorIcon,
   OrangeSliceIcon,
   PlanetIcon,
@@ -27,6 +32,16 @@ export function ThemeIcon({
   size?: number;
 }) {
   switch (theme) {
+    case "autumn":
+      return <LeafIcon size={size} weight="duotone" />;
+    case "tropical":
+      return <IslandIcon size={size} weight="duotone" />;
+    case "console":
+      return <GameControllerIcon size={size} weight="duotone" />;
+    case "y2k":
+      return <DiscIcon size={size} weight="duotone" />;
+    case "diner":
+      return <CoffeeIcon size={size} weight="duotone" />;
     case "ocean":
       return <WavesIcon size={size} />;
     case "dunes":

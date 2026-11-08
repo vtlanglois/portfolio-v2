@@ -4,16 +4,18 @@ import Card from "@/components/ui/Card";
 
 export default function ThemeCard({
   theme,
+  title,
   children,
 }: {
   theme: string;
+  title?: string;
   children: React.ReactNode;
 }) {
   return (
     <Card className="row-span-3 grid grid-rows-subgrid">
       <ThemePalette theme={theme} />
       <h3 className="inline-flex w-full items-center justify-between text-xl font-bold capitalize text-balance">
-        {theme}
+        {title ?? theme}
         <ThemeIcon theme={theme} size={24} />
       </h3>
       <div className="text-pretty">{children}</div>

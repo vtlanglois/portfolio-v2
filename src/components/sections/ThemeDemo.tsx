@@ -108,7 +108,7 @@ export default function ThemeDemo() {
               <h2 className="text-2xl font-bold leading-none">Nature Themes</h2>
               <MountainsIcon size={30} weight="duotone" />
             </Card>
-            <div className="grid grid-rows-1 lg:grid-cols-4 gap-3">
+            <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
               <ThemeCard theme="bliss">
                 <p>
                   The site&apos;s default theme. Based on the default Windows XP
@@ -155,6 +155,13 @@ export default function ThemeDemo() {
                   immediately thought that they could be waves!
                 </p>
               </ThemeCard>
+              <ThemeCard theme="tropical">
+                <p>
+                  I wanted a tropical theme to sit next to Ocean and Dunes. The
+                  warm sky and teal hills ended up giving the landscape a
+                  reef-like feel!
+                </p>
+              </ThemeCard>
               <ThemeCard theme="dunes">
                 <p>
                   The third theme made for the site! Second idea after seeing
@@ -174,6 +181,13 @@ export default function ThemeDemo() {
                   This was supposed to be the fall theme! Having each hill be a
                   different autumn leaf color ended up not being good. But it{" "}
                   <i>did</i> look like lava!
+                </p>
+              </ThemeCard>
+              <ThemeCard theme="autumn">
+                <p>
+                  I still wanted a fall theme after the lava idea didn&apos;t
+                  quite work out. Amber and rust felt much more like autumn
+                  leaves!
                 </p>
               </ThemeCard>
               <ThemeCard theme="galaxy">
@@ -201,12 +215,26 @@ export default function ThemeDemo() {
               </h2>
               <GlobeIcon size={30} weight="duotone" />
             </Card>
-            <div className="grid grid-rows-1 lg:grid-cols-4 gap-3">
+            <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
               <ThemeCard theme="vaporwave">
                 <p>
                   I couldn&apos;t go 10 feet on the 2010s internet w/o seeing
                   these colors. This theme&apos;s purpleness works well as a
                   transition from Galaxy.
+                </p>
+              </ThemeCard>
+              <ThemeCard theme="console">
+                <p>
+                  I was more of a Wii and PS3/4 kid, so I wanted a theme that
+                  felt like both. Light Mode has that clean Wii look, while
+                  Dark Mode leans more PlayStation.
+                </p>
+              </ThemeCard>
+              <ThemeCard theme="y2k" title="Y2K">
+                <p>
+                  This one reminds me of the Xbox 360 era, especially all those
+                  Kinect ads. I liked the glossy Y2K look, so I went with
+                  silver, blue, and lime hills.
                 </p>
               </ThemeCard>
               <ThemeCard theme="metro">
@@ -260,6 +288,13 @@ export default function ThemeDemo() {
                   that would use the hills in a way that <i>wasn&apos;t</i>{" "}
                   based on nature or 2000s internet aesthetics. From that, a
                   friend told me the hills looked like ice cream.
+                </p>
+              </ThemeCard>
+              <ThemeCard theme="diner" title="Retro Diner">
+                <p>
+                  I like cooking and food, so I wanted to try a diner theme.
+                  The vanilla, seafoam, and cherry red give it that classic
+                  Americana diner look.
                 </p>
               </ThemeCard>
               <ThemeCard theme="plain">

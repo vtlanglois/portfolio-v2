@@ -36,6 +36,26 @@
 }
 
 /* ============================================
+   AUTUMN
+   ============================================ */
+
+[data-theme="autumn"] {
+  --sky-top: #eaa66c;
+  --sky-bottom: #f4d29a;
+  --hill-far: #d3a85e;
+  --hill-mid: #b85b32;
+  --hill-near: #8d3529;
+  --footer: #382018;
+  --card-bg: rgba(255, 248, 235, 0.8);
+  --section-1: var(--hill-near);
+  --section-2: #a4492b;
+  --section-3: #7b3524;
+  --section-4: #60291d;
+  --section-5: #482018;
+  --section-6: #301611;
+}
+
+/* ============================================
    OCEAN
    ============================================ */
 
@@ -53,6 +73,26 @@
   --section-4: #061a30;
   --section-5: #040f20;
   --section-6: #020810;
+}
+
+/* ============================================
+  TROPICAL
+   ============================================ */
+
+[data-theme="tropical"] {
+  --sky-top: #f19b86;
+  --sky-bottom: #f9d1ad;
+  --hill-far: #efd49a;
+  --hill-mid: #4eaaa0;
+  --hill-near: #167c79;
+  --footer: #174b55;
+  --card-bg: rgba(255, 249, 238, 0.82);
+  --section-1: var(--hill-near);
+  --section-2: #176a6d;
+  --section-3: #20565e;
+  --section-4: #284552;
+  --section-5: #243845;
+  --section-6: #1a2c38;
 }
 
 /* ============================================
@@ -209,6 +249,26 @@
   --border-radius: 0px;
   --interface-border-radius: 0px;
 }
+
+/* ============================================
+   RETRO DINER
+   ============================================ */
+[data-theme="diner"] {
+  --sky-top: #f1e4cb;
+  --sky-bottom: #faf3e2;
+  --hill-far: #a8c9b3;
+  --hill-mid: #d4564d;
+  --hill-near: #9a3c43;
+  --footer: #442930;
+  --card-bg: rgba(255, 249, 236, 0.85);
+  --section-1: var(--hill-near);
+  --section-2: #a94849;
+  --section-3: #80504c;
+  --section-4: #64766a;
+  --section-5: #486459;
+  --section-6: #2d4d49;
+}
+
 /* ============================================
    SUNSET
    ============================================ */
@@ -352,6 +412,46 @@
 }
 
 /* ============================================
+  CONSOLE
+   ============================================ */
+
+[data-theme="console"] {
+  --sky-top: #c6e8f4;
+  --sky-bottom: #f5fbfd;
+  --hill-far: #dde7ea;
+  --hill-mid: #9bbad2;
+  --hill-near: #376fc0;
+  --footer: #122c54;
+  --card-bg: rgba(250, 253, 255, 0.84);
+  --section-1: var(--hill-near);
+  --section-2: #2d5da2;
+  --section-3: #244b83;
+  --section-4: #1b3c68;
+  --section-5: #152f52;
+  --section-6: #0c203c;
+}
+
+/* ============================================
+  Y2K
+   ============================================ */
+
+[data-theme="y2k"] {
+  --sky-top: #c5d2d7;
+  --sky-bottom: #eef2ef;
+  --hill-far: #7f9097;
+  --hill-mid: #376ba5;
+  --hill-near: #a8c94b;
+  --footer: #192d43;
+  --card-bg: rgba(248, 250, 247, 0.82);
+  --section-1: var(--hill-near);
+  --section-2: #718d43;
+  --section-3: #4a6d55;
+  --section-4: #365b70;
+  --section-5: #294861;
+  --section-6: #1b334d;
+}
+
+/* ============================================
    DARK MODE
    ============================================ */
 
@@ -373,6 +473,38 @@
     --section-4: #0e2e10;
     --section-5: #0a2408;
     --section-6: #071a06;
+  }
+
+  [data-theme="autumn"] {
+    --sky-top: #1b100d;
+    --sky-bottom: #2b1910;
+    --hill-far: #382818;
+    --hill-mid: #562719;
+    --hill-near: #713020;
+    --footer: #100907;
+    --card-bg: rgba(24, 13, 9, 0.55);
+    --section-1: #713020;
+    --section-2: #5a281a;
+    --section-3: #432015;
+    --section-4: #321911;
+    --section-5: #24120d;
+    --section-6: #180c09;
+  }
+
+  [data-theme="tropical"] {
+    --sky-top: #1d100f;
+    --sky-bottom: #321917;
+    --hill-far: #42301c;
+    --hill-mid: #174e4b;
+    --hill-near: #12615f;
+    --footer: #0b1718;
+    --card-bg: rgba(18, 23, 23, 0.6);
+    --section-1: #12615f;
+    --section-2: #104e4e;
+    --section-3: #103c40;
+    --section-4: #0c2e34;
+    --section-5: #09232a;
+    --section-6: #06171d;
   }
 
   [data-theme="ocean"] {
@@ -486,6 +618,22 @@
     --section-4: #002b4a;
     --section-5: #850006;
     --section-6: #0a0a0a;
+  }
+
+  [data-theme="diner"] {
+    --sky-top: #1b1416;
+    --sky-bottom: #2b1d1b;
+    --hill-far: #334b3f;
+    --hill-mid: #783e3c;
+    --hill-near: #63303a;
+    --footer: #10090c;
+    --card-bg: rgba(20, 12, 14, 0.62);
+    --section-1: #63303a;
+    --section-2: #75363a;
+    --section-3: #65403d;
+    --section-4: #4a5549;
+    --section-5: #344a42;
+    --section-6: #22372f;
   }
 
   [data-theme="neopolitan"] {
@@ -648,20 +796,36 @@
     --section-6: #020818;
   }
 
-  [data-theme="bubblegum"] {
-    --sky-top: #280810;
-    --sky-bottom: #380e18;
-    --hill-far: #082038;
-    --hill-mid: #481028;
-    --hill-near: #680818;
-    --footer: #100408;
-    --card-bg: rgba(40, 8, 16, 0.5);
-    --section-1: #680818;
-    --section-2: #480810;
-    --section-3: #580820;
-    --section-4: #081828;
-    --section-5: #041018;
-    --section-6: #020c10;
+  [data-theme="console"] {
+    --sky-top: #061323;
+    --sky-bottom: #102844;
+    --hill-far: #1a3654;
+    --hill-mid: #244b80;
+    --hill-near: #397ae0;
+    --footer: #040d1a;
+    --card-bg: rgba(8, 19, 35, 0.6);
+    --section-1: #397ae0;
+    --section-2: #2e62b4;
+    --section-3: #234e8f;
+    --section-4: #193b70;
+    --section-5: #122c55;
+    --section-6: #0a1c38;
+  }
+
+  [data-theme="y2k"] {
+    --sky-top: #11171b;
+    --sky-bottom: #222b30;
+    --hill-far: #3b464b;
+    --hill-mid: #244b7d;
+    --hill-near: #60763d;
+    --footer: #080d11;
+    --card-bg: rgba(7, 12, 16, 0.6);
+    --section-1: #60763d;
+    --section-2: #4d6237;
+    --section-3: #3d5140;
+    --section-4: #2d4356;
+    --section-5: #21344b;
+    --section-6: #152536;
   }
 }
 
