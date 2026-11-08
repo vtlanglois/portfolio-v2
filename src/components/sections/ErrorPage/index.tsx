@@ -18,7 +18,10 @@ export default function ErrorPage() {
             available.
           </p>
           <Link href="/">
-            <Orb tag="span" className="bg-(--hill-far) color-(contrast-color(var(--hill-far)))">
+            <Orb
+              tag="span"
+              className="themed-ui-control"
+            >
               <HouseIcon />
               Return Home
             </Orb>

@@ -227,7 +227,7 @@ export default function ThemeDemo() {
                 <p>
                   I was more of a Wii and PS3/4 kid, so I wanted a theme that
                   felt like both. Light Mode has that clean Wii look, while
-                  Dark Mode leans more PlayStation.
+                  Dark Mode leans more PlayStation. Adding in a console theme also inspired me to add theming support to buttons.
                 </p>
               </ThemeCard>
               <ThemeCard theme="y2k" title="Y2K">

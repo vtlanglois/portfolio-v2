@@ -4,9 +4,22 @@ nav {
 }
 
 .nav-link {
+  position: relative;
   border-radius: 9999px;
   padding-inline: 0.5rem;
   padding-block: 0.75rem;
+}
+
+.nav-link[aria-current="true"]::after {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 9999px;
+  background: var(--ui-nav-active-indicator);
+  content: "";
+  transform: translateX(-50%);
 }
 
 .glass-card.interface.nav-menu-surface {

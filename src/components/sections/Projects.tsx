@@ -53,7 +53,7 @@ export default function Projects() {
           <Card size="small" variation="interface" className="flex items-center justify-end">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 rounded-full p-2 font-bold opacity-80 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none dark:bg-slate-600/50 bg-slate-200/50 dark:hover:bg-slate-500/50 hover:bg-slate-400/50"
+              className="themed-ui-control inline-flex items-center gap-2 rounded-full p-2 font-bold opacity-80 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"
             >
               View all projects <ArrowRightIcon size={24} weight="bold" />
             </Link>

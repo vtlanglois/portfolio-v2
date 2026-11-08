@@ -10,6 +10,36 @@
   --contrast-border-color-dark: #fafafa;
   --border-radius: 20px;
   --interface-border-radius: 9999px;
+  --ui-control-background: linear-gradient(145deg, #ffffff, #dceaf2);
+  --ui-control-hover-background: linear-gradient(145deg, #f3fbff, #c3dfef);
+  --ui-control-active-background: #a9cce0;
+  --ui-control-color: #173451;
+  --ui-control-focus-outline: 3px solid #2778c8;
+  --ui-control-focus-outline-offset: 2px;
+  --ui-control-shadow:
+    0 2px 6px rgba(28, 67, 99, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  --ui-orb-shadow: var(--ui-control-shadow);
+  --ui-selector-background: var(--ui-control-background);
+  --ui-selector-hover-background: var(--ui-control-hover-background);
+  --ui-nav-active-background: var(--ui-control-hover-background);
+  --ui-nav-active-color: var(--ui-control-color);
+  --ui-nav-active-indicator: var(--ui-control-color);
+  --ui-current-background: var(--hill-near);
+  --ui-current-hover-background: var(--hill-far);
+  --ui-current-color: var(--foreground, #0a0a0a);
+  --ui-action-previous-background: var(--ui-selector-background);
+  --ui-action-previous-hover-background: var(--ui-selector-hover-background);
+  --ui-action-previous-color: var(--ui-control-color);
+  --ui-action-next-background: var(--ui-selector-background);
+  --ui-action-next-hover-background: var(--ui-selector-hover-background);
+  --ui-action-next-color: var(--ui-control-color);
+  --ui-action-random-background: var(--ui-selector-background);
+  --ui-action-random-hover-background: var(--ui-selector-hover-background);
+  --ui-action-random-color: var(--ui-control-color);
+  --ui-action-close-background: rgba(220, 38, 38, 0.8);
+  --ui-action-close-hover-background: #991b1b;
+  --ui-action-close-color: #fff;
 }
 
 /* ============================================
@@ -429,6 +459,33 @@
   --section-4: #1b3c68;
   --section-5: #152f52;
   --section-6: #0c203c;
+  --ui-control-background: linear-gradient(145deg, #ffffff, #dceaf2);
+  --ui-control-hover-background: linear-gradient(145deg, #f3fbff, #c3dfef);
+  --ui-control-active-background: #a9cce0;
+  --ui-control-color: #173451;
+  --ui-control-focus-outline: 3px solid #2778c8;
+  --ui-orb-opacity: 1;
+  --ui-control-shadow:
+    0 2px 6px rgba(28, 67, 99, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  --ui-orb-shadow: var(--ui-control-shadow);
+  --ui-nav-active-background: #b5daf2;
+  --ui-nav-active-color: #173451;
+  --ui-nav-active-indicator: #2778c8;
+  --ui-selector-background: var(--ui-control-background);
+  --ui-selector-hover-background: var(--ui-control-hover-background);
+  --ui-action-previous-background: var(--ui-control-background);
+  --ui-action-previous-hover-background: var(--ui-control-hover-background);
+  --ui-action-close-background: #2778c8;
+  --ui-action-close-color: #fff;
+  --ui-action-close-hover-background: #1f5da0;
+  --ui-action-next-background: var(--ui-control-background);
+  --ui-action-next-hover-background: var(--ui-control-hover-background);
+  --ui-action-previous-color: #2778c8;
+  --ui-action-random-background: var(--ui-control-background);
+  --ui-action-random-hover-background: var(--ui-control-hover-background);
+  --ui-action-next-color: #d94355;
+  --ui-action-random-color: #347347;
 }
 
 /* ============================================
@@ -449,6 +506,33 @@
   --section-4: #365b70;
   --section-5: #294861;
   --section-6: #1b334d;
+  --ui-control-background: linear-gradient(145deg, #ffffff, #b9c9d1);
+  --ui-control-hover-background: linear-gradient(145deg, #eaf3f7, #9fb3be);
+  --ui-control-active-background: #849ba8;
+  --ui-control-color: #122a3a;
+  --ui-control-focus-outline: 3px solid #147cc1;
+  --ui-orb-opacity: 1;
+  --ui-control-shadow:
+    0 2px 6px rgba(16, 40, 56, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  --ui-orb-shadow: var(--ui-control-shadow);
+  --ui-nav-active-background: #cfe86b;
+  --ui-nav-active-color: #122a3a;
+  --ui-nav-active-indicator: #278332;
+  --ui-selector-background: var(--ui-control-background);
+  --ui-selector-hover-background: var(--ui-control-hover-background);
+  --ui-action-close-background: #d93832;
+  --ui-action-close-color: #fff;
+  --ui-action-close-hover-background: #ad2824;
+  --ui-action-previous-background: #147cc1;
+  --ui-action-previous-hover-background: #0c65a0;
+  --ui-action-previous-color: #fff;
+  --ui-action-next-background: #278332;
+  --ui-action-next-hover-background: #1f7028;
+  --ui-action-next-color: #fff;
+  --ui-action-random-background: #f0c526;
+  --ui-action-random-hover-background: #d6ac20;
+  --ui-action-random-color: #17232a;
 }
 
 /* ============================================
@@ -473,6 +557,19 @@
     --section-4: #0e2e10;
     --section-5: #0a2408;
     --section-6: #071a06;
+    --ui-control-background: linear-gradient(145deg, #284764, #162e49);
+    --ui-control-hover-background: linear-gradient(145deg, #355c7d, #1d3d60);
+    --ui-control-active-background: #3970a2;
+    --ui-control-color: #f3f8ff;
+    --ui-control-focus-outline: 3px solid #75b9ff;
+    --ui-control-shadow: none;
+    --ui-control-shadow: none;
+    --ui-orb-shadow: none;
+    --ui-selector-background: var(--ui-control-background);
+    --ui-selector-hover-background: var(--ui-control-hover-background);
+    --ui-nav-active-background: var(--ui-control-hover-background);
+    --ui-nav-active-color: #f3f8ff;
+    --ui-nav-active-indicator: #f3f8ff;
   }
 
   [data-theme="autumn"] {
@@ -810,6 +907,31 @@
     --section-4: #193b70;
     --section-5: #122c55;
     --section-6: #0a1c38;
+    --ui-control-background: linear-gradient(145deg, #284764, #162e49);
+    --ui-control-hover-background: linear-gradient(145deg, #355c7d, #1d3d60);
+    --ui-control-active-background: #3970a2;
+    --ui-control-color: #f3f8ff;
+    --ui-control-focus-outline: 3px solid #75b9ff;
+    --ui-control-shadow: none;
+    --ui-orb-shadow: none;
+    --ui-orb-opacity: 1;
+    --ui-selector-background: var(--ui-control-background);
+    --ui-selector-hover-background: var(--ui-control-hover-background);
+    --ui-nav-active-background: #28558a;
+    --ui-nav-active-color: #f3f8ff;
+    --ui-nav-active-indicator: #75b9ff;
+    --ui-action-close-background: #397ae0;
+    --ui-action-close-color: #fff;
+    --ui-action-close-hover-background: #2e62b4;
+    --ui-action-previous-background: var(--ui-control-background);
+    --ui-action-previous-hover-background: var(--ui-control-hover-background);
+    --ui-action-previous-color: #75b9ff;
+    --ui-action-next-background: var(--ui-control-background);
+    --ui-action-next-hover-background: var(--ui-control-hover-background);
+    --ui-action-next-color: #ff8290;
+    --ui-action-random-background: var(--ui-control-background);
+    --ui-action-random-hover-background: var(--ui-control-hover-background);
+    --ui-action-random-color: #8bdaa0;
   }
 
   [data-theme="y2k"] {
@@ -826,6 +948,31 @@
     --section-4: #2d4356;
     --section-5: #21344b;
     --section-6: #152536;
+    --ui-control-background: linear-gradient(145deg, #53616a, #28343c);
+    --ui-control-hover-background: linear-gradient(145deg, #697983, #35464f);
+    --ui-control-active-background: #445b68;
+    --ui-control-color: #f8fbfc;
+    --ui-control-focus-outline: 3px solid #55b8ff;
+    --ui-control-shadow: none;
+    --ui-orb-shadow: none;
+    --ui-orb-opacity: 1;
+    --ui-selector-background: var(--ui-control-background);
+    --ui-selector-hover-background: var(--ui-control-hover-background);
+    --ui-nav-active-background: #3d652f;
+    --ui-nav-active-color: #f8fbfc;
+    --ui-nav-active-indicator: #70dc5f;
+    --ui-action-close-background: #cf302c;
+    --ui-action-close-color: #fff;
+    --ui-action-close-hover-background: #a82724;
+    --ui-action-previous-background: #0876b7;
+    --ui-action-previous-hover-background: #075f93;
+    --ui-action-previous-color: #fff;
+    --ui-action-next-background: #25842c;
+    --ui-action-next-hover-background: #1c6c23;
+    --ui-action-next-color: #fff;
+    --ui-action-random-background: #edc32b;
+    --ui-action-random-hover-background: #d4ad20;
+    --ui-action-random-color: #17232a;
   }
 }
 

@@ -1,11 +1,128 @@
 .orb {
   box-shadow:
-    0 4px 30px rgba(250, 250, 250, 0.23),
-    inset 0 1px 0 rgba(250, 250, 250, 0.5),
-    inset 0 -1px 0 rgba(250, 250, 250, 0.1),
-    inset 0 0 26px 13px rgba(250, 250, 250, 0.13);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+    0 2px 6px rgba(28, 67, 99, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.themed-ui-control {
+  color: var(--ui-control-color);
+  background: var(--ui-control-background);
+  box-shadow: var(--ui-control-shadow);
+}
+
+.orb.themed-ui-control {
+  opacity: var(--ui-orb-opacity, 0.8);
+  box-shadow: var(--ui-orb-shadow);
+}
+
+.themed-ui-control:hover {
+  background: var(--ui-control-hover-background);
+}
+
+.themed-ui-control:active {
+  background: var(--ui-control-active-background);
+}
+
+.themed-ui-control:focus-visible {
+  outline: var(--ui-control-focus-outline);
+  outline-offset: var(--ui-control-focus-outline-offset);
+}
+
+.themed-ui-control[data-ui-action="nav-link"][aria-current="true"] {
+  color: var(--ui-nav-active-color);
+  background: var(--ui-nav-active-background);
+}
+
+.themed-ui-control[data-ui-action="theme-current"] {
+  color: var(--ui-current-color);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--hill-near) 68%, white),
+    var(--hill-near)
+  );
+}
+
+.themed-ui-control[data-ui-action="theme-current"]:hover {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--hill-near) 52%, white),
+    var(--hill-near)
+  );
+}
+
+.themed-ui-control[data-ui-action="previous"] {
+  color: var(--ui-action-previous-color);
+  background: var(--ui-action-previous-background);
+}
+
+.themed-ui-control[data-ui-action="previous"]:hover {
+  background: var(--ui-action-previous-hover-background);
+}
+
+.themed-ui-control[data-ui-action="previous"] svg {
+  color: var(--ui-action-previous-color);
+}
+
+.themed-ui-control[data-ui-action="next"] {
+  color: var(--ui-action-next-color);
+  background: var(--ui-action-next-background);
+}
+
+.themed-ui-control[data-ui-action="next"]:hover {
+  background: var(--ui-action-next-hover-background);
+}
+
+.themed-ui-control[data-ui-action="next"] svg {
+  color: var(--ui-action-next-color);
+}
+
+.themed-ui-control[data-ui-action="random"] {
+  color: var(--ui-action-random-color);
+  background: var(--ui-action-random-background);
+}
+
+.themed-ui-control[data-ui-action="random"]:hover {
+  background: var(--ui-action-random-hover-background);
+}
+
+.themed-ui-control[data-ui-action="random"] svg {
+  color: var(--ui-action-random-color);
+}
+
+.themed-ui-control[data-ui-action="toggle"][data-ui-state="open"],
+.themed-ui-control[data-ui-action="nav-toggle"][data-ui-state="open"] {
+  color: var(--ui-action-close-color);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--ui-action-close-background) 72%, white),
+    var(--ui-action-close-background)
+  );
+}
+
+.themed-ui-control[data-ui-action="toggle"][data-ui-state="open"]:hover,
+.themed-ui-control[data-ui-action="nav-toggle"][data-ui-state="open"]:hover {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--ui-action-close-hover-background) 72%, white),
+    var(--ui-action-close-hover-background)
+  );
+}
+
+.themed-ui-control[data-ui-action="toggle"][data-ui-state="open"] svg,
+.themed-ui-control[data-ui-action="nav-toggle"][data-ui-state="open"] svg {
+  color: var(--ui-action-close-color);
+}
+
+@media (prefers-contrast: more) {
+  .themed-ui-control {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
+  .orb.themed-ui-control {
+    box-shadow: none;
+  }
 }
 
 .rainbow-orb {
@@ -22,23 +139,38 @@
 
 @media (prefers-color-scheme: dark) {
   .orb {
-    box-shadow:
-      0 4px 30px rgba(0, 0, 0, 0.1),
-      inset 0 1px 0 rgba(250, 250, 250, 0.5),
-      inset 0 -1px 0 rgba(250, 250, 250, 0.1),
-      inset 0 0 26px 13px rgba(250, 250, 250, 0.13);
+    box-shadow: none;
   }
 }
 
 @media (prefers-contrast: more) {
+  .themed-ui-control {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
+  .orb.themed-ui-control {
+    box-shadow: none;
+  }
+
   .orb {
     box-shadow: none;
-    border: 2px solid var(--contrast-border-color);
+    outline: 2px solid var(--contrast-border-color);
+    outline-offset: 2px;
+  }
+
+  .orb.themed-ui-control {
+    box-shadow: none;
   }
 }
 
 @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
   .orb {
-    border-color: var(--contrast-border-color-dark);
+    outline-color: var(--contrast-border-color-dark);
+  }
+
+  .orb.themed-ui-control {
+    outline-color: var(--contrast-border-color-dark);
   }
 }
