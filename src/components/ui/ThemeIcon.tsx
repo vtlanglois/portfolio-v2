@@ -2,7 +2,6 @@ import {
   CactusIcon,
   CloudIcon,
   CoffeeIcon,
-  DiscIcon,
   DropIcon,
   IslandIcon,
   FlowerIcon,
@@ -22,6 +21,7 @@ import {
   TreeEvergreenIcon,
   WavesIcon,
   WindIcon,
+  PersonSimpleRunIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
 export function ThemeIcon({
@@ -38,8 +38,8 @@ export function ThemeIcon({
       return <IslandIcon size={size} weight="duotone" />;
     case "console":
       return <GameControllerIcon size={size} weight="duotone" />;
-    case "y2k":
-      return <DiscIcon size={size} weight="duotone" />;
+    case "kinetic":
+      return <PersonSimpleRunIcon size={size} weight="duotone" />;
     case "diner":
       return <CoffeeIcon size={size} weight="duotone" />;
     case "ocean":

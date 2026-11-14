@@ -489,10 +489,10 @@
 }
 
 /* ============================================
-  Y2K
+  Kinetic
    ============================================ */
 
-[data-theme="y2k"] {
+[data-theme="kinetic"] {
   --sky-top: #c5d2d7;
   --sky-bottom: #eef2ef;
   --hill-far: #7f9097;
@@ -934,7 +934,7 @@
     --ui-action-random-color: #8bdaa0;
   }
 
-  [data-theme="y2k"] {
+  [data-theme="kinetic"] {
     --sky-top: #11171b;
     --sky-bottom: #222b30;
     --hill-far: #3b464b;

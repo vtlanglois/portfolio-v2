@@ -226,15 +226,18 @@ export default function ThemeDemo() {
               <ThemeCard theme="console">
                 <p>
                   I was more of a Wii and PS3/4 kid, so I wanted a theme that
-                  felt like both. Light Mode has that clean Wii look, while
-                  Dark Mode leans more PlayStation. Adding in a console theme also inspired me to add theming support to buttons.
+                  felt like both. Light Mode has that clean Wii look, while Dark
+                  Mode leans more PlayStation. Adding in a console theme also
+                  inspired me to add theming support to buttons.
                 </p>
               </ThemeCard>
-              <ThemeCard theme="y2k" title="Y2K">
+              <ThemeCard theme="kinetic">
                 <p>
                   This one reminds me of the Xbox 360 era, especially all those
-                  Kinect ads. I liked the glossy Y2K look, so I went with
-                  silver, blue, and lime hills.
+                  Kinect ads. Originally this was named Y2K, but it was
+                  considered too generic for a theme like this. So, it was
+                  renamed to Kinetic to be more specific to the exact tech
+                  aesthetic its trying to replicate.
                 </p>
               </ThemeCard>
               <ThemeCard theme="metro">
@@ -292,8 +295,8 @@ export default function ThemeDemo() {
               </ThemeCard>
               <ThemeCard theme="diner" title="Retro Diner">
                 <p>
-                  I like cooking and food, so I wanted to try a diner theme.
-                  The vanilla, seafoam, and cherry red give it that classic
+                  I like cooking and food, so I wanted to try a diner theme. The
+                  vanilla, seafoam, and cherry red give it that classic
                   Americana diner look.
                 </p>
               </ThemeCard>

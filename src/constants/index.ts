@@ -18,7 +18,7 @@ export const THEMES = [
   "galaxy",
   "vaporwave",
   "console",
-  "y2k",
+  "kinetic",
   "metro",
   "aqua",
   "dorfic",
