@@ -27,7 +27,7 @@
   --ui-nav-active-indicator: var(--ui-control-color);
   --ui-current-background: var(--hill-near);
   --ui-current-hover-background: var(--hill-far);
-  --ui-current-color: var(--foreground, #0a0a0a);
+  --ui-current-color: contrast-color(var(--ui-current-background));
   --ui-action-previous-background: var(--ui-selector-background);
   --ui-action-previous-hover-background: var(--ui-selector-hover-background);
   --ui-action-previous-color: var(--ui-control-color);
