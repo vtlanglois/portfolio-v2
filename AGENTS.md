@@ -24,10 +24,11 @@ Data will often also require its own file in `src/types`.
 
 ## Design
 
-The site is inspired by Frutiger Aero and similar 2000s internet aesthetics. The overall look of the site is inspired by Bliss, the default wallpaper for Windows XP. This was chosen for the following reasons:
+The site is inspired by Frutiger Aero and similar 2000s internet and tech aesthetics. The overall look of the site is inspired by Bliss, the default wallpaper for Windows XP. This was chosen for the following reasons:
 - It creates a fun challenge to build this site. For example, instead of plain sections, Vince had to consider how each section would continue the Bliss theme, leading to the use of hill SVGs for section dividers. Since Vince has a lot of front-end experience, it is worth showcasing that through his portfolio as well.
 - It helps set my portfolio apart from others. While Frutiger Aero and 2000s aesthetics are popular amongst Vince's generation and show up on their sites, Vince wants to stand out from sites that use a purely minimalist and/or tech-maximalist design. Vince wants users to walk away remembering the site either as "Vince's website" or "the site that reminded them of rolling green hills."
 - Vince really does like the aesthetic, and he grew up with Windows XP with this exact background. Vince also enjoys nature.
+- Vince has considered a terminal theme before, but he considers it a common look for developer sites. This won't make him stand out.
 
 ### Content
 
@@ -40,7 +41,7 @@ An agent must never invent or implement new experience, projects, or professiona
 
 The site has a set of selectable themes. This allows users to see how the rolling hills theme can change based on the color palette. There are three categories of themes:
 - Nature: based on natural parts of the world, from green hills to blue oceans, all the way to space itself!
-- Internet: based on online aesthetics, particularly those from 2000s to mid-2010s.
+- Tech: based on online and tech aesthetics, particularly those from 2000s to mid-2010s.
 - Misc: any theme that is not based on the above.
 
 For now, do not add new production themes without explicit direction.

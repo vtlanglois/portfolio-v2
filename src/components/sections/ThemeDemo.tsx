@@ -211,7 +211,7 @@ export default function ThemeDemo() {
               className="flex flex-row flex-wrap items-center justify-between"
             >
               <h2 className="text-2xl font-bold leading-none">
-                Internet Themes
+                Tech Themes
               </h2>
               <GlobeIcon size={30} weight="duotone" />
             </Card>
@@ -279,7 +279,7 @@ export default function ThemeDemo() {
               <ThemeCard theme="blocks">
                 <p>
                   LEGOs were the initial design approach I had for the site
-                  before settling on nature and 2000s internet aesthetics.
+                  before settling on nature and 2000s tech aesthetics.
                   Wanted to include it as a theme to show a &quot;What if?&quot;
                   version of the site. Has an easter egg where all UI elements
                   become blocky.
@@ -289,7 +289,7 @@ export default function ThemeDemo() {
                 <p>
                   As I was working on the site, I wanted to include something
                   that would use the hills in a way that <i>wasn&apos;t</i>{" "}
-                  based on nature or 2000s internet aesthetics. From that, a
+                  based on nature or 2000s tech aesthetics. From that, a
                   friend told me the hills looked like ice cream.
                 </p>
               </ThemeCard>
