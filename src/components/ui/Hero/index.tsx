@@ -1,7 +1,6 @@
 import "./styles.css";
 
 export default function Hero({ children }: { children?: React.ReactNode }) {
-  
   return (
     <section id="hero" className="hero">
       <div className="hero__hills">

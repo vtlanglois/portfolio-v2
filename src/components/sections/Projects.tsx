@@ -50,7 +50,11 @@ export default function Projects() {
               className="row-span-3 grid grid-rows-subgrid"
             />
           </div>
-          <Card size="small" variation="interface" className="flex items-center justify-end">
+          <Card
+            size="small"
+            variation="interface"
+            className="flex items-center justify-end"
+          >
             <Link
               href="/projects"
               className="themed-ui-control inline-flex items-center gap-2 rounded-full p-2 font-bold opacity-80 transition duration-300 motion-reduce:transition-none motion-reduce:transform-none"

@@ -7,12 +7,7 @@ interface OrbProps extends React.HTMLAttributes<HTMLElement> {
   [key: string]: unknown;
 }
 
-export default function Orb({
-  tag,
-  children,
-  className,
-  ...rest
-}: OrbProps) {
+export default function Orb({ tag, children, className, ...rest }: OrbProps) {
   const Tag = tag || "div";
   return (
     <Tag

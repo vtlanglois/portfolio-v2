@@ -134,7 +134,8 @@
     var(--section-3),
     var(--hill-far)
   );
-  transition: background var(--bgc-transition-speed) var(--bgc-transition-easing);
+  transition: background var(--bgc-transition-speed)
+    var(--bgc-transition-easing);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -201,11 +201,7 @@ export default function ThemeSelector() {
                   bounce: 0,
                 }}
               >
-                {hidden ? (
-                  <PlusIcon size={32} />
-                ) : (
-                  <XIcon size={32} />
-                )}
+                {hidden ? <PlusIcon size={32} /> : <XIcon size={32} />}
               </motion.div>
             </AnimatePresence>
           </Orb>

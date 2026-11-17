@@ -78,7 +78,7 @@
   opacity: 0;
   color: contrast-color(var(--hill-near));
   animation: 5s fadeInUp 1s ease-out forwards;
-} 
+}
 
 .home-hero__card {
   animation: fadeInUp 1s ease-out forwards;

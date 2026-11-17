@@ -17,7 +17,7 @@ export default function GitHubLink({
       className="themed-ui-control"
       title={alt}
     >
-      <GithubLogoIcon size={32} weight="duotone"  />
+      <GithubLogoIcon size={32} weight="duotone" />
     </Orb>
   );
 }

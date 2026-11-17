@@ -1,8 +1,7 @@
-import "./styles.css"
+import "./styles.css";
 
 const dividerPaths = {
-  standard:
-    "M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z",
+  standard: "M0 30 L0 14 Q120 6 240 12 Q340 18 440 6 Q560 0 680 10 L680 30 Z",
   wave: "M0 30 L0 20 Q80 8 180 14 Q260 18 320 8 Q380 2 460 10 Q560 18 680 8 L680 30 Z",
   rolling:
     "M0 30 L0 8 Q70 26 150 12 Q230 -2 320 14 Q410 30 500 10 Q590 -4 680 16 L680 30 Z",
@@ -43,7 +42,7 @@ export default function Section({
   className,
   sectionNumber,
 }: {
-  id: string,
+  id: string;
   children: React.ReactNode;
   className?: string;
   sectionNumber?: number;

@@ -14,18 +14,28 @@ export default function ExperienceCard({
 }) {
   const skillsLabelId = `${experience.id}-skills-label`;
   return (
-    <Card className={`flex flex-col gap-2 ${experience.isTimelineItem ? "timeline" : ""}`}>
+    <Card
+      className={`flex flex-col gap-2 ${experience.isTimelineItem ? "timeline" : ""}`}
+    >
       <div className="flex flex-row items-center justify-between gap-1 flex-wrap">
         <h3 className="text-xl font-semibold text-balance">
           {experience.role} at <i>{experience.company}</i>
         </h3>
         <span className="inline-flex items-center gap-1 justify-around lg:flex-[0_1_220px]">
-        <CalendarDotsIcon className="colored-icon" weight="duotone" aria-hidden />
-        <p>{experience.dates}</p>
+          <CalendarDotsIcon
+            className="colored-icon"
+            weight="duotone"
+            aria-hidden
+          />
+          <p>{experience.dates}</p>
         </span>
       </div>
       <p className="text-sm inline-flex items-center gap-1 ">
-        <MapPinSimpleAreaIcon className="colored-icon" weight="duotone" aria-hidden />
+        <MapPinSimpleAreaIcon
+          className="colored-icon"
+          weight="duotone"
+          aria-hidden
+        />
         {experience.location} •
         <TimerIcon className="colored-icon" weight="duotone" aria-hidden />
         {experience.duration}

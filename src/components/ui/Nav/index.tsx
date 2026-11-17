@@ -132,11 +132,7 @@ export default function Nav() {
                   bounce: 0,
                 }}
               >
-                {hidden ? (
-                  <ListIcon size={32} />
-                ) : (
-                  <XIcon size={32} />
-                )}
+                {hidden ? <ListIcon size={32} /> : <XIcon size={32} />}
               </motion.div>
             </AnimatePresence>
           </Orb>

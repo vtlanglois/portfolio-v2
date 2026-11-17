@@ -210,9 +210,7 @@ export default function ThemeDemo() {
               variation="heading"
               className="flex flex-row flex-wrap items-center justify-between"
             >
-              <h2 className="text-2xl font-bold leading-none">
-                Tech Themes
-              </h2>
+              <h2 className="text-2xl font-bold leading-none">Tech Themes</h2>
               <GlobeIcon size={30} weight="duotone" />
             </Card>
             <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
@@ -279,18 +277,18 @@ export default function ThemeDemo() {
               <ThemeCard theme="blocks">
                 <p>
                   LEGOs were the initial design approach I had for the site
-                  before settling on nature and 2000s tech aesthetics.
-                  Wanted to include it as a theme to show a &quot;What if?&quot;
-                  version of the site. Has an easter egg where all UI elements
-                  become blocky.
+                  before settling on nature and 2000s tech aesthetics. Wanted to
+                  include it as a theme to show a &quot;What if?&quot; version
+                  of the site. Has an easter egg where all UI elements become
+                  blocky.
                 </p>
               </ThemeCard>
               <ThemeCard theme="neopolitan">
                 <p>
                   As I was working on the site, I wanted to include something
                   that would use the hills in a way that <i>wasn&apos;t</i>{" "}
-                  based on nature or 2000s tech aesthetics. From that, a
-                  friend told me the hills looked like ice cream.
+                  based on nature or 2000s tech aesthetics. From that, a friend
+                  told me the hills looked like ice cream.
                 </p>
               </ThemeCard>
               <ThemeCard theme="diner" title="Retro Diner">

@@ -54,12 +54,12 @@ export default function About() {
                 , and various micro-frontends for Lilly websites.
               </p>
               <p>
-                As a 2000s kid, I grew up alongside technological innovation, from the early
-                days of online games to the rise of smartphones. I even had a
-                desktop at 3 years-old, which sparked my curiosity about how
-                tech worked behind the scenes. This led to me to build my own
-                games and websites. Eventually, this led me to pursue a career
-                in software engineering.
+                As a 2000s kid, I grew up alongside technological innovation,
+                from the early days of online games to the rise of smartphones.
+                I even had a desktop at 3 years-old, which sparked my curiosity
+                about how tech worked behind the scenes. This led to me to build
+                my own games and websites. Eventually, this led me to pursue a
+                career in software engineering.
               </p>
               <p>
                 I&apos;m also a big fan of building and making things, including
@@ -141,14 +141,16 @@ export default function About() {
                   narratives and immersive worlds.
                 </li>
                 <li>
-                  I grown a collection of LEGO sets and comic
-                  books throughout the years.
+                  I grown a collection of LEGO sets and comic books throughout
+                  the years.
                 </li>
                 <li>
-                  I have a passion for photography, especially nature, urban, and liminal spaces.
+                  I have a passion for photography, especially nature, urban,
+                  and liminal spaces.
                 </li>
                 <li>
-                  I enjoy writing stories and worlds, especially sci-fi and modern settings.
+                  I enjoy writing stories and worlds, especially sci-fi and
+                  modern settings.
                 </li>
               </ul>
             </Card>

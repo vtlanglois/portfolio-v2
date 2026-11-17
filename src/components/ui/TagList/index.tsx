@@ -9,11 +9,14 @@ export default function TagList({
 }: {
   tags: TagItem[];
   direction?: "row" | "col";
-  labelledBy: string,
+  labelledBy: string;
 }) {
   const dir = direction === "row" ? "flex-row" : "flex-row lg:flex-col";
   return (
-    <ul aria-labelledby={labelledBy} className={`tag-list flex ${dir} flex-wrap gap-1 list-inside`}>
+    <ul
+      aria-labelledby={labelledBy}
+      className={`tag-list flex ${dir} flex-wrap gap-1 list-inside`}
+    >
       {tags.map((tag) => {
         return (
           <li key={`tag-${tag.text}`}>

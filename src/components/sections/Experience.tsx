@@ -1,4 +1,4 @@
-import { LaptopIcon  } from "@phosphor-icons/react/dist/ssr";
+import { LaptopIcon } from "@phosphor-icons/react/dist/ssr";
 import { TAGS } from "@/data/skills";
 import { ExperienceItem } from "@/types/experienceTypes";
 import Card from "../ui/Card";
@@ -20,10 +20,15 @@ const experiences: ExperienceItem[] = [
         Currently revamping the logged-in experience for Lilly users.
       </p>,
       <p className="text-pretty" key="lilly-scalable">
-        Worked on developing scalable web applications and systems to enhance the customer experience for Lilly&apos;s online services, focusing on accessible user interfaces. Led a full-stack development team to deliver high-quality software solutions.
+        Worked on developing scalable web applications and systems to enhance
+        the customer experience for Lilly&apos;s online services, focusing on
+        accessible user interfaces. Led a full-stack development team to deliver
+        high-quality software solutions.
       </p>,
       <p className="text-pretty" key="lilly-direct">
-        Worked on the initial launch of LillyDirect®. Learned the ropes of software development practices and lifecycle in a real-world, high-profile project.
+        Worked on the initial launch of LillyDirect®. Learned the ropes of
+        software development practices and lifecycle in a real-world,
+        high-profile project.
       </p>,
     ],
     tags: [
@@ -47,7 +52,9 @@ const experiences: ExperienceItem[] = [
     duration: "3mos",
     descriptions: [
       <p className="text-pretty" key="bcforward-case-management">
-        Worked on developing features for the Indiana Prosecutor Case Management System, focused on enhancing user experience and customer support. Reduced customer support calls by the hundreds.
+        Worked on developing features for the Indiana Prosecutor Case Management
+        System, focused on enhancing user experience and customer support.
+        Reduced customer support calls by the hundreds.
       </p>,
     ],
     tags: [
@@ -71,7 +78,10 @@ const experiences: ExperienceItem[] = [
     duration: "2 yrs 11mos",
     descriptions: [
       <p className="text-pretty" key="luddy-outreach">
-        Directed and coordinated community outreach programs, focused on promoting STEM education and engaging with local schools to inspire the next generation of technologists. Engaged students within the Luddy school.
+        Directed and coordinated community outreach programs, focused on
+        promoting STEM education and engaging with local schools to inspire the
+        next generation of technologists. Engaged students within the Luddy
+        school.
       </p>,
     ],
     tags: [

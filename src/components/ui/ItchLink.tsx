@@ -1,13 +1,7 @@
 import { GameControllerIcon } from "@phosphor-icons/react/dist/ssr";
 import Orb from "./Orb";
 
-export default function ItchLink({
-  href,
-  alt,
-}: {
-  href: string;
-  alt: string;
-}) {
+export default function ItchLink({ href, alt }: { href: string; alt: string }) {
   return (
     <Orb
       tag="a"

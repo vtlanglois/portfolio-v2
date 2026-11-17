@@ -18,10 +18,7 @@ export default function ErrorPage() {
             available.
           </p>
           <Link href="/">
-            <Orb
-              tag="span"
-              className="themed-ui-control"
-            >
+            <Orb tag="span" className="themed-ui-control">
               <HouseIcon />
               Return Home
             </Orb>

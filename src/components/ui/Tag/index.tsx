@@ -35,7 +35,6 @@ import { TagItem } from "@/types/tagTypes";
 //   hobby: StarIcon,
 // };
 
-
 // const icons = {
 //   a11y: PersonArmsSpreadIcon,
 //   robot: RobotIcon,
@@ -58,11 +57,7 @@ import { TagItem } from "@/types/tagTypes";
 //   book: BookIcon,
 // };
 
-export default function Tag({
-  tag,
-}: {
-  tag: TagItem;
-}) {
+export default function Tag({ tag }: { tag: TagItem }) {
   // const selectedIcon = () => {
   //   let IconComponent: Icon;
   //   if (tag.icon && tag.icon in icons) {
