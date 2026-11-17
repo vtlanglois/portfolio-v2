@@ -45,7 +45,7 @@ export default function About() {
                   href="https://www.nbcnews.com/now/video/eli-lilly-launches-new-website-to-help-patients-get-weight-loss-drugs-201386053731"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-700 underline inline-flex items-center-safe"
+                  className="underline inline-flex items-center-safe"
                 >
                   NBC News
                   <ArrowSquareOutIcon />
