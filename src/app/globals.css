@@ -17,8 +17,7 @@
   --ui-control-focus-outline: 3px solid #2778c8;
   --ui-control-focus-outline-offset: 2px;
   --ui-control-shadow:
-    0 2px 6px rgba(28, 67, 99, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    0 2px 6px rgba(28, 67, 99, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.75);
   --ui-orb-shadow: var(--ui-control-shadow);
   --ui-selector-background: var(--ui-control-background);
   --ui-selector-hover-background: var(--ui-control-hover-background);
@@ -466,8 +465,7 @@
   --ui-control-focus-outline: 3px solid #2778c8;
   --ui-orb-opacity: 1;
   --ui-control-shadow:
-    0 2px 6px rgba(28, 67, 99, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    0 2px 6px rgba(28, 67, 99, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.75);
   --ui-orb-shadow: var(--ui-control-shadow);
   --ui-nav-active-background: #b5daf2;
   --ui-nav-active-color: #173451;
@@ -513,8 +511,7 @@
   --ui-control-focus-outline: 3px solid #147cc1;
   --ui-orb-opacity: 1;
   --ui-control-shadow:
-    0 2px 6px rgba(16, 40, 56, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+    0 2px 6px rgba(16, 40, 56, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.75);
   --ui-orb-shadow: var(--ui-control-shadow);
   --ui-nav-active-background: #cfe86b;
   --ui-nav-active-color: #122a3a;
@@ -1046,6 +1043,13 @@ ul.list-disc li:nth-child(2n)::marker {
   color: var(--section-4);
 }
 
-ul.list-disc li:nth-child(2n+1)::marker {
+ul.list-disc li:nth-child(2n + 1)::marker {
   color: var(--section-5);
+}
+
+@media (prefers-color-scheme: dark) or (prefers-contrast: more) {
+  ul.list-disc li:nth-child(2n)::marker,
+  ul.list-disc li:nth-child(2n + 1)::marker {
+    color: var(--foreground);
+  }
 }
