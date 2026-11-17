@@ -20,7 +20,7 @@ export default function MiscProjectsGrid() {
             <h2 className="text-2xl font-bold leading-none">Misc. Projects</h2>
             <PinwheelIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
+          <ul className="grid grid-rows-1 lg:grid-cols-3 gap-3 list-none p-0">
             {miscellaneousProjects.map((project: ProjectItem) => (
               <ProjectCard
                 key={project.id}
@@ -32,7 +32,7 @@ export default function MiscProjectsGrid() {
                 className="row-span-3 grid grid-rows-subgrid"
               />
             ))}
-          </div>
+          </ul>
         </Stack>
       </Container>
     </Section>

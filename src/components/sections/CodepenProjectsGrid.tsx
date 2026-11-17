@@ -22,7 +22,7 @@ export default function CodepenProjectsGrid() {
             </h2>
             <TabsIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-rows-1 lg:grid-cols-3 gap-3">
+          <ul className="grid grid-rows-1 lg:grid-cols-3 gap-3 list-none p-0">
             {codePenDemos.map((demo: ProjectItem) => (
               <ProjectCard
                 key={demo.id}
@@ -34,7 +34,7 @@ export default function CodepenProjectsGrid() {
                 className="row-span-3 grid grid-rows-subgrid"
               />
             ))}
-          </div>
+          </ul>
         </Stack>
       </Container>
     </Section>

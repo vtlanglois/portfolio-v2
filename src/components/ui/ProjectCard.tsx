@@ -21,7 +21,7 @@ export default function ProjectCard({
   className: string;
 }) {
   return (
-    <Card className={className}>
+    <Card className={className} tag="li">
       <h3 className="text-xl font-semibold text-balance">{title}</h3>
       <p className="text-pretty">{summary}</p>
       <div className="flex items-start justify-between text-end">

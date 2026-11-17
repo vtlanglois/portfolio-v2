@@ -107,11 +107,13 @@ export default function Experience() {
             <h2 className="text-2xl font-bold leading-none">Experience</h2>
             <LaptopIcon size={30} weight="duotone" />
           </Card>
-          <div className="grid grid-cols-1 gap-3">
+          <ul className="grid grid-cols-1 gap-3 list-none p-0">
             {experiences.map((experience) => (
-              <ExperienceCard key={experience.id} experience={experience} />
+              <li key={experience.id}>
+                <ExperienceCard key={experience.id} experience={experience} />
+              </li>
             ))}
-          </div>
+          </ul>
         </Stack>
       </Container>
     </Section>
